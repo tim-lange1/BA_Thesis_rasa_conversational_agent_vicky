@@ -1,0 +1,118 @@
+Abgabe: 
+2x Exemplare
+USB-Stick:
+Source-Code 
+Fragebogen im ISS Format 
+SPSS-Datei
+PDF-Datei
+Excel-Datei
+
+____________________________
+export PATH=$PATH:/Users/paulkeller/Library/Python/3.8/bin
+
+conda activate /Users/paulkeller/opt/miniconda3/envs/rasa 
+
+./ngrok http 5002 
+
+ngrok http 5005
+
+-> pulicLink in credentials austauschen, rasa run, rasa run acitons
+
+
+
+Download Anaconda:
+
+conda create -n rasa python=3.8
+conda activate rasa
+pip install rasa==2.8.1
+
+pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+_________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+____________________________
+0 in PP:
+0;-0;;@
+_________________________________
+./ngrok Http 5002 - Development
+_________________________________
+Rasa X:
+
+Start: Hello tippen.
+What did you do yesterday..: "I ate dinner"
+Neustart: Refresh-Button und Hello tippen.
+Antwortenformat bei Quizfragen.
+Solution-Button vermeiden.
+Weitere Fragemöglichkeiten: "Hey Vicky what are your skills?"
+
+./ngrok http 5002
+
+
+environment :
+python3 -m venv ./venv
+source ./venv/bin/activate
+
+insall rasa:
+pip3 install -U --user pip && pip3 install rasa
+
+install rasa x: 
+pip install rasa-x --extra-index-url https://pypi.rasa.com/simple
+
+install: 
+- pip install fuzzywuzzy
+- pip install xlwt
+- pip install xlrd 
+- spacy:
+    pip install -U pip setuptools wheel
+    pip install -U spacy
+    python -m spacy download en_core_web_sm
+- pip install sanic==21.9.3
+- in requirements.txt: 
+sanic-plugins-framework==0.8.2 
+
+
+ "terminal.integrated.env.osx": {
+        "PATH": "...:/usr/bin:/bin:..."
+      }
+
+      export PATH=$PATH:/Users/paulkeller/Library/Python/3.8/bin 
+
+        rasa run -m models --enable-api --cors "*" -p 5021  
+__________________________________
+Starten sie die Kommunikation mit einem einfachen Hallo.
+
+Sie können Vicky folgendes zwischendurch immer fragen:
+
+- Where do you live?
+
+- Why do you ask me that?
+
+- Are you a bot?
+
+- What is a learning style?
+
+Übersetzung der Button:
+
+- former of the two: ersteres von beiden
+
+- latter of the two: letzteres von beiden
+
+Möchten Sie die Conversation von neu starten, müssen Sie auf den Refresh-Button drücken und anschließend die Kontakt mit einem 'Hallo' aufnehmen.
+
+Es wird empfohlen auf eine Negation zu verzichten sowie können sie für jede Frage nur eine Antwort auswählen. Bei den Fragen des Quiz-Spiels verlangen die Antworten an einigen Stellen ein bestimmtes Format, bitte halten Sie sich daran, damit Ihre Antwort vernünftig ausgewertet werden kann.
+
+Viel Spaß!
+
+* Falls Sie bei der Frage: What did you do yesterday in the evening? der Bot Sie nicht versteht, antworten Sie: I ate dinner.
