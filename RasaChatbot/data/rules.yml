@@ -1,0 +1,196 @@
+version: "3.0"
+
+rules: 
+
+- rule: Greet
+  conversation_start: true
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+
+- rule: Submit Name Form
+  condition:
+  - active_loop: name_form
+  steps:
+  - action: name_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null 
+  - intent: give_how_you_are_doing
+  - action: action_feeling
+ 
+- rule: Affirm Explanation
+  steps:
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+ 
+- rule: Deny Explanation
+  steps:
+  - intent: not_explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  
+- rule: Activate FORM Talk
+  steps:
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+
+- rule: Submit FORM Talk 
+  condition:
+  - active_loop: elicitation_form
+  steps:
+  - action: elicitation_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+
+- rule: Affirm Recommendation Talk
+  steps:
+  - action: utter_learning_style_recommendation_talk
+  - intent: affirm
+  - action: give_learning_style_recommendation_talk
+
+
+- rule: ILS_Recommendations1-2
+  steps:
+  - action: give_learning_style_recommendation_talk
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_2
+
+- rule: ILS_Recommendations2-3
+  steps:
+  - action: give_learning_style_ILS_Dim_2
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_3
+
+- rule: ILS_Recommendations3-4
+  steps:
+  - action: give_learning_style_ILS_Dim_3
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_4
+
+- rule: ILS_Recommendations3-4
+  steps:
+  - action: give_learning_style_ILS_Dim_4
+  - intent: affirm 
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+
+
+- rule: Deny Recommendation Talk
+  steps:
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+
+
+- rule: Activate FORM Game
+  steps:
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+ 
+   
+- rule: Active FORM Game
+  condition:
+  - active_loop: quest_game_form_part_one
+  steps:
+  - action: quest_game_form_part_one
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null 
+  - action: utter_ask_continue
+
+
+
+- rule: Affirm affirm FORM Game
+  steps:
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - requested_slot: null 
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+
+- rule: Deny affirm FORM Game
+  steps:
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+
+
+- rule: Affirm Recommendation Game
+  steps:
+  - action: utter_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_recommendation_game
+
+
+- rule: ILS_Game_Recommendations1-2
+  steps:
+  - action: give_learning_style_recommendation_game
+  - intent: affirm 
+  - action: give_learning_style_game_ILS_Dim_2
+
+- rule: ILS_Game_Recommendations2-3
+  steps:
+  - action: give_learning_style_game_ILS_Dim_2
+  - intent: affirm 
+  - action: give_learning_style_game_ILS_Dim_3
+
+- rule: ILS_Game_Recommendations3-4
+  steps:
+  - action: give_learning_style_game_ILS_Dim_3
+  - intent: affirm 
+  - action: give_learning_style_game_ILS_Dim_4
+
+- rule: ILS_Game_Recommendations4
+  steps:
+  - action: give_learning_style_game_ILS_Dim_4
+  - intent: affirm 
+  - action: action_timer_utter_bye_game
+
+
+- rule: Deny Recommendation Game
+  steps:
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  
+
+# After Talk/ Job start QuestGame
+- rule: after_game_say_goodbye
+  steps:
+  - action: action_goodbye_person_by_name
+  - intent: goodbye
+
+
+
+#Extra Behavior
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - action: action_timer_utter_bye_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+
+
+#Fallback
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase
+

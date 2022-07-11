@@ -1,0 +1,1169 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey hey
+    - hola
+    - hi?
+    - howdy
+    - hhi
+    - Hi
+- intent: goodbye
+  examples: |
+    - bye
+    - ciao
+    - See you
+    - bye bye
+    - goodbye
+    - see you later
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?
+- intent: ask_residence
+  examples: |
+    - where do you live
+    - where is your home
+    - your town
+    - your city
+    - where do you stay
+    - what is your city
+- intent: ask_killerphrases
+  examples: |
+    - why do you ask me that?
+    - for what do you need that information?
+    - is that question really important?
+    - for what the hell is the question important?
+    - I don´t want to answer you.
+    - I don´t know
+- intent: chitchat
+  examples: |
+    - ok ok
+    - ok
+    - cool!
+    - cool
+- intent: ask_learningstyle
+  examples: |
+    - what is a learning style?
+    - can you explain me what a learning style is?
+    - learning style?
+    - for what do I need a leaning style?
+    - how can a learning style help me?
+    - why should a learning style be interesting for me?
+    - [learning](208_qG8)
+- intent: give_how_you_are_doing
+  examples: |
+    - I`m [fine](1_how_you_are_doing) thanks and you?
+    - I`m [good](1_how_you_are_doing) thanks and you?
+    - I`m [allright](1_how_you_are_doing) thanks and you?
+    - [fine](1_how_you_are_doing) thanks and you?
+    - [good](1_how_you_are_doing) thanks and you?
+    - [bad](1_how_you_are_doing) thanks and you?
+    - [sick](1_how_you_are_doing) thanks and you?
+    - I´m [good](1_how_you_are_doing) thanks and you?
+    - [satisfied](1_how_you_are_doing)
+    - [well](1_how_you_are_doing)
+    - [breezy](1_how_you_are_doing)
+    - [sunny](1_how_you_are_doing)
+    - [cheery](1_how_you_are_doing)
+    - [easygoing](1_how_you_are_doing)
+    - [happy](1_how_you_are_doing)
+    - [good](1_how_you_are_doing)
+    - [doing well](1_how_you_are_doing)
+    - [bad](1_how_you_are_doing)
+    - [sick](1_how_you_are_doing)
+    - [fine](1_how_you_are_doing)
+    - [unhappy](1_how_you_are_doing)
+    - [sad](1_how_you_are_doing)
+    - [depressed](1_how_you_are_doing)
+    - [dissatisfied](1_how_you_are_doing)
+    - [troubled](1_how_you_are_doing)
+    - [worried](1_how_you_are_doing)
+    - [heavy-hearted](1_how_you_are_doing)
+    - [satisfied](1_how_you_are_doing) and you?
+    - [well](1_how_you_are_doing) and you?
+    - [breezy](1_how_you_are_doing) and you?
+    - [sunny](1_how_you_are_doing) and you?
+    - [cheery](1_how_you_are_doing) and you?
+    - [easygoing](1_how_you_are_doing) and you?
+    - [happy](1_how_you_are_doing) and you?
+    - [good](1_how_you_are_doing) and you?
+    - [doing well](1_how_you_are_doing) and you?
+    - [bad](1_how_you_are_doing) and you?
+    - [sick](1_how_you_are_doing) and you?
+    - [fine](1_how_you_are_doing) and you?
+    - [unhappy](1_how_you_are_doing) and you?
+    - [sad](1_how_you_are_doing) and you?
+    - [depressed](1_how_you_are_doing) and you?
+    - [dissatisfied](1_how_you_are_doing) and you?
+    - [troubled](1_how_you_are_doing) and you?
+    - [worried](1_how_you_are_doing) and you?
+    - [heavy-hearted](1_how_you_are_doing) and you?
+    - I`m [alright](1_how_you_are_doing) thanks How are you doing?
+    - I`m [good](1_how_you_are_doing) thanks How are you doing?
+    - I`m [fine](1_how_you_are_doing) thanks How are you doing?
+    - I`m [sad](1_how_you_are_doing) thanks How are you doing?
+    - I`m [unhappy](1_how_you_are_doing) thanks How are you doing?
+    - I`m [doing well](1_how_you_are_doing) thanks How are you doing?
+    - i am [good](1_how_you_are_doing) thanks
+    - I am [good](1_how_you_are_doing)
+- intent: out_of_scope
+  examples: |
+    - somehow a mix between both
+    - a mix
+    - somehow a mix
+    - both
+    - both things
+    - neither of them
+    - none
+    - none of them
+    - don´t
+    - do not
+    - didn´t
+    - did not
+    - would not
+    - wouldn't
+    - might not
+    - don´t take
+    - do not take
+    - didn´t take
+    - did not take
+    - would not take
+    - wouldn't take
+    - might not take
+    - why
+    - I´m not sure
+    - not sure
+    - I would not take a [map](4_q_twentyThree)
+    - I think both
+    - I think neither of them
+    - I think none
+    - I think none of them
+    - I would not use a [chart](5_q_thirtyOne)
+    - I don´t [words](3_q_three)
+    - I don´t [picture](3_q_three)
+    - I don´t [written instructions)(4_q_twentyThree)
+    - I don´t [map](4_q_twentyThree)
+    - I don´t [chart](5_q_thirtyOne)
+    - I don´t [text)(5_q_thirtyOne) summarization
+    - I don´t [diagram](15_q_eleven)
+    - I don´t [descriptions](15_q_eleven)
+    - I don´t [sketch](16_q_twentySeven)
+    - I don´t [draft](16_q_twentySeven)
+    - I don´t [drawing](16_q_twentySeven)
+    - I don´t [instructor](16_q_twentySeven) said
+    - I wouldn´t [words](3_q_three)
+    - I wouldn´t [picture](3_q_three)
+    - I wouldn´t [written instructions)(4_q_twentyThree)
+    - I wouldn´t [map](4_q_twentyThree)
+    - I wouldn´t [chart](5_q_thirtyOne)
+    - I wouldn´t [text)(5_q_thirtyOne) summarization
+    - I wouldn´t [diagram](15_q_eleven)
+    - I wouldn´t [descriptions](15_q_eleven)
+    - I wouldn´t [sketch](16_q_twentySeven)
+    - I wouldn´t [instructor](16_q_twentySeven) said
+    - I don´t [attempt](6_q_twentyFive)
+    - I don´t [undertake](6_q_twentyFive)
+    - I don´t [try](6_q_twentyFive) out
+    - I don´t make a [plan](6_q_twentyFive)
+    - I don´t [start](9_q_sevenTeen)
+    - I don´t [begin](9_q_sevenTeen)
+    - I don´t [take up](9_q_sevenTeen)
+    - I don´t try [to understand](9_q_sevenTeen)
+    - I don´t [appreciate](9_q_sevenTeen)
+    - I don´t [recognize](9_q_sevenTeen)
+    - I don´t [realize](9_q_sevenTeen)
+    - I´m not [realistic](7_q_two)
+    - I´m not [practical](7_q_two)
+    - I´m not [pragmatic](7_q_two)
+    - I´m not [innovative](7_q_two)
+    - I don´t [visual](14_q_seven) material
+    - I don´t [visible](14_q_seven) material
+    - I don´t [movies](14_q_seven)
+    - I don´t [images](14_q_seven)
+    - I don´t [verbal](14_q_seven)
+    - I don´t [speech](14_q_seven)
+    - I don´t [speechs](14_q_seven)
+    - I don´t [conversation](14_q_seven)
+    - I don´t [facts](11_q_ten)
+    - I don´t [concepts](11_q_ten)
+    - I don´t [certainty](8_q_eightTeen)
+    - I don´t [truth](8_q_eightTeen)
+    - I don´t [hypothesis](8_q_eightTeen)
+    - I don´t [assumption](8_q_eightTeen)
+    - I don´t [theoretical models](10_q_thirtyEight)
+    - I don´t [theoretical](10_q_thirtyEight)
+    - I don´t [abstract](10_q_thirtyEight) material
+    - I don´t [pyhsical](10_q_thirtyEight)
+    - I don´t [concrete](10_q_thirtyEight)
+    - I don´t [factual](10_q_thirtyEight)
+    - I don´t [solid](10_q_thirtyEight) material
+    - I don´t [factual](10_q_thirtyEight) material
+    - I don´t [existing](10_q_thirtyEight) material
+    - I´m not [creative](18_q_twentyTwo)
+    - I´m not [imaginative](18_q_twentyTwo)
+    - I´m not [inspired](18_q_twentyTwo)
+    - I´m not [wary](18_q_twentyTwo)
+    - I´m not [attentive](18_q_twentyTwo)
+    - I´m not [careful](18_q_twentyTwo)
+    - I don´t [regular](12_q_twentyFour) pace
+    - I don´t [well ordered](12_q_twentyFour) speed
+    - I don´t [organized](12_q_twentyFour) speed
+    - I´m not [confused](12_q_twentyFour)
+    - I don´t [stay focused](13_q_thirtySix)
+    - I don´t [make connections](13_q_thirtySix)
+    - I don´t [relations](13_q_thirtySix)
+    - I don´t [association](13_q_thirtySix)
+    - I don´t [links](13_q_thirtySix)
+    - I don´t [step](17_q_fourtyFour)
+    - I´m not [slowly](17_q_fourtyFour)
+    - I don´t [consequences](17_q_fourtyFour)
+    - I don´t [result](17_q_fourtyFour)
+    - I don´t [effect](17_q_fourtyFour)
+    - I don´t [real](19_q_six)
+    - I don´t [ideas](19_q_six) and [theories](19_q_six)
+    - I don´t like [ideas](19_q_six) and [theories](19_q_six)
+    - I don´t like [draft]{"entity": "16_q_twentySeven", "value": "sketch"}
+    - somehow a mix of both
+    - I don´t prefer a [map](4_q_twentyThree)
+    - I don´t got [words](3_q_three)
+    - I don´t take [words](3_q_three)
+    - I don´t use a [map](4_q_twentyThree)
+    - Neither of them
+    - I might not take a [chart](5_q_thirtyOne)
+    - I might not making a [plan](6_q_twentyFive)
+- intent: give_smalltalk
+  examples: |
+    - I bought some books
+    - I read a book
+    - I sold my car
+    - I played soccer
+    - I met friends
+    - I cooked dinner
+    - I´ve been doing some sport with my boyfriend
+    - I ate dinner
+    - I watched a series
+    - I was playing basketball
+    - I watched a film
+    - I did my sport class
+    - I did my sport
+    - we ate dinner
+    - we were shopping
+    - I was studying
+    - I was learning for an exam
+    - I was at the university
+    - I had sex with my boyfriend
+    - I had sex with my wife
+    - I had sex with my girlfrined
+    - I was hanging out with friends
+    - I was at the driving school
+    - I was at the gym
+    - I did some fitness
+    - I was shopping
+    - I was meeting my friends
+    - I was swimming
+    - I learned
+    - I did homeworks
+    - i was swiming
+    - i was swimming
+    - I bought a new computer
+    - swimming in pool
+    - i was watching tv
+    - I was swimming with the boys
+    - swimming
+    - learning math
+    - learning for test
+    - just studying
+    - did my homeworks
+    - I was sleeping
+    - I slept
+    - I was learning math
+    - working
+    - I was working
+- intent: qOne
+  examples: |
+    - I got it by [picture](3_q_three)
+    - I got it by a [words](3_q_three)
+    - I memorize it like seeing a [picture](3_q_three)
+    - In my memorys I see a [picture](3_q_three) of what I did yesterday
+    - [picture](3_q_three)
+    - [pictures](3_q_three)
+    - [image](3_q_three)
+    - [words](3_q_three)
+    - I think it is more a [picture](3_q_three) than words
+    - I think it are more [words](3_q_three) than a  picture
+    - I think I got it more by a [picture](3_q_three) than by words
+    - I think I got it more by [words](3_q_three) than a picture
+    - I think [picture](3_q_three)
+    - I think [words](3_q_three)
+    - I guess for me is more like [words](3_q_three) than a picture
+    - I guess for me is more like [picture](3_q_three) than words
+    - I got it by [words](3_q_three)
+- intent: qTwo
+  examples: |
+    - Ohh yes I feel so too..I think I would prefer to see it on a [map](4_q_twentyThree) for me that is much easier.
+    - [map](4_q_twentyThree)
+    - [written instructions)(4_q_twentyThree)
+    - Ohh yes I feel so too..I think I would prefer a [wirtten instruction](4_q_twentyThree) that is much easier
+    - Ohh yes I feel so too..I think I would prefer to see it on a [map](4_q_twentyThree)
+    - I think I would prefer a [map](4_q_twentyThree)
+    - I think I would prefer a [written instructions](4_q_twentyThree)
+    - I think I would rather read the [written instructions](4_q_twentyThree) than a map
+    - I think I would rather use a [map](4_q_twentyThree) than the written instructions
+    - I prefer a [map](4_q_twentyThree)
+    - I prefer more a [map](4_q_twentyThree) than written instructions
+    - I prefer a [written instructions](4_q_twentyThree)
+    - I prefer more [written instructions](4_q_twentyThree) than a map
+    - I would go for a [written instructions](4_q_twentyThree)
+    - I would go for a [map](4_q_twentyThree)
+    - a [map](4_q_twentyThree)
+- intent: qThree
+  examples: |
+    - I would like to see it as a [chart](5_q_thirtyOne) or something like that
+    - You can give me them as [chart](5_q_thirtyOne)
+    - You can give me them as a [text summarization)(5_q_thirtyOne)
+    - You can pass them as [chart](5_q_thirtyOne)
+    - You can pass them as a [text summarization)(5_q_thirtyOne)
+    - [chart](5_q_thirtyOne)
+    - more a [chart](5_q_thirtyOne) than a text summarization
+    - [charts](5_q_thirtyOne)
+    - I would like to see it as a [text summarization)(5_q_thirtyOne)
+    - [text summarization)(5_q_thirtyOne)
+    - [sum up)(5_q_thirtyOne)
+    - [textsummarization)(5_q_thirtyOne)
+    - more a [text summarization)(5_q_thirtyOne) than a chart
+    - [text)(5_q_thirtyOne) summarization
+    - I think I would prefer a [chart](5_q_thirtyOne)
+    - I think I would prefer a [sum up](5_q_thirtyOne)
+    - I think I would more prefer a [chart](5_q_thirtyOne) than a text summarization
+    - I think I would prefer a [text summarization](5_q_thirtyOne)
+    - I think I would prefer more a [text summarization](5_q_thirtyOne) than a chart
+    - Maybe I could get that as a [chart](5_q_thirtyOne) or something like this
+- intent: qFour
+  examples: |
+    - [diagrams](15_q_eleven)
+    - [diagram](15_q_eleven)
+    - [description](15_q_eleven)
+    - For me it is easier to understand it by looking at the [diagram](15_q_eleven)
+    - I think I look over the [diagrams](15_q_eleven)
+    - I think I like [diagrams](15_q_eleven)  more
+    - I think I like [descriptions](15_q_eleven) more
+    - did not [diagrams](15_q_eleven)
+- intent: qFive
+  examples: |
+    - [visual material](14_q_seven)
+    - [visual](14_q_seven) material
+    - [visible](14_q_seven) material
+    - [movies](14_q_seven)
+    - [images](14_q_seven)
+    - [verbal](14_q_seven)
+    - [speech](14_q_seven)
+    - [speechs](14_q_seven)
+    - [conversation](14_q_seven)
+    - [conversations](14_q_seven)
+    - I think I like [movies](14_q_seven)
+    - I think I like [images](14_q_seven)
+    - I think I like [verbal](14_q_seven)
+    - I think I like [speech](14_q_seven)
+    - I think I like [speechs](14_q_seven)
+    - I think I like [conversation](14_q_seven)
+    - I think I like [visual material](14_q_seven) more
+    - I think I like [visible](14_q_seven) material more
+    - I think I like [visual](14_q_seven) material more
+    - I think I like [verbal information](14_q_seven) more
+    - I think I like [verbal](14_q_seven) information more
+    - I would not use [visual material](14_q_seven)
+- intent: affirm
+  examples: |
+    - yy
+    - yyy
+- intent: deny
+  examples: |
+    - nn
+    - nnn
+- intent: affirmJob
+  examples: |
+    - yyyy
+    - yyyyy
+- intent: qSix
+  examples: |
+    - [draft](16_q_twentySeven)
+    - [drawing](16_q_twentySeven)
+    - [sketch](16_q_twentySeven)
+    - [instructor](16_q_twentySeven) said
+    - [teacher](16_q_twentySeven) said
+    - [supervisor](16_q_twentySeven) said
+    - [teacher](16_q_twentySeven)
+    - [supervisor](16_q_twentySeven)
+    - I think I like [sketch](16_q_twentySeven) more
+    - I think I like [drawing](16_q_twentySeven) more
+    - I think I like [teacher](16_q_twentySeven) words more
+    - I guess I like [supervisor](16_q_twentySeven) words more
+    - I guess I like [instructor](16_q_twentySeven) words more
+    - I guess I like [sketch](16_q_twentySeven)
+    - I guess I like [draft](16_q_twentySeven)
+    - I guess I like [drawing](16_q_twentySeven)
+    - the [sketch](16_q_twentySeven)
+    - I think I like [draft](16_q_twentySeven) more
+    - the [draft](16_q_twentySeven)
+    - the [instructor](16_q_twentySeven) words
+    - the [teacher](16_q_twentySeven) words
+    - the [supervisor](16_q_twentySeven) words
+- intent: qSeven
+  examples: |
+    - [try out](6_q_twentyFive)
+    - [try](6_q_twentyFive)
+    - [attempt](6_q_twentyFive)
+    - [undertake](6_q_twentyFive)
+    - [plan](6_q_twentyFive)
+    - [preparations](6_q_twentyFive)
+    - make a [plan](6_q_twentyFive)
+    - I would just [try](6_q_twentyFive) it out
+    - I think I would just [try](6_q_twentyFive) it out
+    - I think I would just [attempt](6_q_twentyFive) it out
+    - I think I would just [undertake](6_q_twentyFive) it out
+    - I think just [try](6_q_twentyFive)
+    - I [try](6_q_twentyFive) things outs
+    - I think just [undertake](6_q_twentyFive)
+    - I would make a [plan](6_q_twentyFive)
+    - I would make [preparations](6_q_twentyFive)
+    - I think I would make a [plan](6_q_twentyFive)
+    - First I would make a [plan](6_q_twentyFive)
+    - Firstly I would make a [plan](6_q_twentyFive)
+    - First of all I would make a [plan](6_q_twentyFive)
+    - Primarily I would make a [plan](6_q_twentyFive)
+    - Primarily I would make a [preparations](6_q_twentyFive)
+    - Principally I would make a [plan](6_q_twentyFive)
+    - Basically I would make a [plan](6_q_twentyFive)
+    - I prefer to make a [plan](6_q_twentyFive)
+    - First I would [try](6_q_twentyFive) it out
+    - Firstly I would [try](6_q_twentyFive) it out
+    - Firstly I would [undertake](6_q_twentyFive) it
+    - Basically I would [try](6_q_twentyFive) it out
+    - First of all I would [try](6_q_twentyFive) it out
+    - Primarily I would [try](6_q_twentyFive) it out
+    - Principally I would [try](6_q_twentyFive) it out
+    - I prefer to [try](6_q_twentyFive) it out
+    - I prefer to [undertake](6_q_twentyFive) it out
+    - I would [try](6_q_twentyFive) them first out
+    - [try](6_q_twentyFive) them out
+    - I [try](6_q_twentyFive) them out
+    - First I would get to know the things
+- intent: qEight
+  examples: |
+    - [start](9_q_sevenTeen)
+    - [start directly](9_q_sevenTeen)
+    - [start immediately](9_q_sevenTeen)
+    - [begin immediately](9_q_sevenTeen)
+    - [begin directly](9_q_sevenTeen)
+    - [begin](9_q_sevenTeen)
+    - [take up](9_q_sevenTeen)
+    - [understand](9_q_sevenTeen)
+    - [appreciate](9_q_sevenTeen)
+    - [recognize](9_q_sevenTeen)
+    - [realize](9_q_sevenTeen)
+    - try [to understand](9_q_sevenTeen)
+    - I try to [understand](9_q_sevenTeen) the problem at first
+    - I try to [recognize](9_q_sevenTeen) the problem at first
+    - I try to [realize](9_q_sevenTeen) the problem at first
+    - First I try to [understand](9_q_sevenTeen) the problem
+    - At the beginning I try to [understand](9_q_sevenTeen) the problem
+    - Basically I try to [understand](9_q_sevenTeen) the problem
+    - I would [start](9_q_sevenTeen) on the problem immediately
+    - I would [take up](9_q_sevenTeen) on the problem immediately
+    - I would [appreciate](9_q_sevenTeen) on the problem immediately
+    - I would [recognize](9_q_sevenTeen) on the problem immediately
+    - I would [realize](9_q_sevenTeen) on the problem immediately
+    - I would try to [understand](9_q_sevenTeen) the problem
+    - I think I would [start](9_q_sevenTeen) on the problem immediately
+    - I think I would try to [understand](9_q_sevenTeen) the problem
+    - I would [start](9_q_sevenTeen) on the problem immediately and try to understand the whole thing while working on it
+    - I think [start](9_q_sevenTeen) on the problem would be faster
+    - I think [appreciate](9_q_sevenTeen) on the problem would be faster
+    - I think [recognize](9_q_sevenTeen) on the problem would be faster
+    - I think [realize](9_q_sevenTeen) on the problem would be faster
+    - I think to [begin](9_q_sevenTeen) on the problem would be faster
+    - [understand](9_q_sevenTeen) the problem
+- intent: qNine
+  examples: |
+    - [realistic](7_q_two)
+    - [practical](7_q_two)
+    - [pragmatic](7_q_two)
+    - [innovative](7_q_two)
+    - I am more [realistic](7_q_two) than innovative
+    - I am more [practical](7_q_two) than innovative
+    - I am more [pragmatic](7_q_two) than innovative
+    - I am more [innovative](7_q_two) than realistic
+    - more [realistic](7_q_two) than innovative
+    - more [innovative](7_q_two) than realistic
+    - I think if I am honest I am more a [realistic](7_q_two) person
+    - I think if I am honest I am more a [innovative](7_q_two) person
+    - I think I am more a [realistic](7_q_two) person
+    - I think I am more a [innovative](7_q_two) person
+    - I think [innovative](7_q_two) person
+    - I think [realistic](7_q_two) person
+    - I think [innovative](7_q_two)
+    - I think [realistic](7_q_two)
+    - I think [practical](7_q_two)
+    - I think [pragmatic](7_q_two)
+    - I think I tend to be [innovative](7_q_two)
+    - I think I tend to be [practical](7_q_two)
+    - I think I tend to be [pragmatic](7_q_two)
+    - I think I tend to be [realistic](7_q_two)
+    - I might be a [innovative](7_q_two) person
+    - I might be a [practical](7_q_two) person
+    - I might be a [pragmatic](7_q_two) person
+    - I might be a [realistic](7_q_two) person
+    - I might be more a [innovative](7_q_two) person than realistic person
+    - I might be more a [realistic](7_q_two) person than innovative person
+    - I tend to be more [realistic](7_q_two) than innovative
+- intent: qTen
+  examples: |
+    - [facts](11_q_ten)
+    - [concepts](11_q_ten)
+    - I prefer [facts](11_q_ten)
+    - I prefer [concepts](11_q_ten)
+    - I think [facts](11_q_ten)
+    - I think [concepts](11_q_ten)
+    - I guess [facts](11_q_ten)
+    - I guess [concepts](11_q_ten)
+    - I find it easier to learn [facts](11_q_ten)
+    - I find it easier to learn [concepts](11_q_ten)
+    - I guess I find it easier to learn [facts](11_q_ten)
+    - I guess I find it easier to learn [concepts](11_q_ten)
+    - I find it easier to learn [facts](11_q_ten) than concepts
+    - I find it easier to learn [concepts](11_q_ten) than facts
+- intent: qEleven
+  examples: |
+    - [certainty](8_q_eightTeen)
+    - [truth](8_q_eightTeen)
+    - [hypothesis](8_q_eightTeen)
+    - I think I like the idea of [assumption](8_q_eightTeen)
+    - I think I like the idea of [truth](8_q_eightTeen)
+    - [certainty](8_q_eightTeen) like a fact that is definitely true
+    - [hypothesis](8_q_eightTeen) like a explanation which is made on the basis of limited evidence
+    - I think I like the idea of [certainty](8_q_eightTeen)
+    - I think I like the idea of [hypothesis](8_q_eightTeen)
+    - I like the idea of [certainty](8_q_eightTeen)
+    - I prefer the idea of [certainty](8_q_eightTeen)
+    - I would go for the idea of [certainty](8_q_eightTeen)
+    - I like the idea of [hypothesis](8_q_eightTeen)
+    - I prefer the idea of [hypothesis](8_q_eightTeen)
+    - I prefer the idea of [truth](8_q_eightTeen)
+    - I prefer the idea of [assumption](8_q_eightTeen)
+    - I would go for the idea of [hypothesis](8_q_eightTeen)
+    - I like the idea of certaitny
+    - I don´t like the idea of [certainty](8_q_eightTeen)
+- intent: qTwelve
+  examples: |
+    - [theoretical models](10_q_thirtyEight)
+    - [theoretical](10_q_thirtyEight)
+    - I think [theoretical models](10_q_thirtyEight)
+    - I think [theoretical](10_q_thirtyEight)
+    - I am more interested in [theoretical models](10_q_thirtyEight)
+    - I am more interested in [theoretical](10_q_thirtyEight)
+    - I prefer [theoretical models](10_q_thirtyEight)
+    - I prefer [theoretical](10_q_thirtyEight)
+    - [concrete](10_q_thirtyEight)
+    - [abstract](10_q_thirtyEight)
+    - [solid](10_q_thirtyEight) material
+    - [factual](10_q_thirtyEight) material
+    - [existing](10_q_thirtyEight) material
+    - [pyhsical](10_q_thirtyEight)
+    - I prefer [solid](10_q_thirtyEight) material
+    - I prefer [factual](10_q_thirtyEight) material
+    - I prefer [existing](10_q_thirtyEight) material
+    - I prefer [pyhsical](10_q_thirtyEight)
+    - [concrete material](10_q_thirtyEight)
+    - [abstract material](10_q_thirtyEight)
+    - I am more interested in [concrete](10_q_thirtyEight) material
+    - I am more interested in [abstract](10_q_thirtyEight) material
+    - I think [concrete](10_q_thirtyEight) material
+    - I think [abstract](10_q_thirtyEight) material
+    - I think I prefer [concrete](10_q_thirtyEight) material more
+    - I think I prefer [abstract](10_q_thirtyEight) material more
+    - I prefer [concrete](10_q_thirtyEight) material
+    - I prefer [abstract](10_q_thirtyEight) material
+    - I like concrete material more
+- intent: qThirteen
+  examples: |
+    - [careful](18_q_twentyTwo)
+    - [details](18_q_twentyTwo)
+    - [creative](18_q_twentyTwo)
+    - [imaginative](18_q_twentyTwo)
+    - [inspired](18_q_twentyTwo)
+    - [wary](18_q_twentyTwo)
+    - [attentive](18_q_twentyTwo)
+    - I am more carfule about the [details](18_q_twentyTwo)
+    - I think I am more carful about the [details](18_q_twentyTwo)
+    - I guess Iam more carful about the [details](18_q_twentyTwo)
+    - I think I am more [careful](18_q_twentyTwo)
+    - I think I am more [wary](18_q_twentyTwo)
+    - I think I am more [attentive](18_q_twentyTwo)
+    - I guess I am more [wary](18_q_twentyTwo) about the details
+    - I guess I am more [imaginative](18_q_twentyTwo) about the details
+    - I guess I am more [inspired](18_q_twentyTwo) about the details
+    - I guess I am more [attentive](18_q_twentyTwo) about the details
+    - I guess I am more [careful](18_q_twentyTwo)
+    - I think I am more [careful](18_q_twentyTwo) about the details
+    - I guess I am more [careful](18_q_twentyTwo) about the details
+    - I am more [creative](18_q_twentyTwo)
+    - I think I am more [creative](18_q_twentyTwo)
+    - I think I am more [imaginative](18_q_twentyTwo)
+    - I think I am more [inspired](18_q_twentyTwo)
+    - I guess I am more [creative](18_q_twentyTwo)
+    - I am more [creative](18_q_twentyTwo) about how to do my job
+    - I think I am more [inspired](18_q_twentyTwo) about how to do my job
+    - I think I am more [imaginative](18_q_twentyTwo) about how to do my job
+    - I think I am more [creative](18_q_twentyTwo) about how to do my job
+    - I guess Iam more [creative](18_q_twentyTwo) about how to do my job
+- intent: qFourteen
+  examples: |
+    - [confused](12_q_twentyFour)
+    - [regular pace](12_q_twentyFour)
+    - [regular](12_q_twentyFour) pace
+    - [regular](12_q_twentyFour) tempo
+    - [regular](12_q_twentyFour) speed
+    - regular [speed](12_q_twentyFour)
+    - regular [tempo](12_q_twentyFour)
+    - [structured](12_q_twentyFour) tempo
+    - [structured](12_q_twentyFour) speed
+    - [efficient](12_q_twentyFour) tempo
+    - [efficient](12_q_twentyFour) speed
+    - [well ordered](12_q_twentyFour) tempo
+    - [well ordered](12_q_twentyFour) speed
+    - [organized](12_q_twentyFour) speed
+    - [organized](12_q_twentyFour) tempo
+    - [suddenly all clicks](12_q_twentyFour)
+    - [regular tempo](12_q_twentyFour)
+    - I learn in [structured](12_q_twentyFour) tempo
+    - I learn in [structured](12_q_twentyFour) speed
+    - I learn in [efficient](12_q_twentyFour) tempo
+    - I learn in [efficient](12_q_twentyFour) speed
+    - I learn in [well ordered](12_q_twentyFour) tempo
+    - I learn in [well ordered](12_q_twentyFour) speed
+    - I learn in [organized](12_q_twentyFour) tempo
+    - I learn in [organized](12_q_twentyFour) speed
+    - I learn in regular [tempo](12_q_twentyFour)
+    - I learn in regular [speed](12_q_twentyFour)
+    - I learn in [regular](12_q_twentyFour) speed
+    - I learn in [regular](12_q_twentyFour) tempo
+    - I learn in [regular](12_q_twentyFour) pace
+    - [all clicks](12_q_twentyFour)
+    - [suddenly](12_q_twentyFour) all clicks
+    - [fairly](12_q_twentyFour)
+    - [regular](12_q_twentyFour)
+    - I´m at the beginning confused and suddenly it [all clicks](12_q_twentyFour)
+    - I´m at the beginning [confused](12_q_twentyFour) and suddenly it all clicks
+    - [speed](12_q_twentyFour)
+- intent: qFifteen
+  examples: |
+    - [stay focused](13_q_thirtySix)
+    - [stay focus](13_q_thirtySix)
+    - [focus](13_q_thirtySix)
+    - [focused](13_q_thirtySix)
+    - [connections](13_q_thirtySix)
+    - [relations](13_q_thirtySix)
+    - [association](13_q_thirtySix)
+    - [links](13_q_thirtySix)
+    - [make connections](13_q_thirtySix)
+    - [stay on](13_q_thirtySix) topic
+    - [keep on](13_q_thirtySix) topic
+    - I make [relations](13_q_thirtySix) between that subject and related subjects
+    - I make [associations](13_q_thirtySix) between that subject and related subjects
+    - I make [links](13_q_thirtySix) between that subject and related subjects
+    - I think for me I prefer to [stay on](13_q_thirtySix) topic
+    - I think for me I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I think for me I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I think for me I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I think I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I think I prefer to [stay on](13_q_thirtySix) topic
+    - I think I prefer to [keep on](13_q_thirtySix) topic
+    - I think I prefer to [keep](13_q_thirtySix) on topic
+    - I think I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I think I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I guess I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I guess I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I guess I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I might be to prefer to [stay focused](13_q_thirtySix) on that subject
+    - I might be to make [connections](13_q_thirtySix) between that subject and related subjects
+    - I would not use [stay focused](13_q_thirtySix)
+- intent: qSixteen
+  examples: |
+    - [step](17_q_fourtyFour)
+    - [slowly](17_q_fourtyFour)
+    - I think [slowly](17_q_fourtyFour) in the solution process
+    - [step by step](17_q_fourtyFour)
+    - [steps](17_q_fourtyFour)
+    - [consequences](17_q_fourtyFour)
+    - [result](17_q_fourtyFour)
+    - [effect](17_q_fourtyFour)
+    - [conclusion](17_q_fourtyFour)
+    - I think of each [step](17_q_fourtyFour) in the solution process
+    - I think of the [steps](17_q_fourtyFour) in the solution process
+    - I guess I think of each [step](17_q_fourtyFour) in the process
+    - I think of possible [consequences](17_q_fourtyFour) of the solution in a wide range
+    - I think of possible [effects](17_q_fourtyFour) of the solution in a wide range
+    - I think of possible [conclusions](17_q_fourtyFour) of the solution in a wide range
+    - I guess I think of possible [consequences](17_q_fourtyFour) of the solution
+    - Thats a good question I think I start working on the solution
+- intent: qSeventeen
+  examples: |
+    - [real](19_q_six)
+    - [ideas](19_q_six)
+    - [intention](19_q_six)
+    - [theories](19_q_six)
+    - [theory](19_q_six)
+    - I think a course with [intentions](19_q_six)
+    - I think a course with [real](19_q_six) situations
+    - I think I would teach a course with [real](19_q_six) situations
+    - I think I would teach a course with [ideas](19_q_six) and theories
+    - I think I would rather teach a course with [real](19_q_six) life situations
+    - I think I would rather teach a course with ideas and [theories](19_q_six)
+    - I think I´d prefer a course dealing with [real](19_q_six) situations
+    - I think I´d prefer a course  with [real](19_q_six) life situations
+    - I guess I´d prefer a course dealing with [real](19_q_six) situations
+    - I take a course dealing with [real](19_q_six) situations
+    - I think I´d prefer a course  with [ideas](19_q_six)
+    - I think I´d prefer a course dealing with [ideas](19_q_six) and theories
+    - I guess I´d prefer a course with [ideas](19_q_six)
+    - I guess I´d prefer a course dealing with [ideas](19_q_six) and theories
+    - I take a course dealing with [ideas](19_q_six)
+    - I take a course dealing with [ideas](19_q_six) and theories
+    - I think I´d prefer a course dealing with [theories](19_q_six)
+    - I think I´d prefer a course with [theories](19_q_six)
+    - I guess I´d prefer a course dealing with [theories](19_q_six)
+    - I guess I´d prefer a course with [theories](19_q_six)
+    - I take a course with [theories](19_q_six)
+    - [ideas](19_q_six) and theories
+- intent: qG0
+  examples: |
+    - [monday](200_qG0)
+    - [tuesday](200_qG0)
+    - [wednesday](200_qG0)
+    - [thursday](200_qG0)
+    - [sunday](200_qG0)
+    - [saturday](200_qG0)
+    - [friday](200_qG0)
+    - [qG00textHelp](200_qG0)
+    - [qG00imageHelp](200_qG0)
+    - [qG00solution](200_qG0)
+    - [wednesdday](200_qG0)
+- intent: qG1
+  examples: |
+    - [left](201_qG1)
+    - [right](201_qG1)
+    - [both](201_qG1)
+    - [same](201_qG1)
+    - [equal](201_qG1)
+- intent: qG2
+  examples: |
+    - [0-1-2](202_qG2)
+    - [1-0-9](202_qG2)
+    - [1-1-1](202_qG2)
+    - [3-2-1](202_qG2)
+    - [4-5-6](202_qG2)
+    - [6-2-9](202_qG2)
+    - [7-8-1](202_qG2)
+    - [7-5-4](202_qG2)
+    - [3-0-1](202_qG2)
+    - [2-3-8](202_qG2)
+    - [5-2-1](202_qG2)
+    - [7-3-6](202_qG2)
+    - [1-2-4](202_qG2)
+    - [0-3-5](202_qG2)
+    - [0-1-9](202_qG2)
+    - [0-2-8](202_qG2)
+- intent: qG4
+  examples: |
+    - [blue](204_qG4)
+    - [red](204_qG4)
+    - [yellow](204_qG4)
+    - [green](204_qG4)
+    - [white](204_qG4)
+    - [black](204_qG4)
+    - Tessa´s coat has the colour [red](204_qG4)
+    - Tessa´s coat has the colour [blue](204_qG4)
+    - Tessa´s coat has the colour [yellow](204_qG4)
+    - Tessa´s coat has the colour [green](204_qG4)
+    - Tessa´s coat has the colour [black](204_qG4)
+    - the colour is [black](204_qG4)
+    - the colour is [blue](204_qG4)
+    - the colour is [yellow](204_qG4)
+    - the colour is [red](204_qG4)
+    - the colour is [green](204_qG4)
+    - the colour is [white](204_qG4)
+- intent: qG5
+  examples: |
+    - [thirtyone](205_qG5)
+    - [twentynine](205_qG5)
+    - [fifty](205_qG5)
+    - [thirty](205_qG5)
+    - [fourty](205_qG5)
+    - [ten](205_qG5)
+    - [twentyfive](205_qG5)
+    - [twentyseven](205_qG5)
+    - [twentysix](205_qG5)
+    - [eightteen](205_qG5)
+    - [sixteen](205_qG5)
+    - [twelve](205_qG5)
+    - [thirteen](205_qG5)
+    - [fourteen](205_qG5)
+    - [fifteen](205_qG5)
+    - [eleven](205_qG5)
+    - [seventeen](205_qG5)
+    - [nineteen](205_qG5)
+    - [twenty](205_qG5)
+    - [twentyone](205_qG5)
+    - [twentytwo](205_qG5)
+    - [twentyfour](205_qG5)
+    - [twentyeight](205_qG5)
+    - [thirtytwo](205_qG5)
+    - [thirtyfour](205_qG5)
+    - [thirtyfive](205_qG5)
+    - [thirysix](205_qG5)
+    - [thirtyseven](205_qG5)
+    - [thirtyeight](205_qG5)
+    - [thirtynine](205_qG5)
+    - [fourtyone](205_qG5)
+    - [fourtytwo](205_qG5)
+    - [fourtyfour](205_qG5)
+    - [fourtyfive](205_qG5)
+    - [fourtysix](205_qG5)
+    - [fourtyseven](205_qG5)
+    - the numbers in the lower line are [twice](205_qG5) as the numbers in the higher line
+    - the numbers in the lower line are [double](205_qG5) as the numbers in the above line
+    - the numbers in the lower line are multiplied by [two](205_qG5) as the numbers in the higher line
+    - [two](205_qG5) more
+    - [double](205_qG5)
+    - [twice](205_qG5)
+    - [no](205_qG5)
+    - [once](205_qG5)
+    - the numbers are [double](205_qG5)
+    - the numbers are multiplied by [two](205_qG5) 
+    - the numbers are multiplied by [2](205_qG5)
+
+- intent: qG6
+  examples: |
+    - [4/4.5/8](206_qG6)
+    - [10/12.5/7](206_qG6)
+    - [8/2.5/1](206_qG6)
+    - [5/7.5/2](206_qG6)
+    - [8/5.5/3](206_qG6)
+    - [7/3.5/2](206_qG6)
+    - [9/10.5/5](206_qG6)
+    - [9/8.5/7](206_qG6)
+    - [11/9.5/10](206_qG6)
+    - [12/10.5/8](206_qG6)
+    - [7/9.5/5](206_qG6)
+    - [8/11.5/9](206_qG6)
+    - [12/8.5/7](206_qG6)
+    - [9/8/7](206_qG6)
+    - [8/9.5/7](206_qG6)
+- intent: qG8
+  examples: |
+    - [work](208_qG8)
+    - [worked](208_qG8)
+    - [well](208_qG8)
+    - [teatimes](208_qG8)
+    - [niice](208_qG8)
+    - [woork](208_qG8)
+    - [ahjjaaa](208_qG8)
+    - [III](208_qG8)
+    - [IX](208_qG8)
+    - [X](208_qG8)
+    - [XII](208_qG8)
+    - [XV](208_qG8)
+    - [XIV](208_qG8)
+    - [XIX](208_qG8)
+    - [XIII](208_qG8)
+    - [VIII](208_qG8)
+    - [XX](208_qG8)
+    - [XVII](208_qG8)
+    - [XVIII](208_qG8)
+    - [I](208_qG8)
+    - [II](208_qG8)
+    - [IV](208_qG8)
+    - [XXI](208_qG8)
+    - [XXII](208_qG8)
+    - [XXIII](208_qG8)
+    - [XXIV](208_qG8)
+    - [XXVII](208_qG8)
+    - [XXIX](208_qG8)
+    - [XXX](208_qG8)
+    - the numbers are [three](208_qG8) more
+    - [three](208_qG8) times more
+    - [triple](208_qG8)
+    - [threefold](208_qG8) more
+    - [increment](208_qG8) of three
+    - [increase](208_qG8) of three
+    - increase of [three](208_qG8)
+    - the numbers increases each time by [three](208_qG8)
+    - the numbers increases by [three](208_qG8)
+    - [increment](208_qG8) of 3
+    - [higher](208_qG8) of three
+    - three [higher](208_qG8)
+    - [3](208_qG8) higher
+    - [3](208_qG8) more
+    - increment of [3](208_qG8)
+    - increase of [3](208_qG8)
+    - [help](208_qG8)
+    - [help](208_qG8) me
+    - [xv](208_qG8)
+    - [VII](208_qG8)
+    - the numbers increase by [three](208_qG8)
+    - [XC](208_qG8)
+- intent: give_name
+  examples: |
+    - my name is [Paul](1_first_name)
+    - [Paul](1_first_name)
+    - [Patti](1_first_name)
+    - I´m [Peter](1_first_name)
+    - I am [Perle](1_first_name)
+    - my name is [Aadam](1_first_name)
+    - [Aafke](1_first_name)
+    - I´m [Aadam](1_first_name)
+    - I am [Aafke](1_first_name)
+    - I´m [Aad](1_first_name)
+    - I´m [Aadje](1_first_name)
+    - I´m [dne](1_first_name)
+    - I´m [Aadu](1_first_name)
+    - I´m [Aaf](1_first_name)
+    - [Lara](1_first_name)
+    - [paul](1_first_name)
+    - [Aad](1_first_name)
+    - [Aadam](1_first_name)
+    - [Aadje](1_first_name)
+    - [dne](1_first_name)
+    - [Aadu](1_first_name)
+    - [Aaf](1_first_name)
+    - [Aafkea](1_first_name)
+    - [Aafko](1_first_name)
+    - [Aage](1_first_name)
+    - [ge](1_first_name)
+    - [Aagje](1_first_name)
+    - [Aagot](1_first_name)
+    - [got](1_first_name)
+    - [Aagoth](1_first_name)
+    - [goth](1_first_name)
+    - [ke](1_first_name)
+    - [Aalbert](1_first_name)
+    - [Aalderich](1_first_name)
+    - [Aalderk](1_first_name)
+    - [Aaldrik](1_first_name)
+    - [Aale](1_first_name)
+    - [Aaliyah](1_first_name)
+    - [Aalke](1_first_name)
+    - [Aalt](1_first_name)
+    - [Aaltien](1_first_name)
+    - [Aaltinus](1_first_name)
+    - [Aaltje](1_first_name)
+    - [Aaltsje](1_first_name)
+    - [Aamir](1_first_name)
+    - [Aant](1_first_name)
+    - [Aapeli](1_first_name)
+    - [Aapo](1_first_name)
+    - [Aappo](1_first_name)
+    - [Aard](1_first_name)
+    - [Aare](1_first_name)
+    - [Aarent](1_first_name)
+    - [Aarjan](1_first_name)
+    - [Aarne](1_first_name)
+    - [Aarni](1_first_name)
+    - [Aarno](1_first_name)
+    - [Aarnoud](1_first_name)
+    - [Aarnout](1_first_name)
+    - [Aaro](1_first_name)
+    - [Aaron](1_first_name)
+    - [Aarn](1_first_name)
+    - [Aarre](1_first_name)
+    - [Aarron](1_first_name)
+    - [Aart](1_first_name)
+    - [Aarti](1_first_name)
+    - [sa](1_first_name)
+    - [Aase](1_first_name)
+    - [se](1_first_name)
+    - [sgeir](1_first_name)
+    - [Aashild](1_first_name)
+    - [shild](1_first_name)
+    - [slaug](1_first_name)
+    - [smund](1_first_name)
+    - [ste](1_first_name)
+    - [Aat](1_first_name)
+    - [Aatami](1_first_name)
+    - [Aatos](1_first_name)
+    - [Aatto](1_first_name)
+    - [Aatu](1_first_name)
+    - [Aave](1_first_name)
+    - [Aavo](1_first_name)
+    - [Ab](1_first_name)
+    - [Abad](1_first_name)
+    - [Abagail](1_first_name)
+    - [Abai](1_first_name)
+    - [Abas](1_first_name)
+    - [Abay](1_first_name)
+    - [Abaz](1_first_name)
+    - [Abbas](1_first_name)
+    - [Abbe](1_first_name)
+    - [Abbey](1_first_name)
+    - [Abbie](1_first_name)
+    - [Abbigail](1_first_name)
+    - [Abbo](1_first_name)
+    - [Abbondanza](1_first_name)
+    - [Abbondanzio](1_first_name)
+    - [Abbondio](1_first_name)
+    - [Abby](1_first_name)
+    - [Abd](1_first_name)
+    - [Abdal](1_first_name)
+    - [Abdalla](1_first_name)
+    - [Abdallah](1_first_name)
+    - [Abdal Salam](1_first_name)
+    - [Abdel](1_first_name)
+    - [Abdel Aziz](1_first_name)
+    - [Abdel Fattah](1_first_name)
+    - [Abdel Ghani](1_first_name)
+    - [Abdel Hafid](1_first_name)
+    - [Abdel Hafiz](1_first_name)
+    - [Abdel Hak](1_first_name)
+    - [Abdel Hakim](1_first_name)
+    - [Abdel Halim](1_first_name)
+    - [Abdel Hamid](1_first_name)
+    - [Abdelilah](1_first_name)
+    - [Abdel Kader](1_first_name)
+    - [Abdel Karim](1_first_name)
+    - [Abdellah](1_first_name)
+    - [Abdel Latif](1_first_name)
+    - [Abdel Majid](1_first_name)
+    - [Abdel Rahman](1_first_name)
+    - [Abder Rahim](1_first_name)
+    - [Abder Rahman](1_first_name)
+    - [Abder Rahmane](1_first_name)
+    - [Abder Razak](1_first_name)
+    - [Abdeslam](1_first_name)
+    - [Abdi](1_first_name)
+    - [Abdija](1_first_name)
+    - [Abdo](1_first_name)
+    - [Abdol Karim](1_first_name)
+    - [Abdol Reza](1_first_name)
+    - [Abdol Saleh](1_first_name)
+    - [Abdon](1_first_name)
+    - [Abdorassoul](1_first_name)
+    - [Abdou](1_first_name)
+    - [Abdoul](1_first_name)
+    - [Abdu](1_first_name)
+    - [Abdlhalim](1_first_name)
+    - [Abdlhamid](1_first_name)
+    - [Abdlkadir](1_first_name)
+    - [Abdlkerim](1_first_name)
+    - [Abdllatif](1_first_name)
+    - [Abdlsamet](1_first_name)
+    - [Abduh](1_first_name)
+    - [Abdul](1_first_name)
+    - [Abdulah](1_first_name)
+    - my name is Tom
+    - my name is [David](1_first_name)
+    - [Tom](208_qG8)
+    - I´m [Bijan](1_first_name)
+- synonym: abstract
+  examples: |
+    - theoretical models
+    - theoretical
+- synonym: concrete
+  examples: |
+    - factual Data
+    - factual
+- synonym: visual
+  examples: |
+    - visible
+    - movies
+    - images
+- synonym: verbal
+  examples: |
+    - speech
+    - speechs
+    - conversations
+    - conversation
+- synonym: sketch
+  examples: |
+    - draft
+    - drawing
+- synonym: try
+  examples: |
+    - attempt
+    - undertake
+- synonym: plan
+  examples: |
+    - preparations
+- synonym: start
+  examples: |
+    - take up
+    - begin
+- synonym: understand
+  examples: |
+    - appreciate
+    - recognize
+    - realize
+- synonym: realistic
+  examples: |
+    - practical
+    - pragmatic
+- synonym: hypothesis
+  examples: |
+    - assumption
+- synonym: certainty
+  examples: |
+    - truth
+- synonym: carful
+  examples: |
+    - attentive
+    - wary
+- synonym: regular
+  examples: |
+    - structured
+    - efficient
+    - organized
+    - well ordered
+- synonym: connections
+  examples: |
+    - relations
+    - association
+    - links
+- synonym: consequences
+  examples: |
+    - result
+    - effect
+    - conclusion
+- synonym: creative
+  examples: |
+    - imaginative
+    - inspired
+- synonym: step
+  examples: |
+    - slowly
+- regex: 202_qG2
+  examples: |
+    - ([0-10]{1}-[0-10]{1}-[0-10]{1})
+- regex: 206_qG6
+  examples: |
+    - ([0-20]{1}/[0-20]{1}/[0-20]{1})

@@ -1,0 +1,185 @@
+version: "2.0"
+stories:
+- story: Story from Conversation ID 6bcb4d5700af4c9ca2624c827162e890 (./tests/test_stories.yml)
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - requested_slot: 1_first_name
+  - slot_was_set:
+    - 1_first_name: Paul
+  - slot_was_set:
+    - 1_first_name: Paul
+  - slot_was_set:
+    - 1_first_name: Paul
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - intent: give_how_you_are_doing
+    entities:
+    - 1_how_you_are_doing: fine
+  - slot_was_set:
+    - 1_how_you_are_doing: fine
+  - slot_was_set:
+    - 1_how_you_are_doing: fine
+  - action: action_feeling
+  - intent: deny
+  - action: action_explain_learning_style
+  - action: utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - requested_slot: 100_q_three
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - requested_slot: 101_q_twentyThree
+  - slot_was_set:
+    - 101_q_twentyThree: map
+  - slot_was_set:
+    - requested_slot: 102_q_thirtyOne
+  - slot_was_set:
+    - 102_q_thirtyOne: chart
+  - slot_was_set:
+    - requested_slot: 103_q_twentyFive
+  - slot_was_set:
+    - 103_q_twentyFive: try
+  - slot_was_set:
+    - requested_slot: 104_q_two
+  - slot_was_set:
+    - 104_q_two: real
+  - slot_was_set:
+    - requested_slot: 105_q_eightTeen
+  - slot_was_set:
+    - 105_q_eightTeen: certainty
+  - slot_was_set:
+    - requested_slot: 106_q_sevenTeen
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - requested_slot: 107_q_thirtyEight
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete
+  - slot_was_set:
+    - requested_slot: 108_q_ten
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - requested_slot: 109_q_twentyFour
+  - slot_was_set:
+    - 109_q_twentyFour: tempo
+  - slot_was_set:
+    - requested_slot: 110_q_thirtySix
+  - slot_was_set:
+    - 110_q_thirtySix: make connections
+  - slot_was_set:
+    - requested_slot: 111_q_seven
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - requested_slot: 112_q_eleven
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - requested_slot: 113_q_twentySeven
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - requested_slot: 114_q_fourtyFour
+  - slot_was_set:
+    - 114_q_fourtyFour: consequences
+  - slot_was_set:
+    - requested_slot: 115_q_twentyTwo
+  - slot_was_set:
+    - 115_q_twentyTwo: careful
+  - slot_was_set:
+    - requested_slot: 116_q_six
+  - slot_was_set:
+    - 116_q_six: ideas
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - requested_slot: 200_qG0
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - requested_slot: 201_qG1
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - requested_slot: 208_qG8
+  - slot_was_set:
+    - 208_qG8: null
+  - slot_was_set:
+    - requested_slot: 208_qG8
+  - slot_was_set:
+    - 208_qG8: XV
+  - slot_was_set:
+    - requested_slot: 209_qG9
+  - slot_was_set:
+    - 209_qG9: null
+  - slot_was_set:
+    - requested_slot: 209_qG9
+  - slot_was_set:
+    - 209_qG9: null
+  - slot_was_set:
+    - requested_slot: 209_qG9
+  - slot_was_set:
+    - 209_qG9: qG09D
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - requested_slot: 304_qG4
+  - slot_was_set:
+    - 304_qG4: blue
+  - slot_was_set:
+    - requested_slot: 305_qG5
+  - slot_was_set:
+    - 305_qG5: null
+  - slot_was_set:
+    - requested_slot: 305_qG5
+  - slot_was_set:
+    - 305_qG5: null
+  - slot_was_set:
+    - requested_slot: 305_qG5
+  - slot_was_set:
+    - 305_qG5: null
+  - slot_was_set:
+    - requested_slot: 305_qG5
+  - slot_was_set:
+    - 305_qG5: twenty-seven
+  - slot_was_set:
+    - requested_slot: 306_qG6
+  - slot_was_set:
+    - 306_qG6: solution
+  - slot_was_set:
+    - requested_slot: 307_qG7
+  - slot_was_set:
+    - 307_qG7: qG07B
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name

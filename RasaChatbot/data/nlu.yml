@@ -1,0 +1,3571 @@
+version: "3.0"
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - Hi bot
+    - Hey bot
+    - Hello
+    - Good morning
+    - hello robot
+    - hallo
+    - heeey
+    - hi hi
+    - hey hey
+    - hola
+    - hi?
+    - howdy
+    - hhi
+    - Hi
+    - /start
+    - HI
+    - Hey mate
+    - Hallo
+    - Hello Vicky!
+    - Hello there !
+    - Hello [Vicky](1_first_name)
+    - let's play!
+    - Hi Vicky!
+    - Vicky!!!!!
+    - Hey Vicky.
+    - Hello Vicky.
+- intent: goodbye
+  examples: |
+    - bye
+    - ciao
+    - See you
+    - bye bye
+    - goodbye
+    - see you later
+    - good bye
+    - See you!Bye!
+    - thank you! [good](1_how_you_are_doing) bye
+    - Bye1
+    - Bye! 😊
+- intent: rephrase_learningstyle
+  examples: |
+    - Could you say it in a different way?
+    - Could you rephrase it?
+    - Can you rephrase it?
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?
+    - are you alive?
+    - are you a person?
+    - do you exist?
+    - what are you?
+    - are you machine?
+    - and are you a bot?
+    - and are you a human?
+    - and am I talking to a bot?
+    - and am I talking to a human?
+    - and are you real?
+    - and are you alive?
+    - and are you a person?
+    - and do you exist?
+    - and what are you?
+    - and are you machine?
+    - By th way are you a bot?
+    - Are you a bot?
+    - buddy, are you a real human oder a bot?
+    - Sorry. Am I talking to a bot?
+    - Are you a chatbot?
+    - sorry, are you real?
+    - How are yout?
+- intent: chitchat_whynegation
+  examples: |
+    - why is negation not possible?
+    - why can I not use negation?
+    - Explain me why I cann´t use negation.
+    - and why is negation not possible?
+    - and why can I not use negation?
+    - and Explain me why I cann´t use negation.
+    - Why is negation not possible?
+    - why is negation not possible
+- intent: chitchat_skills
+  examples: |
+    - Hey Vicky what are your skills?
+    - What skills do you have?
+    - what skills do you have
+- intent: ask_residence
+  examples: |
+    - where do you live
+    - where is your home
+    - your town
+    - your city
+    - where do you stay
+    - what is your city
+    - great where do you live
+    - cool where do you live
+    - and where do you live
+    - and where is your home
+    - and your town
+    - and your city
+    - and where do you stay
+    - and what is your city
+    - Where do you live?
+    - Where do you live ?
+    - where do live
+    - What's your home city?
+    - Where is this app?
+    - A written instruction. By the way: where do you live?
+    - Where do you live by the way?
+    - Where are you live?
+- intent: ask_killerphrases
+  examples: |
+    - why do you ask me that?
+    - for what do you need that information?
+    - is that question really important?
+    - for what the hell is the question important?
+    - I don´t want to answer you.
+    - But why are you asking me that question? That's a little bit to personal
+    - I don't want to answer that question.
+    - I don't want to answer you.
+    - why is that question important?
+    - sorry, that's to personal for me
+    - I do not know this
+    - Is that question really important?
+- intent: time
+  examples: |
+    - What time is it?
+    - Do you know the time?
+    - Do you know what time it is right now?
+    - Tell me the time.
+    - What’s the time?
+    - I need the time.
+    - Give me the current time.
+    - Show me the time.
+    - cool and What time is it?
+    - great and Do you know the time?
+    - By the way What time is it?
+    - By the way Do you know the time?
+    - By the way Do you know what time it is right now?
+    - By the way Tell me the time.
+    - By the way  What’s the time?
+    - And What time is it?
+    - And Do you know the time?
+    - and do you know what time it is right now?
+    - and  Tell me the time.
+    - and What’s the time?
+    - Whats the time?
+- intent: chitchat_languages
+  examples: |
+    - Do you speak other languages?
+    - Do you know other languages?
+    - Do you speak any other languages?
+    - Which languages are you fluent in?
+    - What languages can you speak?
+    - Which languages can you speak?
+    - Do you can speak more languages?
+    - Can you speak more languages?
+    - Can you speak german?
+    - Bot, can you speak german?
+    - Bot, can you only speak german?
+    - great Do you speak other languages?
+    - great Do you know other languages?
+    - great Do you speak any other languages?
+    - cool Do you speak other languages?
+    - cool Do you know other languages?
+    - cool Do you speak any other languages?
+    - and Do you speak other languages?
+    - and Do you know other languages?
+    - and Do you speak any other languages?
+    - and Which languages are you fluent in?
+    - and What languages can you speak?
+    - and Which languages can you speak?
+    - and Do you can speak more languages?
+    - and Can you speak more languages?
+    - and Can you speak german?
+    - Do you speak other languages
+    - Do you speak other languages=
+    - i only speak german
+- intent: chitchat_insult
+  examples: |
+    - I hate you.
+    - You’re so stupid.
+    - Nobody likes you.
+    - Bitch
+    - Fuck you
+    - Are you silly?
+    - You are so ugly.
+    - So stupid.
+    - Damn idiot.
+    - Shut up.
+    - Are you dumb?
+- intent: chitchat_givelanguages
+  examples: |
+    - I can speak german.
+    - I can speak german, english and spanish.
+    - I can speak german, italian and english.
+    - I can speak german and english.
+    - I can speak german, english and french.
+    - German is my native language.
+    - German is my mother tongue.
+    - german and english
+    - german, english and french.
+    - german, english and spanish
+    - german, english and italian
+    - Cool! I can speak German and English fluently
+- intent: chitchat_languagecourses
+  examples: |
+    - Which language courses do you want to attend?
+    - Which language courses do you want to take part?
+    - What languages do you want to learn?
+    - Which languages?
+    - and Which language courses do you want to attend?
+    - and Which language courses do you want to take part?
+    - and What languages do you want to learn?
+    - and Which languages?
+    - Thanks, which language do you will learn?
+    - I want to talk
+    - What do you want
+- intent: chitchat_age
+  examples: |
+    - How old are you?
+    - What´s your age?
+    - Are you older than me?
+    - great and How old are you?
+    - cool and What´s your age?
+    - nice and Are you older than me?
+    - and How old are you?
+- intent: chitchat_giveage
+  examples: |
+    - I´m 20 years old
+    - I´m twenty yeas old
+    - I´m 30 years old.
+    - I´m 54 years old.
+    - I´m fourty years old.
+    - I´m 25 yeaes old.
+    - I´m 24 years old
+    - I´m twenty six years old
+    - I´m 21 yeaes old.
+    - I´m 26 years old
+    - I´m 27 years old.
+    - I´m 28 years old.
+    - I´m twenty eight years old.
+    - I´m 22 years old.
+    - I´m twenty two years old.
+    - I´m 29 years old.
+    - I´m 40 years old.
+    - I´m 50 years old
+    - I´m 60 years old.
+    - I´m 64 years old.
+    - I´m 70 years old.
+    - I´m 34 years old
+    - I´m thirty three years old.
+    - I´m 20
+    - I´m twenty
+    - I´m 30
+    - I´m 54
+    - I´m fourty
+    - I´m 25
+    - I´m 24
+    - I´m 21
+    - I´m 26
+    - I´m twenty six
+    - I´m 27
+    - I´m 28
+    - I´m 33
+    - I´m 22
+    - I´m 36
+    - I´m 29
+    - I´m 40
+    - I´m 50
+    - I´m twenty eight
+    - I´m twenty nine
+    - I´m twenty two
+    - I´m twenty three
+    - I´m twenty four
+    - I´m thirty one
+    - I´m thirty six
+    - I´m thirty nine
+    - I´m fourty one
+    - I´m fourty six
+    - I´m fourty eight
+    - I´m fifty one
+    - I´m fifty two
+    - I´m fifty three
+    - I´m fifty six
+    - I´m sixty one
+    - I´m sixty five
+    - I´m sixty three
+    - I´m fourty nine
+    - I´m 60
+    - I´m 64
+    - I´m 70
+    - I´m 34
+    - I´m thirty
+    - [15](208_qG8)
+    - twenty six
+    - 11
+- intent: chitchat_whatsyourname
+  examples: |
+    - what´s your name?
+    - Tell me your name.
+    - Do you have a name?
+    - Give me your name
+    - by the way what´s your name?
+    - and what´s your name?
+    - and sorry what was your name?
+- intent: chitchat_joke
+  examples: |
+    - are you joking?
+    - do you have a joke
+    - tell me a joke!
+    - Tell me a joke!
+    - Tell me a joke
+    - What’s the best joke you know?
+    - Give me a joke.
+    - Please tell me a joke.
+    - Can you make me laugh?
+    - and do you have a joke
+    - and tell me a joke!
+    - cool do you have a joke
+    - great tell me a joke!
+    - tell me a joke
+    - Haha okay, nice. And could you tell me a joke ? +
+    - Thanks. Tell me another joke.
+    - Cool. Please also tell me a joke!
+- intent: chitchat_xmas
+  examples: |
+    - Merry Chirstmas!
+    - happy new year
+    - merry x-mas
+- intent: interruption
+  examples: |
+    - Oh i'm sorry, sure
+    - sorry, sure!
+    - sorry, let´s go!
+    - let´s continue!
+    - okay, let´s continue!
+    - okay, let´s continue
+- intent: chitchat_compliment
+  examples: |
+    - you are cool!
+    - I like you!
+    - I love you!
+    - your are so cool!
+    - nice to meet you!
+    - nice to meet you too!
+    - you are funny!
+    - you are pretty
+    - you are strong
+    - you are so clever!
+    - clever!
+    - great!
+    - Great!
+    - that sounds great!
+    - that´s awesome!
+    - haha nice one !
+    - prescient of you
+    - you are smart
+    - you are beautiful
+    - you are very kind
+    - you are kind
+    - you are sweet!
+    - you have a sweet ass!
+    - I like to talk with you!
+    - Cool question!
+    - Good one
+    - That sounds great!
+    - that sounds greeat!
+    - I like your shoes!
+    - You are gay
+    - very funny :-D
+    - Hey darling. I am Nils. Nice to e-meet you :-)
+    - My name ist Tim. nice to meet you too
+    - Awesome. How abotu you?
+    - Funny 😂
+- intent: chitchat_howareyou
+  examples: |
+    - How are you?
+    - How are you doing?
+    - how are you?
+    - how are you doing?
+    - Are you ok?
+    - great and How are you?
+- intent: chitchat_stop
+  examples: |
+    - Sorry, stopp it! Bye!
+    - STOPP
+    - STOPP it please!
+    - stopp
+    - No
+    - no
+    - I don´t want to continue
+    - I don´t think so!
+    - I don´t wanna
+    - are you sure?
+    - now
+- intent: chitchat_weather
+  examples: |
+    - How is the weather today?
+    - What's the weather like?
+    - Do you have good weather?
+    - Is it raining?
+    - Beautiful day, isn't it?
+    - What's the weather forecast?
+    - Is it quite breezy outside?
+    - great and How is the weather today?
+    - great and  What's the weather like?
+    - great and  Do you have good weather?
+    - great and  Is it raining?
+    - great and  Beautiful day, isn't it?
+    - great and  What's the weather forecast?
+    - great and  Is it quite breezy outside?
+    - cool and How is the weather today?
+    - cool and  What's the weather like?
+    - cool and  Do you have good weather?
+    - cool and  Is it raining?
+    - cool and  Beautiful day, isn't it?
+    - cool and  What's the weather forecast?
+    - cool and  Is it quite breezy outside?
+    - and How is the weather today?
+    - and  What's the weather like?
+    - How is the weather today ?
+    - Cool. How is the weather today?
+- intent: chitchat_answerweather
+  examples: |
+    - here it´s raining
+    - it´s raining
+    - not here it´s raining
+    - it´s snowing
+    - it´s soo cold
+    - it´s too cold
+    - it´s warm
+    - it´s very hot outside
+    - it´s too hot
+    - no it´s raining
+    - no it´s snowing
+    - no it´s shit weather outside
+- intent: chitchat_other
+  examples: |
+    - How many people live in German?
+    - What day is today?
+    - Whats 3 time 3?
+    - me too
+    - 3 times 3
+    - asd
+    - 2 times 2
+    - ok ok
+    - ok
+    - cool!
+    - cool
+    - okaay
+    - great!
+    - okay
+    - you are welcome
+    - welcome
+    - thanks
+    - thank you
+    - yeeeah
+    - I´m sorry Vicky
+    - that sounds great!
+    - yes
+    - allright
+    - that sounds great
+    - [Liar](1_first_name)
+    - Baron of the [Lies](1_first_name)!
+    - You are welcome.
+    - Thank you
+    - Are you joking?
+    - Fine. How are you?
+    - theroies
+    - Cool 😂
+- intent: answerBot
+  examples: |
+    - Answer please
+    - Why did you reset?
+    - answer
+    - answer answer answer
+    - why didn´t you answer?
+    - why don´t you answer?
+    - Vicky answer!
+    - Answer please!
+- intent: ask_learningstyle
+  examples: |
+    - what is a learning style?
+    - can you explain me what a learning style is?
+    - How can I find out what type of learning style I have?
+    - learning style?
+    - for what do I need a leaning style?
+    - how can a learning style help me?
+    - why should a learning style be interesting for me?
+    - What is a learning style
+    - can you give me some more information about learning styles?
+- intent: ask_last_question
+  examples: |
+    - what is now?
+    - What is the question?
+    - What was the question?
+    - which question?
+    - Can you repeat the question?
+    - okay what was the question?
+    - Why do you start again with the same questions?
+    - I answered these questions a short time ago.
+    - okay which question?
+    - Thank you what was the question?
+    - thank you which question?
+    - cool can you repeat the question?
+    - okay can you repeat the question?
+    - I forgot the question?
+    - Tell me the question please
+    - repeat the question please
+    - bot, repeat!
+    - quiz
+    - let´s play
+    - starte the game
+    - Vicky repeat
+    - where are the buttons?
+    - where have the buttons gone?
+    - What was the last question?
+    - what was the question
+    - what was the last question?
+    - what was the last question?,
+    - What was the last question ?
+    - whats the last question
+    - question 4 please
+    - which one?
+    - Sorry. Which question?
+    - Could you repeat the question?
+    - Sorry, what was the question?
+    - what was the question?
+- intent: give_how_you_are_doing
+  examples: |
+    - I`m [fine](1_how_you_are_doing) thanks and you?
+    - I`m [good](1_how_you_are_doing) thanks and you?
+    - I`m [allright](1_how_you_are_doing) thanks and you?
+    - I`m [not not good](1_how_you_are_doing) thanks and you?
+    - I`m [not good](1_how_you_are_doing) thanks and you?
+    - I`m [not not sad](1_how_you_are_doing) thanks and you?
+    - I`m [not not fine](1_how_you_are_doing) thanks and you?
+    - [fine](1_how_you_are_doing) thanks and you?
+    - [Fine](1_how_you_are_doing). What about you?
+    - [Good](1_how_you_are_doing). What about you?
+    - [Fine](1_how_you_are_doing) Thanks. What about you?
+    - [Good](1_how_you_are_doing) Thanks. What about you?
+    - [Bad](1_how_you_are_doing). What about you?
+    - [good](1_how_you_are_doing) thanks and you?
+    - [bad](1_how_you_are_doing) thanks and you?
+    - [sick](1_how_you_are_doing) thanks and you?
+    - I´m [good](1_how_you_are_doing) thanks and you?
+    - [It's going ok](1_how_you_are_doing)
+    - [well](1_how_you_are_doing)
+    - [fantastic](1_how_you_are_doing)
+    - I`m [not not good](1_how_you_are_doing)
+    - I`m [not good](1_how_you_are_doing)
+    - I`m [not not sad](1_how_you_are_doing)
+    - I`m [not not fine](1_how_you_are_doing)
+    - [not not good](1_how_you_are_doing)
+    - [not good](1_how_you_are_doing)
+    - [not not sad](1_how_you_are_doing)
+    - [not not fine](1_how_you_are_doing)
+    - [great](1_how_you_are_doing)
+    - [cheery](1_how_you_are_doing)
+    - [easygoing](1_how_you_are_doing)
+    - [happy](1_how_you_are_doing)
+    - [good](1_how_you_are_doing)
+    - [doing well](1_how_you_are_doing)
+    - [bad](1_how_you_are_doing)
+    - [sick](1_how_you_are_doing)
+    - [fine](1_how_you_are_doing)
+    - [unhappy](1_how_you_are_doing)
+    - [sad](1_how_you_are_doing)
+    - [depressed](1_how_you_are_doing)
+    - [troubled](1_how_you_are_doing)
+    - [great](1_how_you_are_doing)! How are you?
+    - [cheery](1_how_you_are_doing)! How are you?
+    - [easygoing](1_how_you_are_doing)! How are you?
+    - [happy](1_how_you_are_doing)! How are you?
+    - I´m [great](1_how_you_are_doing)! How are you?
+    - [good](1_how_you_are_doing)! How are you?
+    - I´m [good](1_how_you_are_doing)! How are you?
+    - [doing well](1_how_you_are_doing)! How are you?
+    - [bad](1_how_you_are_doing)! How are you?
+    - [sick](1_how_you_are_doing)! How are you?
+    - [fine](1_how_you_are_doing)! How are you?
+    - [unhappy](1_how_you_are_doing)! How are you?
+    - [sad](1_how_you_are_doing)! How are you?
+    - [depressed](1_how_you_are_doing)! How are you?
+    - [troubled](1_how_you_are_doing)! How are you?
+    - [worried](1_how_you_are_doing)! How are you?
+    - [heavy-hearted](1_how_you_are_doing)! How are you?
+    - [satisfied](1_how_you_are_doing) and you?
+    - [well](1_how_you_are_doing) and you?
+    - [breezy](1_how_you_are_doing) and you?
+    - [sunny](1_how_you_are_doing) and you?
+    - [It's going ok](1_how_you_are_doing) and you?
+    - [easygoing](1_how_you_are_doing) and you?
+    - [happy](1_how_you_are_doing) and you?
+    - [good](1_how_you_are_doing) and you?
+    - [doing well](1_how_you_are_doing) and you?
+    - [bad](1_how_you_are_doing) and you?
+    - [sick](1_how_you_are_doing) and you?
+    - [fine](1_how_you_are_doing) and you?
+    - [unhappy](1_how_you_are_doing) and you?
+    - [sad](1_how_you_are_doing) and you?
+    - [depressed](1_how_you_are_doing) and you?
+    - [fantastic](1_how_you_are_doing) and you?
+    - [troubled](1_how_you_are_doing) and you?
+    - [great](1_how_you_are_doing) and you?
+    - I`m [alright](1_how_you_are_doing) thanks How are you doing?
+    - I`m [good](1_how_you_are_doing) thanks How are you doing?
+    - I`m [fine](1_how_you_are_doing) thanks How are you doing?
+    - I`m [sad](1_how_you_are_doing) thanks How are you doing?
+    - I`m [unhappy](1_how_you_are_doing) thanks How are you doing?
+    - I`m [doing well](1_how_you_are_doing) thanks How are you doing?
+    - i am [It's going ok](1_how_you_are_doing) thanks
+    - I am [good](1_how_you_are_doing)
+    - I`m [alright](1_how_you_are_doing) thanks How are you?
+    - I`m [good](1_how_you_are_doing) thanks How are you?
+    - I`m [fine](1_how_you_are_doing) thanks How are you?
+    - I`m [sad](1_how_you_are_doing) thanks How are you?
+    - I`m [unhappy](1_how_you_are_doing) thanks How are you?
+    - I`m [doing well](1_how_you_are_doing) thanks How are you?
+    - I`m [alright](1_how_you_are_doing) How are you?
+    - I`m [good](1_how_you_are_doing) How are you?
+    - I`m [fine](1_how_you_are_doing) How are you?
+    - I`m [sad](1_how_you_are_doing) tHow are you?
+    - I`m [unhappy](1_how_you_are_doing) How are you?
+    - I`m [doing well](1_how_you_are_doing) How are you?
+    - I´m [fine](1_how_you_are_doing) thanks! How are you?
+    - [Fine](1_how_you_are_doing) and you?
+    - I´m [fine](1_how_you_are_doing) thanks how are you
+    - I'm [fine](1_how_you_are_doing), thanks! And how are you?
+    - I´m [fine](1_how_you_are_doing), thanks. How are you?
+    - I am [good](1_how_you_are_doing) and you?
+    - I`m [fine](1_how_you_are_doing).
+    - I`m [fine](1_how_you_are_doing) [because](1_first_name) I`m on holiday.
+    - I´m [fine!How](1_how_you_are_doing) are you doing?
+    - [alright](1_how_you_are_doing)
+    - Im [good](1_how_you_are_doing) and you ?
+    - Im [good](1_how_you_are_doing)
+    - Im [good](1_how_you_are_doing) and you?
+    - I'm [good](1_how_you_are_doing), thanks
+    - [Finde](1_how_you_are_doing) and you?
+    - [Good](1_how_you_are_doing) Thank and u?
+    - I am [fine](1_how_you_are_doing) and you?
+    - I am [good](1_how_you_are_doing), how are you?
+    - i'm [fine](1_how_you_are_doing) thanks. how about you?
+    - I‘m [fine](1_how_you_are_doing), you?
+    - i‘m [fine](1_how_you_are_doing) & you ?
+    - very [good](1_how_you_are_doing), thanks
+    - yes, I'm [fine](1_how_you_are_doing)
+    - You are so [attentive]{"entity": "18_q_twentyTwo", "value": "carful"}. I'm fine!
+    - I'm [fine](1_how_you_are_doing) How are you?
+    - I'm [good](1_how_you_are_doing) how are you?
+    - I am [fine](1_how_you_are_doing), thank you.
+    - Fine. What about you?
+    - [Fantastic](1_how_you_are_doing)
+    - [Fantastic](1_how_you_are_doing). What about you?
+    - [GOod](1_how_you_are_doing) [Good](1_how_you_are_doing) [Good](1_how_you_are_doing). how about you?
+    - I´m [Well](1_how_you_are_doing)! How about you?
+    - [Good](1_how_you_are_doing)
+    - I´m [Fine](1_how_you_are_doing)
+    - [Fine](1_how_you_are_doing)
+    - I´m [Fine](1_how_you_are_doing). What about you?
+    - I'm [fine](1_how_you_are_doing), thanks. How are you?
+- intent: user_unknown
+  examples: |
+    - I don´t know
+    - don´t know
+    - no idea
+    - i don´t know
+    - i don´t know the answer
+    - i dont know
+    - i dont´t know
+    - ?
+    - I don't know
+    - don't know the answer
+- intent: out_of_scope
+  examples: |
+    - somehow a mix between both
+    - a mix
+    - somehow a mix
+    - both
+    - I like to work with both material
+    - both things
+    - Neither of them
+    - neither of them
+    - I think both
+    - I think neither of them
+    - I think none
+    - Both
+    - I think none of them
+    - I´m not sure
+    - not sure
+    - So I think I do both
+    - none of them
+    - maybe both of them
+    - Either
+    - tough question. I would say I am both
+    - neither
+    - Former of the two
+    - Sorry, I didn't got that. Could you rephrase it?
+    - I didn't understood. Could you explain it in another way?
+    - Don't see the [buttons](1_first_name)
+    - not cool
+    - i like both
+- intent: negation
+  examples: |
+    - would not
+    - wouldn't
+    - might not
+    - don´t take
+    - do not take
+    - didn´t take
+    - did not take
+    - would not take
+    - wouldn't take
+    - might not take
+    - I would not take a [map](4_q_twentyThree)
+    - I would not use a [chart](5_q_thirtyOne)
+    - I don´t [words](3_q_three)
+    - I don´t [picture](3_q_three)
+    - I don´t [written instructions](4_q_twentyThree)
+    - I don´t [map](4_q_twentyThree)
+    - I don´t [chart](5_q_thirtyOne)
+    - I don´t [text](5_q_thirtyOne) summarization
+    - I don´t [diagram](15_q_eleven)
+    - I don´t [descriptions](15_q_eleven)
+    - I don´t [sketch](16_q_twentySeven)
+    - I don´t [draft](16_q_twentySeven)
+    - I don´t [drawing](16_q_twentySeven)
+    - I don´t [instructor](16_q_twentySeven) said
+    - I wouldn´t [words](3_q_three)
+    - I wouldn´t [picture](3_q_three)
+    - I wouldn´t [written instructions](4_q_twentyThree)
+    - I wouldn´t [map](4_q_twentyThree)
+    - I wouldn´t [chart](5_q_thirtyOne)
+    - I wouldn´t [text](5_q_thirtyOne) summarization
+    - I wouldn´t [diagram](15_q_eleven)
+    - I wouldn´t [descriptions](15_q_eleven)
+    - I wouldn´t [sketch](16_q_twentySeven)
+    - I wouldn´t [instructor](16_q_twentySeven) said
+    - I don´t [attempt](6_q_twentyFive)
+    - I don´t [undertake](6_q_twentyFive)
+    - I don´t [try](6_q_twentyFive) out
+    - I don´t make a [plan](6_q_twentyFive)
+    - I don´t [start](9_q_sevenTeen)
+    - I don´t [begin](9_q_sevenTeen)
+    - I don´t [take up](9_q_sevenTeen)
+    - I don´t try [to understand](9_q_sevenTeen)
+    - I don´t [appreciate](9_q_sevenTeen)
+    - I don´t [recognize](9_q_sevenTeen)
+    - I don´t [realize](9_q_sevenTeen)
+    - I´m not [realistic](7_q_two)
+    - I´m not [practical](7_q_two)
+    - I´m not [pragmatic](7_q_two)
+    - I´m not [innovative](7_q_two)
+    - I don´t [visual](14_q_seven) material
+    - I don´t [visible](14_q_seven) material
+    - I don´t [movies](14_q_seven)
+    - I don´t [images](14_q_seven)
+    - I don´t [verbal](14_q_seven)
+    - I don´t [speech](14_q_seven)
+    - I don´t [speechs](14_q_seven)
+    - I don´t [conversation](14_q_seven)
+    - I don´t [facts](11_q_ten)
+    - I don´t [concepts](11_q_ten)
+    - I don´t [certainty](8_q_eightTeen)
+    - I don´t [truth](8_q_eightTeen)
+    - I don´t [hypothesis](8_q_eightTeen)
+    - I don´t [assumption](8_q_eightTeen)
+    - I don´t [theoretical models](10_q_thirtyEight)
+    - I don´t [theoretical](10_q_thirtyEight)
+    - I don´t [abstract](10_q_thirtyEight) material
+    - I don´t [pyhsical](10_q_thirtyEight)
+    - I don´t [concrete](10_q_thirtyEight)
+    - I don´t [factual](10_q_thirtyEight)
+    - I don´t [solid](10_q_thirtyEight) material
+    - I don´t [factual](10_q_thirtyEight) material
+    - I don´t [existing](10_q_thirtyEight) material
+    - I´m not [creative](18_q_twentyTwo)
+    - I´m not [imaginative](18_q_twentyTwo)
+    - I´m not [inspired](18_q_twentyTwo)
+    - I´m not [wary](18_q_twentyTwo)
+    - I´m not [attentive](18_q_twentyTwo)
+    - I´m not [careful](18_q_twentyTwo)
+    - I don´t [regular](12_q_twentyFour) pace
+    - I don´t [well ordered](12_q_twentyFour) speed
+    - I don´t [organized](12_q_twentyFour) speed
+    - I´m not [confused](12_q_twentyFour)
+    - I don´t [stay focused](13_q_thirtySix)
+    - I don´t [make connections](13_q_thirtySix)
+    - I don´t [relations](13_q_thirtySix)
+    - I don´t [association](13_q_thirtySix)
+    - I don´t [links](13_q_thirtySix)
+    - I don´t [step](17_q_fourtyFour)
+    - I´m not [slowly](17_q_fourtyFour)
+    - I don´t [consequences](17_q_fourtyFour)
+    - I don´t [result](17_q_fourtyFour)
+    - I don´t [effect](17_q_fourtyFour)
+    - I don´t [real](19_q_six)
+    - I don´t [ideas](19_q_six) and [theories](19_q_six)
+    - I don´t like [ideas](19_q_six) and [theories](19_q_six)
+    - I don´t like [draft]{"entity": "16_q_twentySeven", "value": "sketch"}
+    - I don´t prefer a [map](4_q_twentyThree)
+    - I don´t got [words](3_q_three)
+    - I don´t take [words](3_q_three)
+    - I don´t use a [map](4_q_twentyThree)
+    - I might not take a [chart](5_q_thirtyOne)
+    - I might not making a [plan](6_q_twentyFive)
+    - I think I wouldn´t use something
+    - Shut up, i do not talk to a liar!
+    - [not](1_how_you_are_doing) [green](204_qG4)
+- intent: give_smalltalk
+  examples: |
+    - I bought some books
+    - I read a book
+    - I had Pizza
+    - I ate Pizza
+    - I ate Cookies
+    - I got Pizza
+    - I sold my car
+    - I played soccer
+    - I met friends
+    - I cooked dinner
+    - I´ve been doing some sport with my boyfriend
+    - I ate dinner
+    - I watched a series
+    - I was playing basketball
+    - I watched a film
+    - I did my sport class
+    - I did my sport
+    - we ate dinner
+    - we were shopping
+    - I was studying
+    - I was learning for an exam
+    - I was at the university
+    - I had sex with my boyfriend
+    - I had sex with my wife
+    - I had sex with my girlfrined
+    - I was hanging out with friends
+    - I was at the driving school
+    - I was at the gym
+    - I did some fitness
+    - I had training
+    - I helped my brother with his IT-homeworks
+    - I was shopping
+    - I was meeting my friends
+    - Yesterday I went to the City to buy new things for my Appartement
+    - I went to the City to buy new things for my Appartement
+    - I was swimming
+    - Wathed a movie
+    - I went to the christmas market with a friend
+    - For the most part, I played video games, but also went to buy some groceries. I was exhausted and went to sleep pretty early.
+    - I learned
+    - I did homeworks
+    - i was swiming
+    - I took a shower
+    - i was swimming
+    - I bought a new computer
+    - swimming in pool
+    - i was watching tv
+    - I was swimming with the boys
+    - swimming
+    - learning math
+    - learning for test
+    - just studying
+    - did my homeworks
+    - I was sleeping
+    - I slept
+    - I was learning math
+    - working
+    - I was working
+    - Celebrating Christmas with my flatmates
+    - I was reading a book
+    - I was with my friends
+    - I was watching a serie with my girlfried
+    - I ate dinner.
+    - I have watch a [movie](14_q_seven) yesterday
+    - I was at my parents house and you?
+    - I read a book.
+    - Yesterday evening I read a book.
+    - I played a tabletop game with friends.
+    - I`m fine because I have a lot of freetime at the moment.
+    - I was drinking a beer.
+    - Reading a book
+    - I stay at home and watched tv
+    - i ate dinner
+    - Eating dinner with my [parents](1_first_name)
+    - I ate Dinner
+    - I ate dinner with some friends and drank some alcohol
+    - I played video games and bought groceries
+    - My friends [visited](14_q_seven) us
+    - I was drinking glühwein With friends
+    - thank you for providing the definition. Yesterday evening, I was drinking beer with my friends. What did you do?
+    - I played a game with my [family](1_first_name)
+    - i met some friends and had a relaxed evening
+    - I watched a [movie](14_q_seven)
+    - We had dinner with my [Family](1_first_name)
+    - I was drinking alcohol with some friends
+    - working all day long
+    - I played Volleyball.
+    - I had [training](10_q_thirtyEight).
+    - At 6 p.m. I had training. After that I took a shower and later helped my brother with his IT homework.
+    - I had a Pizza
+    - I had a Pizza for dinner
+    - I ate pizza with friends
+    - Swimming
+    - I ate pizza with my girlfriend. 🍕
+- intent: qOne
+  examples: |
+    - I got it by [picture](3_q_three)
+    - I got it by a [words](3_q_three)
+    - [don´t words](3_q_three)
+    - [don´t picture](3_q_three)
+    - I [don´t words](3_q_three)
+    - I [don´t picture](3_q_three)
+    - I memorize it like seeing a [picture](3_q_three)
+    - In my memorys I see a [picture](3_q_three) of what I did yesterday
+    - [picture](3_q_three)
+    - [pictures](3_q_three)
+    - [image](3_q_three)
+    - [words](3_q_three)
+    - rather [picture](3_q_three)
+    - rather [pictures](3_q_three)
+    - rather [image](3_q_three)
+    - rather [words](3_q_three)
+    - definitely [picture](3_q_three)
+    - definitely [pictures](3_q_three)
+    - definitely [image](3_q_three)
+    - definitely [words](3_q_three)
+    - I think it is more a [picture](3_q_three) than words
+    - I think it are more [words](3_q_three) than a  picture
+    - I think I got it more by a [picture](3_q_three) than by words
+    - I think I got it more by [words](3_q_three) than a picture
+    - I think [picture](3_q_three)
+    - I think [words](3_q_three)
+    - I guess for me is more like [words](3_q_three) than a picture
+    - I guess for me is more like [picture](3_q_three) than words
+    - I got it by [words](3_q_three)
+    - I think I got it as a [picture](3_q_three)
+    - [word](3_q_three)
+    - I think I remembered it by [words](3_q_three)
+    - I think I got it by [picture](3_q_three)
+    - I would say, more like to get a [picture](3_q_three)
+    - I got a [picture](3_q_three).
+    - I memorized it like a [picture](3_q_three).
+    - I think i thought in [pictures](3_q_three).
+    - [Picture](3_q_three)
+    - [Words](3_q_three)
+    - yes! some blurry [pictures](3_q_three)
+    - i would say more like a [picture](3_q_three)
+    - a [picture](3_q_three)
+    - With [pictures](3_q_three)
+    - Like a [picture](3_q_three)
+    - Rather like a [picture](3_q_three).
+    - i remeber it as [words](3_q_three)
+    - A [picture](3_q_three) :)
+- intent: qTwo
+  examples: |
+    - Ohh yes I feel so too..I think I would prefer to see it on a [map](4_q_twentyThree) for me that is much easier.
+    - [map](4_q_twentyThree)
+    - [written instructions](4_q_twentyThree)
+    - rather [map](4_q_twentyThree)
+    - rather [written instructions](4_q_twentyThree)
+    - I [don´t written instructions](4_q_twentyThree)
+    - I [don´t map](4_q_twentyThree)
+    - definitely [map](4_q_twentyThree)
+    - definitely [written instructions](4_q_twentyThree)
+    - Ohh yes I feel so too..I think I would prefer a [wirtten instruction](4_q_twentyThree) that is much easier
+    - Ohh yes I feel so too..I think I would prefer to see it on a [map](4_q_twentyThree)
+    - I think I would prefer a [map](4_q_twentyThree)
+    - I think I would prefer a [written instructions](4_q_twentyThree)
+    - I think I would rather read the [written instructions](4_q_twentyThree) than a map
+    - I think I would rather use a [map](4_q_twentyThree) than the written instructions
+    - I prefer a [map](4_q_twentyThree)
+    - I prefer more a [map](4_q_twentyThree) than written instructions
+    - I prefer a [written instructions](4_q_twentyThree)
+    - I prefer more [written instructions](4_q_twentyThree) than a map
+    - I would go for a [written instructions](4_q_twentyThree)
+    - I would go for a [map](4_q_twentyThree)
+    - a [map](4_q_twentyThree)
+    - I prefer a [wirttne insturction](4_q_twentyThree)
+    - I prefer a [wirttne intsruction](4_q_twentyThree)
+    - Please give me a [map](4_q_twentyThree)
+    - Give me a [map](4_q_twentyThree) please mate
+    - I think I would prefer a [written instruction](4_q_twentyThree)
+    - I prefer a [map](4_q_twentyThree).
+    - I would prefer a [map](4_q_twentyThree)
+    - Please a [map](4_q_twentyThree).
+    - [written instruction](4_q_twentyThree)
+    - [Map](4_q_twentyThree) for sure
+    - [Map](4_q_twentyThree)
+    - A [map](4_q_twentyThree)
+    - I went to the christmas market with a freidn
+    - a [written instuction](4_q_twentyThree)
+    - a [written instruction](4_q_twentyThree) would be cool
+    - [writen instructions](4_q_twentyThree)
+    - I would definitely prefer a [map](4_q_twentyThree)
+- intent: qThree
+  examples: |
+    - I would like to see it as a [chart](5_q_thirtyOne) or something like that
+    - You can give me them as [chart](5_q_thirtyOne)
+    - You can give me them as a [text summarization](5_q_thirtyOne)
+    - You can pass them as [chart](5_q_thirtyOne)
+    - You can pass them as a [text summarization](5_q_thirtyOne)
+    - You can pass them as a [text summary](5_q_thirtyOne)
+    - I [don´t chart](5_q_thirtyOne)
+    - I [don´t text](5_q_thirtyOne) summarization
+    - [chart](5_q_thirtyOne)
+    - more a [chart](5_q_thirtyOne) than a text summarization
+    - I would like to see it as a [text summarization](5_q_thirtyOne)
+    - I would like to see it as a [text summary](5_q_thirtyOne)
+    - [charts](5_q_thirtyOne)
+    - [text summarization](5_q_thirtyOne)
+    - [text summary](5_q_thirtyOne)
+    - [sum up](5_q_thirtyOne)
+    - A [chart](5_q_thirtyOne) is definitely better
+    - definitely [charts](5_q_thirtyOne)
+    - definitely [text summarization](5_q_thirtyOne)
+    - definitely [text summary](5_q_thirtyOne)
+    - definitely [sum up](5_q_thirtyOne)
+    - rather [charts](5_q_thirtyOne)
+    - rather [text summarization](5_q_thirtyOne)
+    - rather [text summary](5_q_thirtyOne)
+    - rather [sum up](5_q_thirtyOne)
+    - more a [text summarization](5_q_thirtyOne) than a chart
+    - [text](5_q_thirtyOne) summarization
+    - I think I would prefer a [chart](5_q_thirtyOne)
+    - I think I would prefer a [sum up](5_q_thirtyOne)
+    - I think I would more prefer a [chart](5_q_thirtyOne) than a text summarization
+    - I think I would prefer a [text summarization](5_q_thirtyOne)
+    - I think I would prefer more a [text summarization](5_q_thirtyOne) than a chart
+    - Maybe I could get that as a [chart](5_q_thirtyOne) or something like this
+    - please give me the [statistic](7_q_two) as a [chart](5_q_thirtyOne)
+    - I prefer a [text summary](5_q_thirtyOne)
+    - I prefer a text [summarization](1_first_name)
+    - I prefer a text [summary](1_first_name)
+    - I would like to get them as a text [summary](1_first_name)
+    - Please give me them as a [chart](5_q_thirtyOne)
+    - please give me them as a [chart](5_q_thirtyOne)
+    - Let´s go with a [chart](5_q_thirtyOne)
+    - I would like to get them as a [chart](5_q_thirtyOne)
+    - I would like to get a [chart](5_q_thirtyOne).
+    - Better give me a [chart](5_q_thirtyOne).
+    - As a [Chart](5_q_thirtyOne).
+    - [Chart](5_q_thirtyOne)
+    - As a [chart](5_q_thirtyOne)
+    - as a pie [chart](5_q_thirtyOne)
+    - [chart](5_q_thirtyOne) would be cool
+    - Yes/maybe
+    - maybe
+    - [text](5_q_thirtyOne)
+    - I would prefer a [text summary](5_q_thirtyOne)
+    - [text summariazation](5_q_thirtyOne)
+    - As a [chart](5_q_thirtyOne) 😊
+- intent: qFour
+  examples: |
+    - [diagrams](15_q_eleven)
+    - [diagram](15_q_eleven)
+    - [description](15_q_eleven)
+    - rather [diagrams](15_q_eleven)
+    - rather [diagram](15_q_eleven)
+    - rather [description](15_q_eleven)
+    - definitely [diagrams](15_q_eleven)
+    - definitely [diagram](15_q_eleven)
+    - definitely [description](15_q_eleven)
+    - For me it is easier to understand it by looking at the [diagram](15_q_eleven)
+    - I think I look over the [diagrams](15_q_eleven)
+    - I think I like [diagrams](15_q_eleven)  more
+    - I think I like [descriptions](15_q_eleven) more
+    - did not [diagrams](15_q_eleven)
+    - I like to look over the [diagrams](15_q_eleven)
+    - I like to look over the [diagram](15_q_eleven)
+    - I still likely look over the [diagrams](15_q_eleven)
+    - I have to read the [description](15_q_eleven) to [understand](9_q_sevenTeen) the [diagrams](15_q_eleven).
+    - I look over the [diagrams](15_q_eleven).
+    - i always read the [description](15_q_eleven) too.
+    - [Diagrams](15_q_eleven)
+    - [diagrams](15_q_eleven) surely
+    - [discription](15_q_eleven)
+    - [descriptions](15_q_eleven)
+    - I am focusing on the [diagrams](15_q_eleven).
+    - [descroption](15_q_eleven)
+    - I would rather look at the [diagrams](15_q_eleven)
+- intent: qFive
+  examples: |
+    - [visual material](14_q_seven)
+    - [visual](14_q_seven) material
+    - [visible](14_q_seven) material
+    - [movies](14_q_seven)
+    - [images](14_q_seven)
+    - [verbal](14_q_seven)
+    - [speech](14_q_seven)
+    - [speechs](14_q_seven)
+    - [conversation](14_q_seven)
+    - [conversations](14_q_seven)
+    - rather [visual material](14_q_seven)
+    - rather [visual](14_q_seven) material
+    - rather [visible](14_q_seven) material
+    - rather [movies](14_q_seven)
+    - rather [images](14_q_seven)
+    - rather [verbal](14_q_seven)
+    - rather [speech](14_q_seven)
+    - rather [speechs](14_q_seven)
+    - rather [conversation](14_q_seven)
+    - rather [conversations](14_q_seven)
+    - definitely [visual material](14_q_seven)
+    - definitely [visual](14_q_seven) material
+    - definitely [visible](14_q_seven) material
+    - definitely [movies](14_q_seven)
+    - definitely [images](14_q_seven)
+    - definitely [verbal](14_q_seven)
+    - definitely [speech](14_q_seven)
+    - definitely [speechs](14_q_seven)
+    - Rather [visible](14_q_seven) material. But the description is also important.
+    - definitely [conversation](14_q_seven)
+    - definitely [conversations](14_q_seven)
+    - I think I like [movies](14_q_seven)
+    - I think I like [images](14_q_seven)
+    - I think I like [verbal](14_q_seven)
+    - I think I like [speech](14_q_seven)
+    - I think I like [speechs](14_q_seven)
+    - I think I like [conversation](14_q_seven)
+    - I think I like [visual material](14_q_seven) more
+    - I think I like [visible](14_q_seven) material more
+    - I think I like [visual](14_q_seven) material more
+    - I think I like [verbal information](14_q_seven) more
+    - I think I like [verbal](14_q_seven) information more
+    - I would not use [visual material](14_q_seven)
+    - I prefer [visual](14_q_seven) material
+    - [visual](14_q_seven)
+    - I prever [visual](14_q_seven) material
+    - [verbal information](14_q_seven)
+    - I prefer [information](14_q_seven) as [visual material](14_q_seven)
+    - Wie viel wiegst du?
+    - I think , I like [verbal](14_q_seven) information.
+    - I prefer [visual material](14_q_seven).
+    - I always preferes [visual maerials](14_q_seven)
+    - [visual materials](14_q_seven)
+    - [verbal informations](14_q_seven)
+    - [Visual](14_q_seven)
+    - [Visual](14_q_seven) material
+    - [verbal](14_q_seven) [conversation](14_q_seven)
+    - That was a great [conversation](14_q_seven). Bye!
+    - I prefer to get it as [visual material](14_q_seven).
+    - Rather [visual](14_q_seven) material. But the [description](15_q_eleven) is also important. So I think I do both
+    - [Visual](14_q_seven) Materials are nice
+    - [visua](14_q_seven)
+    - [visiual](14_q_seven)
+    - [verbak](14_q_seven)
+    - I think, I prefer [verbal](14_q_seven) information ✌️
+- intent: affirm
+  examples: |
+    - yy
+    - yyy
+- intent: deny
+  examples: |
+    - nn
+    - nnn
+- intent: affirmJob
+  examples: |
+    - yyyy
+    - yyyyy
+- intent: qSix
+  examples: |
+    - [draft](16_q_twentySeven)
+    - [drawing](16_q_twentySeven)
+    - [sketch](16_q_twentySeven)
+    - [instructor](16_q_twentySeven) said
+    - [teacher](16_q_twentySeven) said
+    - [supervisor](16_q_twentySeven) said
+    - [teacher](16_q_twentySeven)
+    - [supervisor](16_q_twentySeven)
+    - rather [draft](16_q_twentySeven)
+    - rather [drawing](16_q_twentySeven)
+    - rather [sketch](16_q_twentySeven)
+    - rather [instructor](16_q_twentySeven) said
+    - rather [teacher](16_q_twentySeven) said
+    - rather [supervisor](16_q_twentySeven) said
+    - definitely [teacher](16_q_twentySeven)
+    - definitely [supervisor](16_q_twentySeven)
+    - definitely [draft](16_q_twentySeven)
+    - definitely [drawing](16_q_twentySeven)
+    - definitely [sketch](16_q_twentySeven)
+    - definitely [instructor](16_q_twentySeven) said
+    - I think I like [sketch](16_q_twentySeven) more
+    - I think I like [drawing](16_q_twentySeven) more
+    - I think I like [teacher](16_q_twentySeven) words more
+    - I guess I like [supervisor](16_q_twentySeven) words more
+    - I guess I like [instructor](16_q_twentySeven) words more
+    - I guess I like [sketch](16_q_twentySeven)
+    - I guess I like [draft](16_q_twentySeven)
+    - I guess I like [drawing](16_q_twentySeven)
+    - the [sketch](16_q_twentySeven)
+    - I think I like [draft](16_q_twentySeven) more
+    - the [draft](16_q_twentySeven)
+    - the [instructor](16_q_twentySeven) words
+    - the [teacher](16_q_twentySeven) words
+    - the [supervisor](16_q_twentySeven) words
+    - I prefer to remember the [sketch](16_q_twentySeven)
+    - skecth
+    - what the [instructor](16_q_twentySeven) said about it
+    - I think, I remember the [sketch](16_q_twentySeven)
+    - I remember the [sketch](16_q_twentySeven).
+    - I remember the [sketch](16_q_twentySeven) better.
+    - I think i would remember the [sketch](16_q_twentySeven) more.
+    - [Sketch](16_q_twentySeven)
+    - what the [instructor](16_q_twentySeven) said
+    - The [sketch](16_q_twentySeven)
+    - [Instructor](16_q_twentySeven)
+    - I think I am more likely to remember the [sketch](16_q_twentySeven).
+    - [ketch](16_q_twentySeven)
+    - I am more likely to remember what the [instructor](16_q_twentySeven) said
+- intent: qSeven
+  examples: |
+    - [try out](6_q_twentyFive)
+    - [try](6_q_twentyFive)
+    - [attempt](6_q_twentyFive)
+    - [undertake](6_q_twentyFive)
+    - [plan](6_q_twentyFive)
+    - [preparations](6_q_twentyFive)
+    - make a [plan](6_q_twentyFive)
+    - rather [try out](6_q_twentyFive)
+    - rather [try](6_q_twentyFive)
+    - rather [attempt](6_q_twentyFive)
+    - rather [undertake](6_q_twentyFive)
+    - rather [plan](6_q_twentyFive)
+    - rather [preparations](6_q_twentyFive)
+    - rather make a [plan](6_q_twentyFive)
+    - definitely [try out](6_q_twentyFive)
+    - definitely [try](6_q_twentyFive)
+    - definitely [attempt](6_q_twentyFive)
+    - definitely [undertake](6_q_twentyFive)
+    - definitely [plan](6_q_twentyFive)
+    - definitely [preparations](6_q_twentyFive)
+    - definitely make a [plan](6_q_twentyFive)
+    - I would just [try](6_q_twentyFive) it out
+    - I think I would just [try](6_q_twentyFive) it out
+    - I think I would just [attempt](6_q_twentyFive) it out
+    - I think I would just [undertake](6_q_twentyFive) it out
+    - I think just [try](6_q_twentyFive)
+    - I [try](6_q_twentyFive) things outs
+    - I think just [undertake](6_q_twentyFive)
+    - I would make a [plan](6_q_twentyFive)
+    - I would make [preparations](6_q_twentyFive)
+    - I think I would make a [plan](6_q_twentyFive)
+    - First I would make a [plan](6_q_twentyFive)
+    - Firstly I would make a [plan](6_q_twentyFive)
+    - First of all I would make a [plan](6_q_twentyFive)
+    - Primarily I would make a [plan](6_q_twentyFive)
+    - Primarily I would make a [preparations](6_q_twentyFive)
+    - Principally I would make a [plan](6_q_twentyFive)
+    - Basically I would make a [plan](6_q_twentyFive)
+    - I prefer to make a [plan](6_q_twentyFive)
+    - First I would [try](6_q_twentyFive) it out
+    - Firstly I would [try](6_q_twentyFive) it out
+    - Firstly I would [undertake](6_q_twentyFive) it
+    - Basically I would [try](6_q_twentyFive) it out
+    - First of all I would [try](6_q_twentyFive) it out
+    - Primarily I would [try](6_q_twentyFive) it out
+    - Principally I would [try](6_q_twentyFive) it out
+    - I prefer to [try](6_q_twentyFive) it out
+    - I prefer to [undertake](6_q_twentyFive) it out
+    - I would [try](6_q_twentyFive) them first out
+    - [try](6_q_twentyFive) them out
+    - I [try](6_q_twentyFive) them out
+    - First I would get to know the things
+    - I think I would [try](6_q_twentyFive) it out
+    - [try](6_q_twentyFive) it out
+    - First I would make some notes to get an overview
+    - [try](6_q_twentyFive) them
+    - I would [try](6_q_twentyFive) it out
+    - I would [try](6_q_twentyFive) them first out.
+    - I would [try](6_q_twentyFive) them out
+    - I would [try](6_q_twentyFive) them out.
+    - I´d like to [try](6_q_twentyFive) them out first.
+    - [try](6_q_twentyFive) them out.
+    - Make a [plan](6_q_twentyFive)
+    - [Try](6_q_twentyFive) them out
+    - [try](6_q_twentyFive) Themen Out
+    - I would love to be a person, who [try](6_q_twentyFive) things out first, but I always make [plans](6_q_twentyFive)
+    - I would [plan](6_q_twentyFive) it
+    - i would make a big mindmap, so i think I'm a person who makes a [plan](6_q_twentyFive)
+    - I make a [plan](6_q_twentyFive).
+    - initial [plan](6_q_twentyFive)
+    - I would make an initial [plan](6_q_twentyFive)
+    - make an initial [plan](6_q_twentyFive)
+    - I would [try](6_q_twentyFive) it out first.
+- intent: qEight
+  examples: |
+    - [start](9_q_sevenTeen)
+    - [start directly](9_q_sevenTeen)
+    - [start immediately](9_q_sevenTeen)
+    - [immediately](9_q_sevenTeen)
+    - Start working on the Solution [immediately](9_q_sevenTeen)
+    - [begin immediately](9_q_sevenTeen)
+    - [begin directly](9_q_sevenTeen)
+    - [begin](9_q_sevenTeen)
+    - [take up](9_q_sevenTeen)
+    - [understand](9_q_sevenTeen)
+    - [appreciate](9_q_sevenTeen)
+    - [recognize](9_q_sevenTeen)
+    - [realize](9_q_sevenTeen)
+    - definitely [start](9_q_sevenTeen)
+    - definitely [start directly](9_q_sevenTeen)
+    - definitely [start immediately](9_q_sevenTeen)
+    - definitely [begin immediately](9_q_sevenTeen)
+    - definitely [begin directly](9_q_sevenTeen)
+    - definitely [begin](9_q_sevenTeen)
+    - definitely [take up](9_q_sevenTeen)
+    - definitely [understand](9_q_sevenTeen)
+    - definitely [appreciate](9_q_sevenTeen)
+    - definitely [recognize](9_q_sevenTeen)
+    - definitely [realize](9_q_sevenTeen)
+    - rather [start](9_q_sevenTeen)
+    - rather [start directly](9_q_sevenTeen)
+    - rather [start immediately](9_q_sevenTeen)
+    - rather [begin immediately](9_q_sevenTeen)
+    - rather [begin directly](9_q_sevenTeen)
+    - rather [begin](9_q_sevenTeen)
+    - rather [take up](9_q_sevenTeen)
+    - rather [understand](9_q_sevenTeen)
+    - rather [appreciate](9_q_sevenTeen)
+    - rather [recognize](9_q_sevenTeen)
+    - rather [realize](9_q_sevenTeen)
+    - try [to understand](9_q_sevenTeen)
+    - I try to [understand](9_q_sevenTeen) the problem at first
+    - I try to [recognize](9_q_sevenTeen) the problem at first
+    - I try to [realize](9_q_sevenTeen) the problem at first
+    - First I try to [understand](9_q_sevenTeen) the problem
+    - At the beginning I try to [understand](9_q_sevenTeen) the problem
+    - Basically I try to [understand](9_q_sevenTeen) the problem
+    - I would [start](9_q_sevenTeen) on the problem immediately
+    - I would [take up](9_q_sevenTeen) on the problem immediately
+    - I would [appreciate](9_q_sevenTeen) on the problem immediately
+    - I would [recognize](9_q_sevenTeen) on the problem immediately
+    - I would [realize](9_q_sevenTeen) on the problem immediately
+    - I would try to [understand](9_q_sevenTeen) the problem
+    - I think I would [start](9_q_sevenTeen) on the problem immediately
+    - I think I would try to [understand](9_q_sevenTeen) the problem
+    - I would [start](9_q_sevenTeen) on the problem immediately and try to understand the whole thing while working on it
+    - I think [start](9_q_sevenTeen) on the problem would be faster
+    - I think [appreciate](9_q_sevenTeen) on the problem would be faster
+    - I think [recognize](9_q_sevenTeen) on the problem would be faster
+    - I think [realize](9_q_sevenTeen) on the problem would be faster
+    - I think to [begin](9_q_sevenTeen) on the problem would be faster
+    - [understand](9_q_sevenTeen) the problem
+    - I start working on the solution [immediately](9_q_sevenTeen)
+    - [understand](9_q_sevenTeen) the problem first
+    - [start](9_q_sevenTeen) the game
+    - [Start](9_q_sevenTeen)
+    - I had to solve some problems
+- intent: qNine
+  examples: |
+    - [realistic](7_q_two)
+    - [practical](7_q_two)
+    - [pragmatic](7_q_two)
+    - [innovative](7_q_two)
+    - my tendency is [innovative](7_q_two)
+    - my tendency is [realistic](7_q_two)
+    - rather [realistic](7_q_two)
+    - rather [practical](7_q_two)
+    - rather [pragmatic](7_q_two)
+    - rather [innovative](7_q_two)
+    - definitely [realistic](7_q_two)
+    - definitely [practical](7_q_two)
+    - definitely [pragmatic](7_q_two)
+    - definitely [innovative](7_q_two)
+    - I am more [realistic](7_q_two)
+    - I am more [practical](7_q_two)
+    - I am more [pragmatic](7_q_two)
+    - I am more [innovative](7_q_two)
+    - I am more a [realistic](7_q_two) guy
+    - I am more a [practical](7_q_two) guy
+    - I am more a [pragmatic](7_q_two) guy
+    - I am more a [innovative](7_q_two) guy
+    - I am more [realistic](7_q_two) than innovative
+    - I am more [practical](7_q_two) than innovative
+    - I am more [pragmatic](7_q_two) than innovative
+    - I am more [innovative](7_q_two) than realistic
+    - more [realistic](7_q_two) than innovative
+    - more [innovative](7_q_two) than realistic
+    - I think if I am honest I am more a [realistic](7_q_two) person
+    - I think if I am honest I am more a [innovative](7_q_two) person
+    - I think I am more a [realistic](7_q_two) person
+    - I think I am more a [innovative](7_q_two) person
+    - I think [innovative](7_q_two) person
+    - I think [realistic](7_q_two) person
+    - I think [innovative](7_q_two)
+    - I think [realistic](7_q_two)
+    - I think [practical](7_q_two)
+    - I think [pragmatic](7_q_two)
+    - I think I tend to be [innovative](7_q_two)
+    - I think I tend to be [practical](7_q_two)
+    - I think I tend to be [pragmatic](7_q_two)
+    - I think I tend to be [realistic](7_q_two)
+    - I might be a [innovative](7_q_two) person
+    - I might be a [practical](7_q_two) person
+    - I might be a [pragmatic](7_q_two) person
+    - I might be a [realistic](7_q_two) person
+    - I might be more a [innovative](7_q_two) person than realistic person
+    - I might be more a [realistic](7_q_two) person than innovative person
+    - I tend to be more [realistic](7_q_two) than innovative
+    - I tend to be more [realistic](7_q_two)
+    - I tend do be more [realsitic](7_q_two) for sure
+    - I think, I`m [realistic](7_q_two).
+    - I tend to be a bit more [realistic](7_q_two)
+    - I think that i am more [innovative](7_q_two) in my thinking.
+    - [Realistic](7_q_two)
+    - [innovation](7_q_two) is a great thing!
+    - Rather [realistic](7_q_two)
+    - [realisitc](7_q_two)
+    - [realisti](7_q_two)
+    - [inovative](7_q_two)
+    - I think, I tend to be more [innovative](7_q_two) 😉
+- intent: qTen
+  examples: |
+    - [facts](11_q_ten)
+    - [concepts](11_q_ten)
+    - rather [facts](11_q_ten)
+    - rather [concepts](11_q_ten)
+    - definitely [facts](11_q_ten)
+    - definitely [concepts](11_q_ten)
+    - [Facts](11_q_ten) are easier to learn.
+    - I prefer [facts](11_q_ten)
+    - I prefer [concepts](11_q_ten)
+    - I think [facts](11_q_ten)
+    - I think [concepts](11_q_ten)
+    - I guess [facts](11_q_ten)
+    - I guess [concepts](11_q_ten)
+    - I find it easier to learn [facts](11_q_ten)
+    - I find it easier to learn [concepts](11_q_ten)
+    - I guess I find it easier to learn [facts](11_q_ten)
+    - I guess I find it easier to learn [concepts](11_q_ten)
+    - I find it easier to learn [facts](11_q_ten) than concepts
+    - I find it easier to learn [concepts](11_q_ten) than facts
+    - I think I learn rather [facts](11_q_ten)
+    - [fact](11_q_ten)
+    - I prefer learning [concepts](11_q_ten)
+    - to learn [facts](11_q_ten)
+    - I prefer [concepts](11_q_ten).
+    - [Facts](11_q_ten) are easier to [lern](1_first_name).
+    - I find it easier to learn [concepts](11_q_ten).
+    - [Concepts](11_q_ten)
+    - [Facts](11_q_ten)
+    - [good](1_how_you_are_doing) one! its easier to learn [facts](11_q_ten)
+    - I think rather [concepts](11_q_ten).
+    - I prefer to learn [concepts](11_q_ten)
+- intent: qEleven
+  examples: |
+    - [certainty](8_q_eightTeen)
+    - [truth](8_q_eightTeen)
+    - [hypothesis](8_q_eightTeen)
+    - rather [certainty](8_q_eightTeen)
+    - rather [truth](8_q_eightTeen)
+    - rather [hypothesis](8_q_eightTeen)
+    - definitely [certainty](8_q_eightTeen)
+    - definitely [truth](8_q_eightTeen)
+    - definitely [hypothesis](8_q_eightTeen)
+    - I think I like the idea of [assumption](8_q_eightTeen)
+    - I think I like the idea of [truth](8_q_eightTeen)
+    - [certainty](8_q_eightTeen) like a fact that is definitely true
+    - [hypothesis](8_q_eightTeen) like a explanation which is made on the basis of limited evidence
+    - I think I like the idea of [certainty](8_q_eightTeen)
+    - I think I like the idea of [hypothesis](8_q_eightTeen)
+    - I like the idea of [certainty](8_q_eightTeen)
+    - I prefer the idea of [certainty](8_q_eightTeen)
+    - I would go for the idea of [certainty](8_q_eightTeen)
+    - I like the idea of [hypothesis](8_q_eightTeen)
+    - I prefer the idea of [hypothesis](8_q_eightTeen)
+    - I prefer the idea of [truth](8_q_eightTeen)
+    - I prefer the idea of [assumption](8_q_eightTeen)
+    - I would go for the idea of [hypothesis](8_q_eightTeen)
+    - I don´t like the idea of [certainty](8_q_eightTeen)
+    - the idea of [certainty](8_q_eightTeen)
+    - Back to your question. [certainty](8_q_eightTeen) .
+    - I think, I prefer [hypothesis](8_q_eightTeen).
+    - I prefer to be more [certainty](8_q_eightTeen)
+    - I prefer the [certainty](8_q_eightTeen).
+    - more like [hypothesis](8_q_eightTeen)
+    - [Hypothesis](8_q_eightTeen)
+    - [Certainty](8_q_eightTeen)
+    - i prefer [certainty](8_q_eightTeen)
+    - I like the idea of [certainty](8_q_eightTeen).
+    - Rather the idea of [certainty](8_q_eightTeen).
+    - A [chart](5_q_thirtyOne) is definitely better.
+    - Definitely the [map](4_q_twentyThree)!
+    - idea of [certainty](8_q_eightTeen)
+- intent: qTwelve
+  examples: |
+    - [theoretical models](10_q_thirtyEight)
+    - [theoretical](10_q_thirtyEight)
+    - I think [theoretical models](10_q_thirtyEight)
+    - I think [theoretical](10_q_thirtyEight)
+    - I am more interested in [theoretical models](10_q_thirtyEight)
+    - I am more interested in [theoretical](10_q_thirtyEight)
+    - I prefer [theoretical models](10_q_thirtyEight)
+    - I prefer [theoretical](10_q_thirtyEight)
+    - [concrete](10_q_thirtyEight)
+    - [abstract](10_q_thirtyEight)
+    - [solid](10_q_thirtyEight) material
+    - [factual](10_q_thirtyEight) material
+    - [existing](10_q_thirtyEight) material
+    - [pyhsical](10_q_thirtyEight)
+    - definitely [theoretical models](10_q_thirtyEight)
+    - definitely [theoretical](10_q_thirtyEight)
+    - definitely [concrete](10_q_thirtyEight)
+    - definitely [abstract](10_q_thirtyEight)
+    - definitely [solid](10_q_thirtyEight) material
+    - definitely [factual](10_q_thirtyEight) material
+    - definitely [existing](10_q_thirtyEight) material
+    - definitely [pyhsical](10_q_thirtyEight)
+    - rather [theoretical models](10_q_thirtyEight)
+    - rather [theoretical](10_q_thirtyEight)
+    - rather [concrete](10_q_thirtyEight)
+    - rather [abstract](10_q_thirtyEight)
+    - rather [solid](10_q_thirtyEight) material
+    - rather [factual](10_q_thirtyEight) material
+    - rather [existing](10_q_thirtyEight) material
+    - rather [pyhsical](10_q_thirtyEight)
+    - I prefer [solid](10_q_thirtyEight) material
+    - I prefer [factual](10_q_thirtyEight) material
+    - I prefer [existing](10_q_thirtyEight) material
+    - I prefer [pyhsical](10_q_thirtyEight)
+    - [concrete material](10_q_thirtyEight)
+    - I like facts! So i prefer to study with courses that are based on [concrete material](10_q_thirtyEight)
+    - [abstract material](10_q_thirtyEight)
+    - i prefer courses that are based on [concrete material](10_q_thirtyEight)
+    - I am more interested in [concrete](10_q_thirtyEight) material
+    - I am more interested in [abstract](10_q_thirtyEight) material
+    - I think [concrete](10_q_thirtyEight) material
+    - I think [abstract](10_q_thirtyEight) material
+    - I think I prefer [concrete](10_q_thirtyEight) material more
+    - I think I prefer [abstract](10_q_thirtyEight) material more
+    - I prefer [concrete](10_q_thirtyEight) material
+    - I prefer [abstract](10_q_thirtyEight) material
+    - I like [concrete material](10_q_thirtyEight) more
+    - I like [solid](10_q_thirtyEight) material
+    - I like [factual](10_q_thirtyEight) material
+    - I like [existing](10_q_thirtyEight) material
+    - I like [pyhsical](10_q_thirtyEight)
+    - [concrtete material](10_q_thirtyEight)
+    - I think, I prefer courses that based on [concrete material](10_q_thirtyEight)
+    - I prefer [concrete](10_q_thirtyEight) material.
+    - I like concrete material.
+    - I would prefer more [concrete](10_q_thirtyEight) material.
+    - would rather work with [abstract](10_q_thirtyEight) material.
+    - I would rather work with [theoretical models](10_q_thirtyEight).
+    - [conecrete material](10_q_thirtyEight)
+    - [Concrete](10_q_thirtyEight)
+    - [Concrete material](10_q_thirtyEight)
+    - Iprefere courses based on [concrete](10_q_thirtyEight) material
+    - Rather [Concrete](10_q_thirtyEight) material
+    - I prefer courses that are based on [concrete material](10_q_thirtyEight)
+- intent: qThirteen
+  examples: |
+    - [careful](18_q_twentyTwo)
+    - [details](18_q_twentyTwo)
+    - [creative](18_q_twentyTwo)
+    - [imaginative](18_q_twentyTwo)
+    - [inspired](18_q_twentyTwo)
+    - [wary](18_q_twentyTwo)
+    - [attentive](18_q_twentyTwo)
+    - definitely [careful](18_q_twentyTwo)
+    - definitely [details](18_q_twentyTwo)
+    - definitely [creative](18_q_twentyTwo)
+    - definitely [imaginative](18_q_twentyTwo)
+    - definitely [inspired](18_q_twentyTwo)
+    - definitely [wary](18_q_twentyTwo)
+    - definitely [attentive](18_q_twentyTwo)
+    - rather [careful](18_q_twentyTwo)
+    - rather [details](18_q_twentyTwo)
+    - rather [creative](18_q_twentyTwo)
+    - rather [imaginative](18_q_twentyTwo)
+    - rather [inspired](18_q_twentyTwo)
+    - rather [wary](18_q_twentyTwo)
+    - rather [attentive](18_q_twentyTwo)
+    - I´m a - [creative](18_q_twentyTwo) guy
+    - I am more carfule about the [details](18_q_twentyTwo)
+    - I think I am more carful about the [details](18_q_twentyTwo)
+    - I guess Iam more carful about the [details](18_q_twentyTwo)
+    - I think I am more [careful](18_q_twentyTwo)
+    - I think I am more [wary](18_q_twentyTwo)
+    - I think I am more [attentive](18_q_twentyTwo)
+    - I guess I am more [wary](18_q_twentyTwo) about the details
+    - I guess I am more [imaginative](18_q_twentyTwo) about the details
+    - I guess I am more [inspired](18_q_twentyTwo) about the details
+    - I guess I am more [attentive](18_q_twentyTwo) about the details
+    - I guess I am more [careful](18_q_twentyTwo)
+    - I think I am more [careful](18_q_twentyTwo) about the details
+    - I guess I am more [careful](18_q_twentyTwo) about the details
+    - I am more [creative](18_q_twentyTwo)
+    - I think I am more [creative](18_q_twentyTwo)
+    - I think I am more [imaginative](18_q_twentyTwo)
+    - I think I am more [inspired](18_q_twentyTwo)
+    - I guess I am more [creative](18_q_twentyTwo)
+    - I am more [creative](18_q_twentyTwo) about how to do my job
+    - I think I am more [inspired](18_q_twentyTwo) about how to do my job
+    - I think I am more [imaginative](18_q_twentyTwo) about how to do my job
+    - I think I am more [creative](18_q_twentyTwo) about how to do my job
+    - I guess Iam more [creative](18_q_twentyTwo) about how to do my job
+    - I'm a [creative](18_q_twentyTwo) [guy](1_first_name)
+    - I am [careful](18_q_twentyTwo) about the details.
+- intent: qFourteen
+  examples: |
+    - [confused](12_q_twentyFour)
+    - [regular pace](12_q_twentyFour)
+    - [regular](12_q_twentyFour) pace
+    - [regular](12_q_twentyFour) tempo
+    - [regular](12_q_twentyFour) speed
+    - regular [speed](12_q_twentyFour)
+    - regular [tempo](12_q_twentyFour)
+    - [structured](12_q_twentyFour) tempo
+    - [structured](12_q_twentyFour) speed
+    - [efficient](12_q_twentyFour) tempo
+    - [efficient](12_q_twentyFour) speed
+    - [well ordered](12_q_twentyFour) tempo
+    - [well ordered](12_q_twentyFour) speed
+    - [organized](12_q_twentyFour) speed
+    - [organized](12_q_twentyFour) tempo
+    - [suddenly all clicks](12_q_twentyFour)
+    - [regular tempo](12_q_twentyFour)
+    - rather [confused](12_q_twentyFour)
+    - rather [regular pace](12_q_twentyFour)
+    - rather [regular](12_q_twentyFour) pace
+    - rather [regular](12_q_twentyFour) tempo
+    - rather [regular](12_q_twentyFour) speed
+    - rather regular [speed](12_q_twentyFour)
+    - rather regular [tempo](12_q_twentyFour)
+    - rather [structured](12_q_twentyFour) tempo
+    - rather [structured](12_q_twentyFour) speed
+    - rather [efficient](12_q_twentyFour) tempo
+    - rather [efficient](12_q_twentyFour) speed
+    - rather [well ordered](12_q_twentyFour) tempo
+    - rather [well ordered](12_q_twentyFour) speed
+    - rather [organized](12_q_twentyFour) speed
+    - rather [organized](12_q_twentyFour) tempo
+    - rather [suddenly all clicks](12_q_twentyFour)
+    - rather [regular tempo](12_q_twentyFour)
+    - definitely [confused](12_q_twentyFour)
+    - definitely [regular pace](12_q_twentyFour)
+    - definitely [regular](12_q_twentyFour) pace
+    - definitely [regular](12_q_twentyFour) tempo
+    - definitely [regular](12_q_twentyFour) speed
+    - definitely regular [speed](12_q_twentyFour)
+    - definitely regular [tempo](12_q_twentyFour)
+    - definitely [structured](12_q_twentyFour) tempo
+    - definitely [structured](12_q_twentyFour) speed
+    - definitely [efficient](12_q_twentyFour) tempo
+    - definitely [efficient](12_q_twentyFour) speed
+    - definitely [well ordered](12_q_twentyFour) tempo
+    - definitely [well ordered](12_q_twentyFour) speed
+    - definitely [organized](12_q_twentyFour) speed
+    - definitely [organized](12_q_twentyFour) tempo
+    - definitely [suddenly all clicks](12_q_twentyFour)
+    - definitely [regular tempo](12_q_twentyFour)
+    - I learn in [structured](12_q_twentyFour) tempo
+    - I learn in [structured](12_q_twentyFour) speed
+    - I learn in [efficient](12_q_twentyFour) tempo
+    - I learn in [efficient](12_q_twentyFour) speed
+    - I learn in [well ordered](12_q_twentyFour) tempo
+    - I learn in [well ordered](12_q_twentyFour) speed
+    - I learn in [organized](12_q_twentyFour) tempo
+    - I learn in [organized](12_q_twentyFour) speed
+    - I learn in regular [tempo](12_q_twentyFour)
+    - I learn in regular [speed](12_q_twentyFour)
+    - I learn in [regular](12_q_twentyFour) speed
+    - I learn in [regular](12_q_twentyFour) tempo
+    - I learn in [regular](12_q_twentyFour) pace
+    - [all clicks](12_q_twentyFour)
+    - [suddenly](12_q_twentyFour) all clicks
+    - [fairly](12_q_twentyFour)
+    - [regular](12_q_twentyFour)
+    - I´m at the beginning confused and suddenly it [all clicks](12_q_twentyFour)
+    - I´m at the beginning [confused](12_q_twentyFour) and suddenly it all clicks
+    - [speed](12_q_twentyFour)
+    - I learn at a regular [tempo](12_q_twentyFour)
+- intent: qFifteen
+  examples: |
+    - [stay focused](13_q_thirtySix)
+    - [stay focus](13_q_thirtySix)
+    - [focus](13_q_thirtySix)
+    - [focused](13_q_thirtySix)
+    - [connections](13_q_thirtySix)
+    - [relations](13_q_thirtySix)
+    - [association](13_q_thirtySix)
+    - [links](13_q_thirtySix)
+    - [make connections](13_q_thirtySix)
+    - [stay on](13_q_thirtySix) topic
+    - [keep on](13_q_thirtySix) topic
+    - definitely [stay focused](13_q_thirtySix)
+    - definitely [stay focus](13_q_thirtySix)
+    - definitely [focus](13_q_thirtySix)
+    - definitely [focused](13_q_thirtySix)
+    - definitely [connections](13_q_thirtySix)
+    - definitely [relations](13_q_thirtySix)
+    - definitely [association](13_q_thirtySix)
+    - definitely [links](13_q_thirtySix)
+    - definitely [make connections](13_q_thirtySix)
+    - definitely [stay on](13_q_thirtySix) topic
+    - definitely [keep on](13_q_thirtySix) topic
+    - rather [stay focused](13_q_thirtySix)
+    - rather [stay focus](13_q_thirtySix)
+    - rather [focus](13_q_thirtySix)
+    - rather [focused](13_q_thirtySix)
+    - rather [connections](13_q_thirtySix)
+    - rather [relations](13_q_thirtySix)
+    - rather [association](13_q_thirtySix)
+    - rather [links](13_q_thirtySix)
+    - rather [make connections](13_q_thirtySix)
+    - rather [stay on](13_q_thirtySix) topic
+    - rather [keep on](13_q_thirtySix) topic
+    - I make [relations](13_q_thirtySix) between that subject and related subjects
+    - I make [associations](13_q_thirtySix) between that subject and related subjects
+    - I make [links](13_q_thirtySix) between that subject and related subjects
+    - I think for me I prefer to [stay on](13_q_thirtySix) topic
+    - I think for me I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I think for me I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I think for me I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I think I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I think I prefer to [stay on](13_q_thirtySix) topic
+    - I think I prefer to [keep on](13_q_thirtySix) topic
+    - I think I prefer to [keep](13_q_thirtySix) on topic
+    - I think I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I think I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I guess I prefer to [stay focused](13_q_thirtySix) on that subject
+    - I guess I prefer to [stay focused](13_q_thirtySix) on that subject and learn as much as I can
+    - I guess I make [connections](13_q_thirtySix) between that subject and related subjects
+    - I might be to prefer to [stay focused](13_q_thirtySix) on that subject
+    - I might be to make [connections](13_q_thirtySix) between that subject and related subjects
+    - I would not use [stay focused](13_q_thirtySix)
+- intent: qSixteen
+  examples: |
+    - [step](17_q_fourtyFour)
+    - [slowly](17_q_fourtyFour)
+    - I think [slowly](17_q_fourtyFour) in the solution process
+    - [step by step](17_q_fourtyFour)
+    - [steps](17_q_fourtyFour)
+    - [consequences](17_q_fourtyFour)
+    - [result](17_q_fourtyFour)
+    - [effect](17_q_fourtyFour)
+    - [conclusion](17_q_fourtyFour)
+    - I think of each [step](17_q_fourtyFour) in the solution process
+    - I think of the [steps](17_q_fourtyFour) in the solution process
+    - I guess I think of each [step](17_q_fourtyFour) in the process
+    - I think of possible [consequences](17_q_fourtyFour) of the solution in a wide range
+    - I think of possible [effects](17_q_fourtyFour) of the solution in a wide range
+    - I think of possible [conclusions](17_q_fourtyFour) of the solution in a wide range
+    - I guess I think of possible [consequences](17_q_fourtyFour) of the solution
+    - Thats a good question I think I start working on the solution
+    - I would think about the [steps](17_q_fourtyFour)
+    - [Consequences](17_q_fourtyFour)
+    - i [start](9_q_sevenTeen) working in the Solution immediately
+- intent: qSeventeen
+  examples: |
+    - definitely [real](19_q_six)
+    - [real](19_q_six)
+    - rather [real](19_q_six)
+    - [ideas](19_q_six)
+    - [intention](19_q_six)
+    - [theories](19_q_six)
+    - [theory](19_q_six)
+    - rather [ideas](19_q_six)
+    - rather [intention](19_q_six)
+    - rather [theories](19_q_six)
+    - rather [theory](19_q_six)
+    - definitely [ideas](19_q_six)
+    - definitely [intention](19_q_six)
+    - definitely [theories](19_q_six)
+    - definitely [theory](19_q_six)
+    - I think a course with [intentions](19_q_six)
+    - I think a course with [real](19_q_six) situations
+    - I think I would teach a course with [real](19_q_six) situations
+    - I think I would teach a course with [ideas](19_q_six) and theories
+    - I think I would rather teach a course with [real](19_q_six) life situations
+    - I think I would rather teach a course with ideas and [theories](19_q_six)
+    - I think I´d prefer a course dealing with [real](19_q_six) situations
+    - I think I´d prefer a course  with [real](19_q_six) life situations
+    - I guess I´d prefer a course dealing with [real](19_q_six) situations
+    - I take a course dealing with [real](19_q_six) situations
+    - I think I´d prefer a course  with [ideas](19_q_six)
+    - I think I´d prefer a course dealing with [ideas](19_q_six) and theories
+    - I guess I´d prefer a course with [ideas](19_q_six)
+    - I guess I´d prefer a course dealing with [ideas](19_q_six) and theories
+    - I take a course dealing with [ideas](19_q_six)
+    - I take a course dealing with [ideas](19_q_six) and theories
+    - I think I´d prefer a course dealing with [theories](19_q_six)
+    - I think I´d prefer a course with [theories](19_q_six)
+    - I guess I´d prefer a course dealing with [theories](19_q_six)
+    - I guess I´d prefer a course with [theories](19_q_six)
+    - I take a course with [theories](19_q_six)
+    - rather [ideas](19_q_six) and theories
+    - definitely [ideas](19_q_six) and theories
+    - [ideas](19_q_six) and theories
+    - I would like to teach a course that deals with [real](19_q_six) life situations
+    - I would prefer to teach a class who deals with [ideas](19_q_six) and theories.
+    - I would teach a course that [deals](19_q_six) with [real](19_q_six) life situations
+    - [real](19_q_six) life situations
+    - I think I prefer [real](19_q_six) life situations.
+    - I would rather teach [real](19_q_six) life situations.
+    - depence, but in [general](1_first_name) i would rather teach [ideas](19_q_six) and [theories](19_q_six)
+    - [real](19_q_six) life
+    - [Real](19_q_six) life situations
+    - [Real](19_q_six) life
+    - [Ideas](19_q_six) and theories
+    - I would prefere teaching the course about [real](19_q_six) life situation.
+    - One that deals with [ideas](19_q_six) and theories I guess
+- intent: qG0
+  examples: |
+    - [monday](200_qG0)
+    - [tuesday](200_qG0)
+    - [wednesday](200_qG0)
+    - [thursday](200_qG0)
+    - [sunday](200_qG0)
+    - [saturday](200_qG0)
+    - [friday](200_qG0)
+    - [qG00textHelp](200_qG0)
+    - [qG00imageHelp](200_qG0)
+    - [qG00solution](200_qG0)
+    - [wednesdday](200_qG0)
+    - [Thursday](200_qG0)
+    - [Friday](200_qG0)
+    - [Sunday](200_qG0)
+    - [wedensday](200_qG0)
+    - [Wednesday](200_qG0)
+    - [Tuesday](200_qG0)
+    - [thursaday](200_qG0)
+    - [Thursday](200_qG0)!
+- intent: qG1
+  examples: |
+    - [left](201_qG1)
+    - [5/19](201_qG1)
+    - [3/29](201_qG1)
+    - [right](201_qG1)
+    - [left](201_qG1) is greater
+    - [right](201_qG1) is greater
+    - [left](201_qG1) is bigger
+    - [right](201_qG1) is bigger
+    - I think [left](201_qG1)
+    - I think [right](201_qG1)
+    - I think [left](201_qG1) is greater
+    - I think [right](201_qG1) is greater
+    - [both](201_qG1)
+    - [same](201_qG1)
+    - [equal](201_qG1)
+    - I think [both](201_qG1)
+    - I think [same](201_qG1)
+    - I think [equal](201_qG1)
+    - [left](201_qG1) fraction is greater
+    - [left](201_qG1) fraction is [bigger](1_first_name)
+    - [left](201_qG1) fraction
+    - [5/19](206_qG6) is greater
+    - The [left](201_qG1) one is bigger
+- intent: qG4
+  examples: |
+    - [blue](204_qG4)
+    - [red](204_qG4)
+    - [yellow](204_qG4)
+    - [green](204_qG4)
+    - [white](204_qG4)
+    - [black](204_qG4)
+    - Tessa´s coat has the colour [red](204_qG4)
+    - Tessa´s coat has the colour [blue](204_qG4)
+    - Tessa´s coat has the colour [yellow](204_qG4)
+    - Tessa´s coat has the colour [green](204_qG4)
+    - Tessa´s coat has the colour [black](204_qG4)
+    - the colour is [black](204_qG4)
+    - the colour is [blue](204_qG4)
+    - the colour is [yellow](204_qG4)
+    - the colour is [red](204_qG4)
+    - the colour is [green](204_qG4)
+    - the colour is [white](204_qG4)
+    - [Green](204_qG4)
+    - [Blue](204_qG4)
+    - Tessas´s coat must be [blue](204_qG4)!
+- intent: qG5
+  examples: |
+    - [twenty-one](205_qG5)
+    - [twenty-eight](205_qG5)
+    - [thirty-two](205_qG5)
+    - [twenty-seven](205_qG5)
+    - [fourty-five](205_qG5)
+    - the numbers in the lower line are [twice](205_qG5) as the numbers in the higher line
+    - the numbers in the lower line are [double](205_qG5) as the numbers in the above line
+    - the numbers in the lower line are multiplied by [two](205_qG5) as the numbers in the higher line
+    - [two](205_qG5) more
+    - [double](205_qG5)
+    - [twice](205_qG5)
+    - [need help](205_qG5)
+    - [Need Help](205_qG5)
+    - [once](205_qG5)
+    - the numbers are [double](205_qG5)
+    - the numbers are multiplied by [two](205_qG5)
+    - the numbers are multiplied by [2](205_qG5)
+    - the numbers are [doubled](205_qG5)
+    - former of the [two](205_qG5)
+    - [Need help](205_qG5)
+    - [twentyseven](205_qG5)
+    - A, B and A are multiplied?
+- intent: qG6
+  examples: |
+    - [4/4.5/8](206_qG6)
+    - [10/12.5/7](206_qG6)
+    - [8/2.5/1](206_qG6)
+    - [5/7.5/2](206_qG6)
+    - [8/5.5/3](206_qG6)
+    - [7/3.5/2](206_qG6)
+    - [9/10.5/5](206_qG6)
+    - [9/8.5/7](206_qG6)
+    - [11/9.5/10](206_qG6)
+    - [12/10.5/8](206_qG6)
+    - [7/9.5/5](206_qG6)
+    - [8/11.5/9](206_qG6)
+    - [12/8.5/7](206_qG6)
+    - [9/8/7](206_qG6)
+    - [8/9.5/7](206_qG6)
+    - [9/7.10/7](206_qG6)
+    - [9/10/7](206_qG6)
+    - [9/7/7](206_qG6)
+    - [28.5](206_qG6)
+    - [9.5](206_qG6)
+    - [9/3/7](206_qG6)
+    - [9/8,5/7](206_qG6)
+    - [9](208_qG8)/ [8.5](208_qG8)/ [7](208_qG8)
+    - [9](208_qG8)/ [8,5](208_qG8) [/7](208_qG8)
+    - [9](208_qG8)/ [8,5](208_qG8)/ [7](208_qG8)
+    - [8/7,5/4](206_qG6)
+    - [9](208_qG8)/ [8,5/7](206_qG6)
+- intent: qG8
+  examples: |
+    - [work](208_qG8)
+    - [worked](208_qG8)
+    - [well](208_qG8)
+    - [teatimes](208_qG8)
+    - [niice](208_qG8)
+    - [woork](208_qG8)
+    - [ahjjaaa](208_qG8)
+    - [III](208_qG8)
+    - [IX](208_qG8)
+    - [X](208_qG8)
+    - [XII](208_qG8)
+    - [XV](208_qG8)
+    - [XIV](208_qG8)
+    - [XIX](208_qG8)
+    - [XIII](208_qG8)
+    - [VIII](208_qG8)
+    - [XX](208_qG8)
+    - [XVII](208_qG8)
+    - [XVIII](208_qG8)
+    - [I](208_qG8)
+    - [II](208_qG8)
+    - [IV](208_qG8)
+    - [XXI](208_qG8)
+    - [XXII](208_qG8)
+    - [XXIII](208_qG8)
+    - [XXIV](208_qG8)
+    - [XXVII](208_qG8)
+    - [XXIX](208_qG8)
+    - [XXX](208_qG8)
+    - the numbers are [three](208_qG8) more
+    - [three](208_qG8) times more
+    - [triple](208_qG8)
+    - [threefold](208_qG8) more
+    - [increment of three](208_qG8)
+    - an [increment of three](208_qG8)
+    - [increase](208_qG8) of three
+    - increase of [three](208_qG8)
+    - the numbers increases each time by [three](208_qG8)
+    - the numbers increases by [three](208_qG8)
+    - an [increment of 3](208_qG8)
+    - [increment of 3](208_qG8)
+    - [higher of three](208_qG8)
+    - [three higher](208_qG8)
+    - [3](208_qG8) higher
+    - [3](208_qG8) more
+    - [three](208_qG8) higher
+    - [three](208_qG8) more
+    - increment of [3](208_qG8)
+    - increment of [4](208_qG8)
+    - increment of [2](208_qG8)
+    - increment of [1](208_qG8)
+    - an increase of [3](208_qG8)
+    - an increase of [three](208_qG8)
+    - an [increase of three](208_qG8)
+    - [increase of three](208_qG8)
+    - an [increase of 3](208_qG8)
+    - [help](208_qG8)
+    - [Help](208_qG8)
+    - [help](208_qG8) me
+    - [xv](208_qG8)
+    - [VII](208_qG8)
+    - the numbers increase by [three](208_qG8)
+    - [XC](208_qG8)
+    - [IXX](208_qG8)
+    - [XVI](208_qG8)
+    - [XI](208_qG8)
+    - it increases by [three](208_qG8)
+- intent: give_name
+  examples: |
+    - my name is [Bijan](1_first_name)
+    - [Paul](1_first_name)
+    - [Lotta](1_first_name)
+    - I´m [Patti](1_first_name)
+    - my name is [Paul](1_first_name)
+    - My name ist [Tim](1_first_name). Nice to meet you too.
+    - [Patti](1_first_name)
+    - I´m [Peter](1_first_name)
+    - I am [Perle](1_first_name)
+    - my name is [Aadam](1_first_name)
+    - My name ist [Kevin](1_first_name). Nice to meet you too!
+    - [Aafke](1_first_name)
+    - Hello Vicky my name is [Bijan](1_first_name)
+    - Hello Vicky [Paul](1_first_name)
+    - Hello Vicky my name is [Lotta](1_first_name)
+    - Hello Vicky I´m [Patti](1_first_name)
+    - Hello Vicky my name is [Paul](1_first_name)
+    - Hello Vicky my name is [Joshi](1_first_name)
+    - Hello Vicky I´m [Peter](1_first_name)
+    - Hello Vicky I am [Perle](1_first_name)
+    - Hello Vicky my name is [Aadam](1_first_name)
+    - I´m [Aadam](1_first_name)
+    - I am [Aafke](1_first_name)
+    - I´m [Aad](1_first_name)
+    - I´m [Aadje](1_first_name)
+    - I´m [dne](1_first_name)
+    - I´m [Aadu](1_first_name)
+    - I´m [Aaf](1_first_name)
+    - My name is [Lara](1_first_name)
+    - I´m [paul](1_first_name)
+    - [Camilton](1_first_name)
+    - I´m [linda](1_first_name)
+    - I´m [barbara](1_first_name)
+    - I´m [donald](1_first_name)
+    - I´m [anthony](1_first_name)
+    - I´m [mark](1_first_name)
+    - I´m [george](1_first_name)
+    - I´m [steven](1_first_name)
+    - I´m [kenneth](1_first_name)
+    - I´m [andrew](1_first_name)
+    - I´m [edward](1_first_name)
+    - I´m [joshua](1_first_name)
+    - I´m [brian](1_first_name)
+    - I´m [kevin](1_first_name)
+    - I´m [margaret](1_first_name)
+    - I´m [susan](1_first_name)
+    - I´m [ronald](1_first_name)
+    - I´m [timothy](1_first_name)
+    - I´m [dorothy](1_first_name)
+    - I´m [jessica](1_first_name)
+    - I´m [sarah](1_first_name)
+    - I´m [jason](1_first_name)
+    - I´m [betty](1_first_name)
+    - I´m [nancy](1_first_name)
+    - I´m [karen](1_first_name)
+    - I´m [jeffrey](1_first_name)
+    - I´m [lisa](1_first_name)
+    - I´m [gary](1_first_name)
+    - I´m [helen](1_first_name)
+    - I´m [ryan](1_first_name)
+    - I´m [sandra](1_first_name)
+    - I´m [nicholas](1_first_name)
+    - I´m [eric](1_first_name)
+    - I´m [jacob](1_first_name)
+    - I´m [stephen](1_first_name)
+    - I´m [ashley](1_first_name)
+    - I´m [donna](1_first_name)
+    - I´m [kimberly](1_first_name)
+    - I´m [frank](1_first_name)
+    - I´m [carol](1_first_name)
+    - I´m [jonathan](1_first_name)
+    - I´m [michelle](1_first_name)
+    - I´m [larry](1_first_name)
+    - I´m [emily](1_first_name)
+    - I´m [amanda](1_first_name)
+    - I´m [scott](1_first_name)
+    - I´m [justin](1_first_name)
+    - I´m [laura](1_first_name)
+    - I´m [melissa](1_first_name)
+    - I´m [raymond](1_first_name)
+    - I´m [deborah](1_first_name)
+    - I´m [brandon](1_first_name)
+    - I´m [stephanie](1_first_name)
+    - I´m [rebecca](1_first_name)
+    - I´m [ruth](1_first_name)
+    - I´m [anna](1_first_name)
+    - I´m [sharon](1_first_name)
+    - I´m [kathleen](1_first_name)
+    - I´m [cynthia](1_first_name)
+    - I´m [gregory](1_first_name)
+    - I´m [samuel](1_first_name)
+    - I´m [shirley](1_first_name)
+    - I´m [amy](1_first_name)
+    - I´m [benjamin](1_first_name)
+    - I´m [patrick](1_first_name)
+    - I´m [angela](1_first_name)
+    - I´m [jack](1_first_name)
+    - I´m [virginia](1_first_name)
+    - I´m [dennis](1_first_name)
+    - I´m [catherine](1_first_name)
+    - I´m [jerry](1_first_name)
+    - I´m [brenda](1_first_name)
+    - I´m [alexander](1_first_name)
+    - I´m [katherine](1_first_name)
+    - I´m [pamela](1_first_name)
+    - I´m [nicole](1_first_name)
+    - I´m [christine](1_first_name)
+    - I´m [henry](1_first_name)
+    - I´m [tyler](1_first_name)
+    - I´m [walter](1_first_name)
+    - I´m [peter](1_first_name)
+    - I´m [douglas](1_first_name)
+    - I´m [janet](1_first_name)
+    - I´m [samantha](1_first_name)
+    - I´m [debra](1_first_name)
+    - I´m [carolyn](1_first_name)
+    - I´m [rachel](1_first_name)
+    - I´m [aaron](1_first_name)
+    - I´m [jose](1_first_name)
+    - I´m [frances](1_first_name)
+    - I´m [harold](1_first_name)
+    - I´m [adam](1_first_name)
+    - I´m [heather](1_first_name)
+    - I´m [maria](1_first_name)
+    - I´m [diane](1_first_name)
+    - I´m [zachary](1_first_name)
+    - I´m [nathan](1_first_name)
+    - I´m [joyce](1_first_name)
+    - I´m [julie](1_first_name)
+    - I´m [evelyn](1_first_name)
+    - I´m [emma](1_first_name)
+    - I´m [martha](1_first_name)
+    - I´m [carl](1_first_name)
+    - I´m [joan](1_first_name)
+    - I´m [arthur](1_first_name)
+    - I´m [alice](1_first_name)
+    - I´m [kelly](1_first_name)
+    - I´m [kyle](1_first_name)
+    - I´m [christina](1_first_name)
+    - I´m [marie](1_first_name)
+    - I´m [lauren](1_first_name)
+    - I´m [ann](1_first_name)
+    - I´m [doris](1_first_name)
+    - I´m [victoria](1_first_name)
+    - I´m [judith](1_first_name)
+    - I´m [jean](1_first_name)
+    - I´m [gerald](1_first_name)
+    - I´m [albert](1_first_name)
+    - I´m [lawrence](1_first_name)
+    - I´m [cheryl](1_first_name)
+    - I´m [roger](1_first_name)
+    - I´m [megan](1_first_name)
+    - I´m [keith](1_first_name)
+    - I´m [kathryn](1_first_name)
+    - I´m [jeremy](1_first_name)
+    - I´m [joe](1_first_name)
+    - I´m [andrea](1_first_name)
+    - I´m [terry](1_first_name)
+    - I´m [jacqueline](1_first_name)
+    - I´m [rose](1_first_name)
+    - I´m [willie](1_first_name)
+    - I´m [sean](1_first_name)
+    - I´m [gloria](1_first_name)
+    - I´m [teresa](1_first_name)
+    - I´m [sara](1_first_name)
+    - I´m [julia](1_first_name)
+    - I´m [janice](1_first_name)
+    - I´m [mildred](1_first_name)
+    - I´m [grace](1_first_name)
+    - I´m [hannah](1_first_name)
+    - I´m [jesse](1_first_name)
+    - I´m [ralph](1_first_name)
+    - I´m [theresa](1_first_name)
+    - I´m [austin](1_first_name)
+    - I´m [christian](1_first_name)
+    - I´m [billy](1_first_name)
+    - I´m [judy](1_first_name)
+    - I´m [bruce](1_first_name)
+    - I´m [roy](1_first_name)
+    - I´m [beverly](1_first_name)
+    - I´m [denise](1_first_name)
+    - I´m [bryan](1_first_name)
+    - I´m [marilyn](1_first_name)
+    - I´m [amber](1_first_name)
+    - I´m [eugene](1_first_name)
+    - I´m [louis](1_first_name)
+    - I´m [danielle](1_first_name)
+    - I´m [harry](1_first_name)
+    - I´m [brittany](1_first_name)
+    - I´m [ethan](1_first_name)
+    - I´m [jane](1_first_name)
+    - I´m [olivia](1_first_name)
+    - I´m [diana](1_first_name)
+    - I´m [wayne](1_first_name)
+    - I´m [lillian](1_first_name)
+    - I´m [jordan](1_first_name)
+    - I´m [russell](1_first_name)
+    - I´m [lori](1_first_name)
+    - I´m [madison](1_first_name)
+    - I´m [alan](1_first_name)
+    - I´m [tiffany](1_first_name)
+    - I´m [kathy](1_first_name)
+    - I´m [tammy](1_first_name)
+    - I´m [philip](1_first_name)
+    - I´m [juan](1_first_name)
+    - I´m [kayla](1_first_name)
+    - I´m [crystal](1_first_name)
+    - I´m [randy](1_first_name)
+    - I´m [howard](1_first_name)
+    - I´m [alexis](1_first_name)
+    - I´m [dylan](1_first_name)
+    - I´m [natalie](1_first_name)
+    - I´m [vincent](1_first_name)
+    - I´m [phyllis](1_first_name)
+    - I´m [lois](1_first_name)
+    - I´m [bonnie](1_first_name)
+    - I´m [bobby](1_first_name)
+    - I´m [erin](1_first_name)
+    - I´m [abigail](1_first_name)
+    - I´m [irene](1_first_name)
+    - I´m [anne](1_first_name)
+    - I´m [johnny](1_first_name)
+    - I´m [taylor](1_first_name)
+    - I´m [ruby](1_first_name)
+    - I´m [phillip](1_first_name)
+    - I´m [victor](1_first_name)
+    - I´m [fred](1_first_name)
+    - I´m [shawn](1_first_name)
+    - I´m [craig](1_first_name)
+    - I´m [noah](1_first_name)
+    - I´m [travis](1_first_name)
+    - I´m [bradley](1_first_name)
+    - I´m [gabriel](1_first_name)
+    - I´m [shannon](1_first_name)
+    - I´m [alyssa](1_first_name)
+    - I´m [martin](1_first_name)
+    - I´m [peggy](1_first_name)
+    - I´m [stanley](1_first_name)
+    - I´m [tina](1_first_name)
+    - I´m [robin](1_first_name)
+    - I´m [charlotte](1_first_name)
+    - I´m [dawn](1_first_name)
+    - I´m [jimmy](1_first_name)
+    - I´m [louise](1_first_name)
+    - I´m [todd](1_first_name)
+    - I´m [danny](1_first_name)
+    - I´m [leonard](1_first_name)
+    - I´m [rita](1_first_name)
+    - I´m [wanda](1_first_name)
+    - I´m [ernest](1_first_name)
+    - I´m [cody](1_first_name)
+    - I´m [annie](1_first_name)
+    - I´m [allison](1_first_name)
+    - I´m [dale](1_first_name)
+    - I´m [paula](1_first_name)
+    - I´m [carlos](1_first_name)
+    - I´m [norma](1_first_name)
+    - I´m [francis](1_first_name)
+    - I´m [clarence](1_first_name)
+    - I´m [logan](1_first_name)
+    - I´m [earl](1_first_name)
+    - I´m [jamie](1_first_name)
+    - I´m [connie](1_first_name)
+    - I´m [leslie](1_first_name)
+    - I´m [sophia](1_first_name)
+    - I´m [wendy](1_first_name)
+    - I´m [marjorie](1_first_name)
+    - I´m [allen](1_first_name)
+    - I´m [courtney](1_first_name)
+    - I´m [cindy](1_first_name)
+    - I´m [luis](1_first_name)
+    - I´m [josephine](1_first_name)
+    - I´m [isabella](1_first_name)
+    - I´m [joel](1_first_name)
+    - I´m [elaine](1_first_name)
+    - I´m [alex](1_first_name)
+    - I´m [curtis](1_first_name)
+    - I´m [audrey](1_first_name)
+    - I´m [ellen](1_first_name)
+    - I´m [tracy](1_first_name)
+    - I´m [valerie](1_first_name)
+    - I´m [florence](1_first_name)
+    - I´m [vanessa](1_first_name)
+    - I´m [eleanor](1_first_name)
+    - I´m [nathaniel](1_first_name)
+    - I´m [frederick](1_first_name)
+    - I´m [cameron](1_first_name)
+    - I´m [norman](1_first_name)
+    - I´m [monica](1_first_name)
+    - I´m [marvin](1_first_name)
+    - I´m [tony](1_first_name)
+    - I´m [rodney](1_first_name)
+    - I´m [caleb](1_first_name)
+    - I´m [glenn](1_first_name)
+    - I´m [brianna](1_first_name)
+    - I´m [chad](1_first_name)
+    - I´m [evan](1_first_name)
+    - I´m [sheila](1_first_name)
+    - I´m [steve](1_first_name)
+    - I´m [melvin](1_first_name)
+    - I´m [april](1_first_name)
+    - I´m [jasmine](1_first_name)
+    - I´m [antonio](1_first_name)
+    - I´m [melanie](1_first_name)
+    - I´m [isaac](1_first_name)
+    - I´m [sherry](1_first_name)
+    - I´m [erica](1_first_name)
+    - I´m [edna](1_first_name)
+    - I´m [jeffery](1_first_name)
+    - I´m [sylvia](1_first_name)
+    - I´m [edwin](1_first_name)
+    - I´m [carrie](1_first_name)
+    - I´m [elijah](1_first_name)
+    - I´m [alfred](1_first_name)
+    - I´m [derek](1_first_name)
+    - I´m [michele](1_first_name)
+    - I´m [alicia](1_first_name)
+    - I´m [gladys](1_first_name)
+    - I´m [luke](1_first_name)
+    - I´m [ricky](1_first_name)
+    - I´m [alexandra](1_first_name)
+    - I´m [marcus](1_first_name)
+    - I´m [suzanne](1_first_name)
+    - I´m [ella](1_first_name)
+    - I´m [katie](1_first_name)
+    - I´m [kristen](1_first_name)
+    - I´m [lee](1_first_name)
+    - I´m [edith](1_first_name)
+    - I´m [jesus](1_first_name)
+    - I´m [herbert](1_first_name)
+    - I´m [joanne](1_first_name)
+    - I´m [veronica](1_first_name)
+    - I´m [esther](1_first_name)
+    - I´m [anita](1_first_name)
+    - I´m [dolores](1_first_name)
+    - I´m [rhonda](1_first_name)
+    - I´m [theodore](1_first_name)
+    - I´m [jill](1_first_name)
+    - I´m [geraldine](1_first_name)
+    - I´m [mason](1_first_name)
+    - I´m [troy](1_first_name)
+    - I´m [lorraine](1_first_name)
+    - I´m [thelma](1_first_name)
+    - I´m [morgan](1_first_name)
+    - I´m [dustin](1_first_name)
+    - I´m [eva](1_first_name)
+    - I´m [adrian](1_first_name)
+    - I´m [angel](1_first_name)
+    - I´m [pauline](1_first_name)
+    - I´m [darlene](1_first_name)
+    - I´m [ian](1_first_name)
+    - I´m [juanita](1_first_name)
+    - I´m [gail](1_first_name)
+    - I´m [eddie](1_first_name)
+    - I´m [mike](1_first_name)
+    - I´m [holly](1_first_name)
+    - I´m [clara](1_first_name)
+    - I´m [ethel](1_first_name)
+    - I´m [lucille](1_first_name)
+    - I´m [hunter](1_first_name)
+    - I´m [sally](1_first_name)
+    - I´m [jared](1_first_name)
+    - I´m [wesley](1_first_name)
+    - I´m [randall](1_first_name)
+    - I´m [leah](1_first_name)
+    - I´m [caroline](1_first_name)
+    - I´m [bernard](1_first_name)
+    - I´m [ray](1_first_name)
+    - I´m [hazel](1_first_name)
+    - I´m [dana](1_first_name)
+    - I´m [lucas](1_first_name)
+    - I´m [leroy](1_first_name)
+    - I´m [debbie](1_first_name)
+    - I´m [calvin](1_first_name)
+    - I´m [vivian](1_first_name)
+    - I´m [shane](1_first_name)
+    - I´m [june](1_first_name)
+    - I´m [ava](1_first_name)
+    - I´m [jay](1_first_name)
+    - I´m [renee](1_first_name)
+    - I´m [brooke](1_first_name)
+    - I´m [eileen](1_first_name)
+    - I´m [lynn](1_first_name)
+    - I´m [ronnie](1_first_name)
+    - I´m [jackson](1_first_name)
+    - I´m [corey](1_first_name)
+    - I´m [barry](1_first_name)
+    - I´m [kristin](1_first_name)
+    - I´m [kim](1_first_name)
+    - I´m [clifford](1_first_name)
+    - I´m [connor](1_first_name)
+    - I´m [jo](1_first_name)
+    - I´m [isaiah](1_first_name)
+    - I´m [tara](1_first_name)
+    - I´m [tommy](1_first_name)
+    - I´m [manuel](1_first_name)
+    - I´m [oscar](1_first_name)
+    - I´m [chloe](1_first_name)
+    - I´m [regina](1_first_name)
+    - I´m [cathy](1_first_name)
+    - I´m [julian](1_first_name)
+    - I´m [warren](1_first_name)
+    - I´m [roberta](1_first_name)
+    - I´m [bernice](1_first_name)
+    - I´m [leo](1_first_name)
+    - I´m [cassandra](1_first_name)
+    - I´m [marion](1_first_name)
+    - I´m [dean](1_first_name)
+    - I´m [jon](1_first_name)
+    - I´m [laurie](1_first_name)
+    - I´m [annette](1_first_name)
+    - I´m [don](1_first_name)
+    - I´m [miguel](1_first_name)
+    - I´m [loretta](1_first_name)
+    - I´m [madeline](1_first_name)
+    - I´m [jeremiah](1_first_name)
+    - I´m [stacy](1_first_name)
+    - I´m [beatrice](1_first_name)
+    - I´m [colleen](1_first_name)
+    - I´m [jeanne](1_first_name)
+    - I´m [mia](1_first_name)
+    - I´m [kaitlyn](1_first_name)
+    - I´m [mitchell](1_first_name)
+    - I´m [jayden](1_first_name)
+    - I´m [claire](1_first_name)
+    - I´m [jeanette](1_first_name)
+    - I´m [beth](1_first_name)
+    - I´m [darrell](1_first_name)
+    - I´m [blake](1_first_name)
+    - I´m [brett](1_first_name)
+    - I´m [sydney](1_first_name)
+    - I´m [bill](1_first_name)
+    - I´m [chelsea](1_first_name)
+    - I´m [jerome](1_first_name)
+    - I´m [joann](1_first_name)
+    - I´m [lindsey](1_first_name)
+    - I´m [seth](1_first_name)
+    - I´m [leon](1_first_name)
+    - I´m [vicki](1_first_name)
+    - I´m [yvonne](1_first_name)
+    - I´m [molly](1_first_name)
+    - I´m [trevor](1_first_name)
+    - I´m [lloyd](1_first_name)
+    - I´m [haley](1_first_name)
+    - I´m [micheal](1_first_name)
+    - I´m [rosemary](1_first_name)
+    - I´m [gina](1_first_name)
+    - I´m [alvin](1_first_name)
+    - I´m [lucy](1_first_name)
+    - I´m [gavin](1_first_name)
+    - I´m [gordon](1_first_name)
+    - I´m [erik](1_first_name)
+    - I´m [rosa](1_first_name)
+    - I´m [stacey](1_first_name)
+    - I´m [carla](1_first_name)
+    - I´m [aiden](1_first_name)
+    - I´m [devin](1_first_name)
+    - I´m [terri](1_first_name)
+    - I´m [kelsey](1_first_name)
+    - I´m [jim](1_first_name)
+    - I´m [savannah](1_first_name)
+    - I´m [maureen](1_first_name)
+    - I´m [hailey](1_first_name)
+    - I´m [floyd](1_first_name)
+    - I´m [jenna](1_first_name)
+    - I´m [vernon](1_first_name)
+    - I´m [shelby](1_first_name)
+    - I´m [chase](1_first_name)
+    - I´m [sue](1_first_name)
+    - I´m [arlene](1_first_name)
+    - I´m [heidi](1_first_name)
+    - I´m [destiny](1_first_name)
+    - I´m [derrick](1_first_name)
+    - I´m [chris](1_first_name)
+    - I´m [bertha](1_first_name)
+    - I´m [dominic](1_first_name)
+    - I´m [mario](1_first_name)
+    - I´m [brent](1_first_name)
+    - I´m [marc](1_first_name)
+    - I´m [charlie](1_first_name)
+    - I´m [edgar](1_first_name)
+    - I´m [lewis](1_first_name)
+    - I´m [owen](1_first_name)
+    - I´m [naomi](1_first_name)
+    - I´m [constance](1_first_name)
+    - I´m [kristina](1_first_name)
+    - I´m [lydia](1_first_name)
+    - I´m [wilma](1_first_name)
+    - I´m [melinda](1_first_name)
+    - I´m [sabrina](1_first_name)
+    - I´m [deanna](1_first_name)
+    - I´m [ricardo](1_first_name)
+    - I´m [charlene](1_first_name)
+    - I´m [carmen](1_first_name)
+    - I´m [marian](1_first_name)
+    - I´m [marcia](1_first_name)
+    - I´m [elsie](1_first_name)
+    - I´m [max](1_first_name)
+    - I´m [jessie](1_first_name)
+    - I´m [joy](1_first_name)
+    - I´m [tamara](1_first_name)
+    - I´m [paige](1_first_name)
+    - I´m [franklin](1_first_name)
+    - I´m [georgia](1_first_name)
+    - I´m [clyde](1_first_name)
+    - I´m [lindsay](1_first_name)
+    - I´m [maurice](1_first_name)
+    - I´m [katelyn](1_first_name)
+    - I´m [tom](1_first_name)
+    - I´m [marlene](1_first_name)
+    - I´m [amelia](1_first_name)
+    - I´m [gabrielle](1_first_name)
+    - I´m [alma](1_first_name)
+    - I´m [ida](1_first_name)
+    - I´m [francisco](1_first_name)
+    - I´m [cory](1_first_name)
+    - I´m [gene](1_first_name)
+    - I´m [garrett](1_first_name)
+    - I´m [gilbert](1_first_name)
+    - I´m [jorge](1_first_name)
+    - I´m [erika](1_first_name)
+    - I´m [stella](1_first_name)
+    - I´m [alejandro](1_first_name)
+    - I´m [gertrude](1_first_name)
+    - I´m [landon](1_first_name)
+    - I´m [clayton](1_first_name)
+    - I´m [glen](1_first_name)
+    - I´m [herman](1_first_name)
+    - I´m [claudia](1_first_name)
+    - I´m [tonya](1_first_name)
+    - I´m [lester](1_first_name)
+    - I´m [liam](1_first_name)
+    - I´m [faith](1_first_name)
+    - I´m [cole](1_first_name)
+    - I´m [patsy](1_first_name)
+    - I´m [marissa](1_first_name)
+    - I´m [agnes](1_first_name)
+    - I´m [jeff](1_first_name)
+    - I´m [delores](1_first_name)
+    - I´m [andre](1_first_name)
+    - I´m [tanya](1_first_name)
+    - I´m [vera](1_first_name)
+    - I´m [ivan](1_first_name)
+    - I´m [colin](1_first_name)
+    - I´m [priscilla](1_first_name)
+    - I´m [lillie](1_first_name)
+    - I´m [duane](1_first_name)
+    - I´m [gwendolyn](1_first_name)
+    - I´m [nina](1_first_name)
+    - I´m [daisy](1_first_name)
+    - I´m [mackenzie](1_first_name)
+    - I´m [xavier](1_first_name)
+    - I´m [lily](1_first_name)
+    - I´m [caitlin](1_first_name)
+    - I´m [yolanda](1_first_name)
+    - I´m [jake](1_first_name)
+    - I´m [grant](1_first_name)
+    - [kenyata](1_first_name)
+    - [dawid](1_first_name)
+    - [chioma](1_first_name)
+    - [orly](1_first_name)
+    - [quincey](1_first_name)
+    - [menashe](1_first_name)
+    - [johnell](1_first_name)
+    - [arisbeth](1_first_name)
+    - [camrin](1_first_name)
+    - [tais](1_first_name)
+    - [cattleya](1_first_name)
+    - [teryn](1_first_name)
+    - [michaelanthony](1_first_name)
+    - [anuhea](1_first_name)
+    - [lux](1_first_name)
+    - [gavan](1_first_name)
+    - [kyden](1_first_name)
+    - [harsh](1_first_name)
+    - [idy](1_first_name)
+    - [anaid](1_first_name)
+    - [sabella](1_first_name)
+    - [sicily](1_first_name)
+    - [jakelin](1_first_name)
+    - [amr](1_first_name)
+    - [delina](1_first_name)
+    - [caris](1_first_name)
+    - [vahe](1_first_name)
+    - [kylei](1_first_name)
+    - [krzysztof](1_first_name)
+    - [tamotsu](1_first_name)
+    - [adi](1_first_name)
+    - [amogh](1_first_name)
+    - [merilee](1_first_name)
+    - [azaan](1_first_name)
+    - [tevon](1_first_name)
+    - [yamila](1_first_name)
+    - [jae](1_first_name)
+    - [carlin](1_first_name)
+    - [woodford](1_first_name)
+    - [albertina](1_first_name)
+    - [ishani](1_first_name)
+    - [mikyla](1_first_name)
+    - [kadiatou](1_first_name)
+    - [hanh](1_first_name)
+    - [muna](1_first_name)
+    - [hogan](1_first_name)
+    - [livier](1_first_name)
+    - [sang](1_first_name)
+    - [zitlali](1_first_name)
+    - [alto](1_first_name)
+    - [treena](1_first_name)
+    - [lyssa](1_first_name)
+    - [sherian](1_first_name)
+    - [bronislaus](1_first_name)
+    - [sharion](1_first_name)
+    - [mushka](1_first_name)
+    - [marelyn](1_first_name)
+    - [tylik](1_first_name)
+    - [brystol](1_first_name)
+    - [lillith](1_first_name)
+    - [jamyia](1_first_name)
+    - [ronica](1_first_name)
+    - [kehaulani](1_first_name)
+    - [derric](1_first_name)
+    - [ieisha](1_first_name)
+    - [lael](1_first_name)
+    - [taylen](1_first_name)
+    - [keylan](1_first_name)
+    - [alaric](1_first_name)
+    - [maralyn](1_first_name)
+    - [judyth](1_first_name)
+    - [sharan](1_first_name)
+    - [talha](1_first_name)
+    - [luiza](1_first_name)
+    - [estanislado](1_first_name)
+    - [eliyah](1_first_name)
+    - [emmily](1_first_name)
+    - [malikai](1_first_name)
+    - [mi](1_first_name)
+    - [brownie](1_first_name)
+    - [maylene](1_first_name)
+    - [gennifer](1_first_name)
+    - [cloyce](1_first_name)
+    - [michaeline](1_first_name)
+    - [chavon](1_first_name)
+    - [niara](1_first_name)
+    - [niccolo](1_first_name)
+    - [hanako](1_first_name)
+    - [arham](1_first_name)
+    - [briceida](1_first_name)
+    - [tarrah](1_first_name)
+    - [dierdre](1_first_name)
+    - [daeja](1_first_name)
+    - [genavieve](1_first_name)
+    - [candise](1_first_name)
+    - [analiah](1_first_name)
+    - [farid](1_first_name)
+    - [kambri](1_first_name)
+    - [shelsea](1_first_name)
+    - [djuna](1_first_name)
+    - [nandi](1_first_name)
+    - [nacole](1_first_name)
+    - [ronit](1_first_name)
+    - [jaretzy](1_first_name)
+    - [bryston](1_first_name)
+    - [tonika](1_first_name)
+    - [moncerrat](1_first_name)
+    - [nirvana](1_first_name)
+    - [curvin](1_first_name)
+    - [autry](1_first_name)
+    - [clell](1_first_name)
+    - [ellin](1_first_name)
+    - [clois](1_first_name)
+    - [desmon](1_first_name)
+    - [catherin](1_first_name)
+    - [nira](1_first_name)
+    - [danzel](1_first_name)
+    - [cally](1_first_name)
+    - [ilyana](1_first_name)
+    - [pao](1_first_name)
+    - [dajour](1_first_name)
+    - [williemae](1_first_name)
+    - [diogo](1_first_name)
+    - [helmer](1_first_name)
+    - [parks](1_first_name)
+    - [willetta](1_first_name)
+    - [jacqueli](1_first_name)
+    - [aashna](1_first_name)
+    - [teya](1_first_name)
+    - [ruel](1_first_name)
+    - [margy](1_first_name)
+    - [tailor](1_first_name)
+    - [jozef](1_first_name)
+    - [payge](1_first_name)
+    - [aylah](1_first_name)
+    - [natassia](1_first_name)
+    - [yanelis](1_first_name)
+    - [aloma](1_first_name)
+    - [vang](1_first_name)
+    - [baker](1_first_name)
+    - [yitta](1_first_name)
+    - [charde](1_first_name)
+    - [nikayla](1_first_name)
+    - [catera](1_first_name)
+    - [kirsty](1_first_name)
+    - [lariah](1_first_name)
+    - [alyssandra](1_first_name)
+    - [kalaya](1_first_name)
+    - [towana](1_first_name)
+    - [montie](1_first_name)
+    - [tawnie](1_first_name)
+    - [shealyn](1_first_name)
+    - [liora](1_first_name)
+    - [yasuo](1_first_name)
+    - [hai](1_first_name)
+    - [manford](1_first_name)
+    - [margarite](1_first_name)
+    - [kadynce](1_first_name)
+    - [libbie](1_first_name)
+    - [urbano](1_first_name)
+    - [gaurav](1_first_name)
+    - [addalynn](1_first_name)
+    - [annalicia](1_first_name)
+    - [lenda](1_first_name)
+    - [eowyn](1_first_name)
+    - [jlynn](1_first_name)
+    - [takira](1_first_name)
+    - [heydi](1_first_name)
+    - [wiktoria](1_first_name)
+    - [tiani](1_first_name)
+    - [saskia](1_first_name)
+    - [kodie](1_first_name)
+    - [bintou](1_first_name)
+    - [mee](1_first_name)
+    - [monico](1_first_name)
+    - [victory](1_first_name)
+    - [cindee](1_first_name)
+    - [crimson](1_first_name)
+    - [danell](1_first_name)
+    - [arminda](1_first_name)
+    - [garner](1_first_name)
+    - [nahom](1_first_name)
+    - [ayvah](1_first_name)
+    - [samaira](1_first_name)
+    - [dallana](1_first_name)
+    - [kristeen](1_first_name)
+    - [reya](1_first_name)
+    - [joslin](1_first_name)
+    - [lakesia](1_first_name)
+    - [cezar](1_first_name)
+    - [othel](1_first_name)
+    - [mesha](1_first_name)
+    - [zakee](1_first_name)
+    - [bracken](1_first_name)
+    - [jackelyne](1_first_name)
+    - [hermilo](1_first_name)
+    - [artem](1_first_name)
+    - [deaundre](1_first_name)
+    - [kamea](1_first_name)
+    - [mabry](1_first_name)
+    - [michaelle](1_first_name)
+    - [margurite](1_first_name)
+    - [brina](1_first_name)
+    - [yordi](1_first_name)
+    - [raequan](1_first_name)
+    - [geremy](1_first_name)
+    - [ma](1_first_name)
+    - [jakhia](1_first_name)
+    - [lindbergh](1_first_name)
+    - [kaori](1_first_name)
+    - [natasia](1_first_name)
+    - [kaely](1_first_name)
+    - [merideth](1_first_name)
+    - [christena](1_first_name)
+    - [avelino](1_first_name)
+    - [race](1_first_name)
+    - [brixton](1_first_name)
+    - [katrena](1_first_name)
+    - [mickel](1_first_name)
+    - [najma](1_first_name)
+    - [hatsuko](1_first_name)
+    - [algie](1_first_name)
+    - [romulo](1_first_name)
+    - [javonta](1_first_name)
+    - [coolidge](1_first_name)
+    - [ariannah](1_first_name)
+    - [shelvia](1_first_name)
+    - [kauan](1_first_name)
+    - [neena](1_first_name)
+    - [raylen](1_first_name)
+    - [vella](1_first_name)
+    - [denasia](1_first_name)
+    - [jacquie](1_first_name)
+    - [reola](1_first_name)
+    - [jorgeluis](1_first_name)
+    - [getsemani](1_first_name)
+    - [zac](1_first_name)
+    - [cassandr](1_first_name)
+    - [nasser](1_first_name)
+    - [allante](1_first_name)
+    - [atha](1_first_name)
+    - [christobal](1_first_name)
+    - [edric](1_first_name)
+    - [myracle](1_first_name)
+    - [doyne](1_first_name)
+    - [curren](1_first_name)
+    - [marlane](1_first_name)
+    - [yeimi](1_first_name)
+    - [ankur](1_first_name)
+    - [sama](1_first_name)
+    - [tamarion](1_first_name)
+    - [keane](1_first_name)
+    - [monalisa](1_first_name)
+    - [yovanni](1_first_name)
+    - [maleny](1_first_name)
+    - [raelee](1_first_name)
+    - [kamalani](1_first_name)
+    - [soraida](1_first_name)
+    - [marimar](1_first_name)
+    - [remo](1_first_name)
+    - [patrici](1_first_name)
+    - [amoni](1_first_name)
+    - [yarelis](1_first_name)
+    - [mykenzie](1_first_name)
+    - [aeryn](1_first_name)
+    - [anisah](1_first_name)
+    - [dezaray](1_first_name)
+    - [aralyn](1_first_name)
+    - [nazario](1_first_name)
+    - [analiz](1_first_name)
+    - [dantrell](1_first_name)
+    - [lorette](1_first_name)
+    - [kendria](1_first_name)
+    - [waymond](1_first_name)
+    - [priscella](1_first_name)
+    - [carrigan](1_first_name)
+    - [kyjuan](1_first_name)
+    - [mouhamed](1_first_name)
+    - [miri](1_first_name)
+    - [lajuan](1_first_name)
+    - [adora](1_first_name)
+    - [asucena](1_first_name)
+    - [andreya](1_first_name)
+    - [sahib](1_first_name)
+    - [denesha](1_first_name)
+    - [madai](1_first_name)
+    - [leiah](1_first_name)
+    - [karmelo](1_first_name)
+    - [fredericka](1_first_name)
+    - [rosaire](1_first_name)
+    - [feige](1_first_name)
+    - [marine](1_first_name)
+    - [renate](1_first_name)
+    - [leylah](1_first_name)
+    - [anica](1_first_name)
+    - [kadejah](1_first_name)
+    - [evalina](1_first_name)
+    - [tirzah](1_first_name)
+    - [tomie](1_first_name)
+    - [tywan](1_first_name)
+    - [tajah](1_first_name)
+    - [oris](1_first_name)
+    - [quoc](1_first_name)
+    - [juliza](1_first_name)
+    - [emileigh](1_first_name)
+    - [eniyah](1_first_name)
+    - [diquan](1_first_name)
+    - [duston](1_first_name)
+    - [sun](1_first_name)
+    - [jasmaine](1_first_name)
+    - [ousmane](1_first_name)
+    - [satoru](1_first_name)
+    - [jameshia](1_first_name)
+    - [tani](1_first_name)
+    - [grabiel](1_first_name)
+    - [eustolia](1_first_name)
+    - [atharva](1_first_name)
+    - [octave](1_first_name)
+    - [arye](1_first_name)
+    - [raheen](1_first_name)
+    - [lillard](1_first_name)
+    - [brynlie](1_first_name)
+    - [rashaud](1_first_name)
+    - [delsie](1_first_name)
+    - [kealani](1_first_name)
+    - [marvell](1_first_name)
+    - [amyia](1_first_name)
+    - [carolanne](1_first_name)
+    - [tedd](1_first_name)
+    - [treston](1_first_name)
+    - [jibril](1_first_name)
+    - [jazel](1_first_name)
+    - [mahir](1_first_name)
+    - [karry](1_first_name)
+    - [latrelle](1_first_name)
+    - [rubbie](1_first_name)
+    - [dinorah](1_first_name)
+    - [braylynn](1_first_name)
+    - [aundre](1_first_name)
+    - [simmie](1_first_name)
+    - [kamyla](1_first_name)
+    - [bedford](1_first_name)
+    - [shimshon](1_first_name)
+    - [saulo](1_first_name)
+    - [keelie](1_first_name)
+    - [eston](1_first_name)
+    - [tatsuo](1_first_name)
+    - [lanaya](1_first_name)
+    - [shaquilla](1_first_name)
+    - [yoni](1_first_name)
+    - [atiana](1_first_name)
+    - [yidel](1_first_name)
+    - [aniela](1_first_name)
+    - [marchelle](1_first_name)
+    - [deolinda](1_first_name)
+    - [adreana](1_first_name)
+    - [vicent](1_first_name)
+    - [kalyssa](1_first_name)
+    - [jerlean](1_first_name)
+    - [joannie](1_first_name)
+    - [jerlene](1_first_name)
+    - [dagmar](1_first_name)
+    - [zak](1_first_name)
+    - [harli](1_first_name)
+    - [halia](1_first_name)
+    - [mathis](1_first_name)
+    - [sarrah](1_first_name)
+    - [edmonia](1_first_name)
+    - [veva](1_first_name)
+    - [isao](1_first_name)
+    - [jacobie](1_first_name)
+    - [jayvin](1_first_name)
+    - [cj](1_first_name)
+    - [kaity](1_first_name)
+    - [pinchos](1_first_name)
+    - [ashleen](1_first_name)
+    - [gurpreet](1_first_name)
+    - [molli](1_first_name)
+    - [ashlan](1_first_name)
+    - [adysen](1_first_name)
+    - [chalmers](1_first_name)
+    - [lazar](1_first_name)
+    - [ichiro](1_first_name)
+    - [yevette](1_first_name)
+    - [ilyssa](1_first_name)
+    - [errick](1_first_name)
+    - [floretta](1_first_name)
+    - [ronesha](1_first_name)
+    - [kimberlin](1_first_name)
+    - [ha](1_first_name)
+    - [devynn](1_first_name)
+    - [roselia](1_first_name)
+    - [qasim](1_first_name)
+    - [menucha](1_first_name)
+    - [maddisyn](1_first_name)
+    - [yakira](1_first_name)
+    - [lore](1_first_name)
+    - [cam](1_first_name)
+    - [colene](1_first_name)
+    - [germain](1_first_name)
+    - [corbett](1_first_name)
+    - [makynzie](1_first_name)
+    - [aarron](1_first_name)
+    - [jeremyah](1_first_name)
+    - [jaylie](1_first_name)
+    - [decarlos](1_first_name)
+    - [rogene](1_first_name)
+    - [braheem](1_first_name)
+    - [kerianne](1_first_name)
+    - [manolo](1_first_name)
+    - [abdoul](1_first_name)
+    - [tashawna](1_first_name)
+    - [yoshito](1_first_name)
+    - [joeanthony](1_first_name)
+    - [charlyn](1_first_name)
+    - [josilyn](1_first_name)
+    - [zamari](1_first_name)
+    - [onita](1_first_name)
+    - [ceil](1_first_name)
+    - [tong](1_first_name)
+    - [genelle](1_first_name)
+    - [hiroko](1_first_name)
+    - [nadene](1_first_name)
+    - [maimouna](1_first_name)
+    - [lenton](1_first_name)
+    - [verania](1_first_name)
+    - [devontay](1_first_name)
+    - [alegandro](1_first_name)
+    - [cotina](1_first_name)
+    - [reyn](1_first_name)
+    - [ramy](1_first_name)
+    - [haneef](1_first_name)
+    - [leasia](1_first_name)
+    - [aaiden](1_first_name)
+    - [keyra](1_first_name)
+    - [dallan](1_first_name)
+    - [marguita](1_first_name)
+    - [brittanee](1_first_name)
+    - [shneur](1_first_name)
+    - [tsuruko](1_first_name)
+    - [isom](1_first_name)
+    - [quashawn](1_first_name)
+    - [mekenzie](1_first_name)
+    - [lyrik](1_first_name)
+    - [laiken](1_first_name)
+    - [devine](1_first_name)
+    - [mahki](1_first_name)
+    - [darryll](1_first_name)
+    - [soha](1_first_name)
+    - [wanya](1_first_name)
+    - [kaeleigh](1_first_name)
+    - [tytus](1_first_name)
+    - [jeriah](1_first_name)
+    - [harmonee](1_first_name)
+    - [dagny](1_first_name)
+    - [mikelle](1_first_name)
+    - [seaborn](1_first_name)
+    - [wendel](1_first_name)
+    - [orson](1_first_name)
+    - [aryssa](1_first_name)
+    - [carline](1_first_name)
+    - [darlin](1_first_name)
+    - [ysenia](1_first_name)
+    - [tiona](1_first_name)
+    - [chardae](1_first_name)
+    - [chong](1_first_name)
+    - [jontavious](1_first_name)
+    - [delos](1_first_name)
+    - [cayleb](1_first_name)
+    - [sebastiano](1_first_name)
+    - [heavyn](1_first_name)
+    - [shoua](1_first_name)
+    - [zacary](1_first_name)
+    - [camillo](1_first_name)
+    - [linford](1_first_name)
+    - [joya](1_first_name)
+    - [verena](1_first_name)
+    - [geoffery](1_first_name)
+    - [stryker](1_first_name)
+    - [maelyn](1_first_name)
+    - [aissa](1_first_name)
+    - [constantinos](1_first_name)
+    - [mckinlee](1_first_name)
+    - [africa](1_first_name)
+    - [tehilla](1_first_name)
+    - [rayanne](1_first_name)
+    - [abdulahi](1_first_name)
+    - [amrit](1_first_name)
+    - [larita](1_first_name)
+    - [shloimy](1_first_name)
+    - [timm](1_first_name)
+    - [tandy](1_first_name)
+    - [cammy](1_first_name)
+    - [tasnim](1_first_name)
+    - [jezabel](1_first_name)
+    - [starlene](1_first_name)
+    - [shepard](1_first_name)
+    - [alter](1_first_name)
+    - [kolbe](1_first_name)
+    - [emmarie](1_first_name)
+    - [shaylene](1_first_name)
+    - [harden](1_first_name)
+    - [dimitra](1_first_name)
+    - [yalonda](1_first_name)
+    - [rithvik](1_first_name)
+    - [komal](1_first_name)
+    - [joellyn](1_first_name)
+    - [bryanne](1_first_name)
+    - [kambrie](1_first_name)
+    - [teah](1_first_name)
+    - [nefertiti](1_first_name)
+    - [masayuki](1_first_name)
+    - [annah](1_first_name)
+    - [rilyn](1_first_name)
+    - [maxfield](1_first_name)
+    - [rapheal](1_first_name)
+    - [annalyn](1_first_name)
+    - [analaura](1_first_name)
+    - [stephane](1_first_name)
+    - [asako](1_first_name)
+    - [avan](1_first_name)
+    - [zury](1_first_name)
+    - [clemon](1_first_name)
+    - [ricci](1_first_name)
+    - [tereza](1_first_name)
+    - [henriette](1_first_name)
+    - [caedmon](1_first_name)
+    - [hang](1_first_name)
+    - [ivie](1_first_name)
+    - [zarek](1_first_name)
+    - [kavita](1_first_name)
+    - [khyree](1_first_name)
+    - [bruna](1_first_name)
+    - [prisma](1_first_name)
+    - [aariz](1_first_name)
+    - [tesia](1_first_name)
+    - [melodye](1_first_name)
+    - [ashish](1_first_name)
+    - [emmely](1_first_name)
+    - [nayelis](1_first_name)
+    - [rahmir](1_first_name)
+    - [amerigo](1_first_name)
+    - [maribell](1_first_name)
+    - [gracy](1_first_name)
+    - [diona](1_first_name)
+    - [courtlyn](1_first_name)
+    - [nija](1_first_name)
+    - [jemima](1_first_name)
+    - [ayelen](1_first_name)
+    - [athziri](1_first_name)
+    - [park](1_first_name)
+    - [jannett](1_first_name)
+    - [amaiyah](1_first_name)
+    - [shalee](1_first_name)
+    - [oda](1_first_name)
+    - [marijane](1_first_name)
+    - [turquoise](1_first_name)
+    - [emarie](1_first_name)
+    - [alean](1_first_name)
+    - [malachai](1_first_name)
+    - [analilia](1_first_name)
+    - [ajla](1_first_name)
+    - [kace](1_first_name)
+    - [kittie](1_first_name)
+    - [rosangela](1_first_name)
+    - [maija](1_first_name)
+    - [annalie](1_first_name)
+    - [siana](1_first_name)
+    - [jahsiah](1_first_name)
+    - [jatavious](1_first_name)
+    - [shaundra](1_first_name)
+    - [marena](1_first_name)
+    - [maymie](1_first_name)
+    - [sherley](1_first_name)
+    - [fong](1_first_name)
+    - [stratton](1_first_name)
+    - [kymora](1_first_name)
+    - [matsue](1_first_name)
+    - [fue](1_first_name)
+    - [sherrye](1_first_name)
+    - [chari](1_first_name)
+    - [tangie](1_first_name)
+    - [enrrique](1_first_name)
+    - [lesha](1_first_name)
+    - [lissete](1_first_name)
+    - [chaney](1_first_name)
+    - [sherelle](1_first_name)
+    - [sharese](1_first_name)
+    - [jamilla](1_first_name)
+    - [columbia](1_first_name)
+    - [han](1_first_name)
+    - [rihana](1_first_name)
+    - [tobey](1_first_name)
+    - [lekeisha](1_first_name)
+    - [steffani](1_first_name)
+    - [geraldean](1_first_name)
+    - [haig](1_first_name)
+    - [azusena](1_first_name)
+    - [dresden](1_first_name)
+    - [frazier](1_first_name)
+    - [ander](1_first_name)
+    - [lesslie](1_first_name)
+    - [keani](1_first_name)
+    - [ayala](1_first_name)
+    - [ardath](1_first_name)
+    - [kamani](1_first_name)
+    - [keagen](1_first_name)
+    - [lillyanne](1_first_name)
+    - [rajon](1_first_name)
+    - [isrrael](1_first_name)
+    - [wendall](1_first_name)
+    - [rosenda](1_first_name)
+    - [corrinne](1_first_name)
+    - [tahirah](1_first_name)
+    - [roselin](1_first_name)
+    - [jeter](1_first_name)
+    - [hymen](1_first_name)
+    - [mandee](1_first_name)
+    - [zurisadai](1_first_name)
+    - [eluzer](1_first_name)
+    - [linn](1_first_name)
+    - [elliette](1_first_name)
+    - [kenichi](1_first_name)
+    - [yuriana](1_first_name)
+    - [azilee](1_first_name)
+    - [rayana](1_first_name)
+    - [lindsie](1_first_name)
+    - [katherina](1_first_name)
+    - [sadye](1_first_name)
+    - [leverne](1_first_name)
+    - [knowledge](1_first_name)
+    - [marcey](1_first_name)
+    - [tadd](1_first_name)
+    - [sephora](1_first_name)
+    - [seichi](1_first_name)
+    - [ingeborg](1_first_name)
+    - [sesar](1_first_name)
+    - [masaichi](1_first_name)
+    - [rabia](1_first_name)
+    - [ayline](1_first_name)
+    - [aureliano](1_first_name)
+    - [shameek](1_first_name)
+    - [amedeo](1_first_name)
+    - [kimia](1_first_name)
+    - [pecola](1_first_name)
+    - [rut](1_first_name)
+    - [talaya](1_first_name)
+    - [liani](1_first_name)
+    - [ninel](1_first_name)
+    - [kristianna](1_first_name)
+    - [shaquasia](1_first_name)
+    - [alger](1_first_name)
+    - [nathali](1_first_name)
+    - [shakeena](1_first_name)
+    - [maiah](1_first_name)
+    - [donaciano](1_first_name)
+    - [desaray](1_first_name)
+    - [berton](1_first_name)
+    - [tichina](1_first_name)
+    - [imagene](1_first_name)
+    - [chevon](1_first_name)
+    - [yzabella](1_first_name)
+    - [aniceto](1_first_name)
+    - [lizanne](1_first_name)
+    - [eola](1_first_name)
+    - [shawntel](1_first_name)
+    - [marilynne](1_first_name)
+    - [jaquavius](1_first_name)
+    - [shalini](1_first_name)
+    - [montreal](1_first_name)
+    - [reza](1_first_name)
+    - [oceana](1_first_name)
+    - [emre](1_first_name)
+    - [alvah](1_first_name)
+    - [denielle](1_first_name)
+    - [taylon](1_first_name)
+    - [peg](1_first_name)
+    - [odeal](1_first_name)
+    - [milca](1_first_name)
+    - [andruw](1_first_name)
+    - [kazue](1_first_name)
+    - [aggie](1_first_name)
+    - [vallerie](1_first_name)
+    - [ender](1_first_name)
+    - [carlette](1_first_name)
+    - [jonae](1_first_name)
+    - [beata](1_first_name)
+    - [elif](1_first_name)
+    - [yunuen](1_first_name)
+    - [atziry](1_first_name)
+    - [chriselda](1_first_name)
+    - [cloteal](1_first_name)
+    - [madolyn](1_first_name)
+    - [casimira](1_first_name)
+    - [loida](1_first_name)
+    - [keilly](1_first_name)
+    - [yaffa](1_first_name)
+    - [diallo](1_first_name)
+    - [vanda](1_first_name)
+    - [fahim](1_first_name)
+    - [tymere](1_first_name)
+    - [maegen](1_first_name)
+    - [sharifa](1_first_name)
+    - [elihu](1_first_name)
+    - [elka](1_first_name)
+    - [jissel](1_first_name)
+    - [allee](1_first_name)
+    - [haya](1_first_name)
+    - [tyreik](1_first_name)
+    - [floree](1_first_name)
+    - [chanice](1_first_name)
+    - [trinidy](1_first_name)
+    - [lanna](1_first_name)
+    - [gionna](1_first_name)
+    - [alyne](1_first_name)
+    - [randolf](1_first_name)
+    - [grigor](1_first_name)
+    - [allena](1_first_name)
+    - [thurmon](1_first_name)
+    - [alixandra](1_first_name)
+    - [caroll](1_first_name)
+    - [trevaughn](1_first_name)
+    - [aquil](1_first_name)
+    - [aishah](1_first_name)
+    - [lilburn](1_first_name)
+    - [kenedi](1_first_name)
+    - [rishaan](1_first_name)
+    - [alyssah](1_first_name)
+    - [aylene](1_first_name)
+    - [jaelene](1_first_name)
+    - [darnel](1_first_name)
+    - [vansh](1_first_name)
+    - [ryo](1_first_name)
+    - [harrold](1_first_name)
+    - [mayeli](1_first_name)
+    - [viliami](1_first_name)
+    - [maraya](1_first_name)
+    - [adham](1_first_name)
+    - [eriq](1_first_name)
+    - [kaitlynne](1_first_name)
+    - [abella](1_first_name)
+    - [wash](1_first_name)
+    - [meghna](1_first_name)
+    - [bashir](1_first_name)
+    - [tran](1_first_name)
+    - [carrissa](1_first_name)
+    - [anner](1_first_name)
+    - [shakina](1_first_name)
+    - [emonie](1_first_name)
+    - [chason](1_first_name)
+    - [trenity](1_first_name)
+    - [layden](1_first_name)
+    - [aigner](1_first_name)
+    - [kramer](1_first_name)
+    - [alverna](1_first_name)
+    - [rosena](1_first_name)
+    - [kemar](1_first_name)
+    - [corby](1_first_name)
+    - [grettel](1_first_name)
+    - [daneil](1_first_name)
+    - [tayton](1_first_name)
+    - [yassin](1_first_name)
+    - [ellee](1_first_name)
+    - [sharisse](1_first_name)
+    - [natally](1_first_name)
+    - [andranik](1_first_name)
+    - [leen](1_first_name)
+    - [sophya](1_first_name)
+    - [havana](1_first_name)
+    - [nazareth](1_first_name)
+    - [batoul](1_first_name)
+    - [shaka](1_first_name)
+    - [dawud](1_first_name)
+    - [santanna](1_first_name)
+    - [mc](1_first_name)
+    - [shamecca](1_first_name)
+    - [brently](1_first_name)
+    - [aracelia](1_first_name)
+    - [juanito](1_first_name)
+    - [tona](1_first_name)
+    - [marlis](1_first_name)
+    - [wanetta](1_first_name)
+    - [kutter](1_first_name)
+    - [asley](1_first_name)
+    - [ellamae](1_first_name)
+    - [odessie](1_first_name)
+    - [marisabel](1_first_name)
+    - [janella](1_first_name)
+    - [annalia](1_first_name)
+    - [akshaj](1_first_name)
+    - [crespin](1_first_name)
+    - [jani](1_first_name)
+    - [faige](1_first_name)
+    - [youlanda](1_first_name)
+    - [maribella](1_first_name)
+    - [miguelina](1_first_name)
+    - [aune](1_first_name)
+    - [journei](1_first_name)
+    - [leasa](1_first_name)
+    - [persia](1_first_name)
+    - [saron](1_first_name)
+    - [zahmir](1_first_name)
+    - [arliss](1_first_name)
+    - [missouri](1_first_name)
+    - [izola](1_first_name)
+    - [kallista](1_first_name)
+    - [aissata](1_first_name)
+    - [brynnlee](1_first_name)
+    - [conway](1_first_name)
+    - [dathan](1_first_name)
+    - [manisha](1_first_name)
+    - [yuvia](1_first_name)
+    - [lus](1_first_name)
+    - [nashaly](1_first_name)
+    - [sully](1_first_name)
+    - [weronika](1_first_name)
+    - [eliberto](1_first_name)
+    - [quin](1_first_name)
+    - [andrianna](1_first_name)
+    - [jenay](1_first_name)
+    - [murrell](1_first_name)
+    - [lucrecia](1_first_name)
+    - [zyanya](1_first_name)
+    - [makoto](1_first_name)
+    - [fabrice](1_first_name)
+    - [chesley](1_first_name)
+    - [johndavid](1_first_name)
+    - [khaleel](1_first_name)
+    - [mataya](1_first_name)
+    - [fiore](1_first_name)
+    - [ronette](1_first_name)
+    - [cassady](1_first_name)
+    - [paralee](1_first_name)
+    - [antonios](1_first_name)
+    - [siham](1_first_name)
+    - [caileigh](1_first_name)
+    - [karriem](1_first_name)
+    - [kadesha](1_first_name)
+    - [avamarie](1_first_name)
+    - [vadim](1_first_name)
+    - [faheem](1_first_name)
+    - [khloey](1_first_name)
+    - [renesmee](1_first_name)
+    - [jakeem](1_first_name)
+    - [laurice](1_first_name)
+    - [teddi](1_first_name)
+    - [tiburcio](1_first_name)
+    - [baleria](1_first_name)
+    - [marlyce](1_first_name)
+    - [abdulaziz](1_first_name)
+    - [janisha](1_first_name)
+    - [mellanie](1_first_name)
+    - [mischelle](1_first_name)
+    - [kage](1_first_name)
+    - [emmanuela](1_first_name)
+    - [karinna](1_first_name)
+    - [jeovany](1_first_name)
+    - [pascale](1_first_name)
+    - [courtenay](1_first_name)
+    - [amarilis](1_first_name)
+    - [wauneta](1_first_name)
+    - [delon](1_first_name)
+    - [raheim](1_first_name)
+    - [gerda](1_first_name)
+    - [kwesi](1_first_name)
+    - [berish](1_first_name)
+    - [samyah](1_first_name)
+    - [abhay](1_first_name)
+    - [lekesha](1_first_name)
+    - [leanora](1_first_name)
+    - [henrry](1_first_name)
+    - [indiana](1_first_name)
+    - [helon](1_first_name)
+    - [mela](1_first_name)
+    - [artin](1_first_name)
+    - [nykia](1_first_name)
+    - [katana](1_first_name)
+    - [shirin](1_first_name)
+    - [yen](1_first_name)
+    - [isak](1_first_name)
+    - [ambra](1_first_name)
+    - [yashira](1_first_name)
+    - [samar](1_first_name)
+    - [valene](1_first_name)
+    - [lakota](1_first_name)
+    - [menno](1_first_name)
+    - [dawayne](1_first_name)
+    - [schneur](1_first_name)
+    - [cristiana](1_first_name)
+    - [bartolo](1_first_name)
+    - [annice](1_first_name)
+    - [merary](1_first_name)
+    - [John](1_first_name)
+    - [paul](1_first_name)
+    - I´m [Nick](1_first_name)
+    - [Bijan](1_first_name)
+    - my name is Nick
+    - [Nick](208_qG8)
+    - [David](1_first_name)
+    - My name is [Hilta](1_first_name).
+    - My name is [Sarah](1_first_name)
+    - Wie alt bist [du](1_first_name)?
+    - My name is [Ina](1_first_name).
+    - I´m [Kai](1_first_name)!
+    - I drank beer in a [bar](1_first_name).
+    - [Charlotte](1_first_name)
+    - und [nun](1_first_name)?
+    - Drinking tea with my [parents](1_first_name)
+    - [Florian](1_first_name)
+    - [Gaming](1_first_name)
+    - [Peter](1_first_name)
+    - Testname
+    - [Kevin](1_first_name)
+    - [factual](10_q_thirtyEight) [data](1_first_name)
+    - [Fabian](1_first_name)
+    - My name is [camilton](1_first_name)
+    - [awsome](1_first_name)
+    - [Max](1_first_name)
+    - [Tom](1_first_name)
+    - [Marike](1_first_name)
+    - hey [vicky](1_first_name), my name is [josh](1_first_name)
+    - [immediatly](9_q_sevenTeen)
+    - [Robin](1_first_name)
+    - My name is [Malte](1_first_name)
+    - [Luc](1_first_name)
+    - [Laura](1_first_name)
+    - [Lionel](1_first_name) Messi
+    - [richard](1_first_name)
+    - [malte](1_first_name)
+    - [meinhard](1_first_name)
+    - Bye [Vicky](1_first_name)!
+    - [Wendsday](1_first_name)
+    - Nice to meet you [Vicky](1_first_name). I am [Lotta](1_first_name).
+    - Bro, my name is David
+    - I am [Andriyan](1_first_name).
+    - [max](1_first_name)
+    - Hey Vicky 😊 I'm [Tom](1_first_name).
+- intent: chitchat_confirm
+  examples: |
+    - We can [carry on](1_first_name)
+    - yeeeeeah
+- intent: qG2
+  examples: |
+    - [1-0-9](202_qG2)
+- synonym: carful
+  examples: |
+    - attentive
+    - wary
+- synonym: sketch
+  examples: |
+    - draft
+    - drawing
+- synonym: good
+  examples: |
+    - not not fine
+    - not not good
+- synonym: sad
+  examples: |
+    - not not sad
+    - not good
+- synonym: visual
+  examples: |
+    - visible
+- synonym: try
+  examples: |
+    - attempt
+    - undertake
+- synonym: plan
+  examples: |
+    - preparations
+- synonym: start
+  examples: |
+    - take up
+    - begin
+- synonym: understand
+  examples: |
+    - appreciate
+    - recognize
+    - realize
+- synonym: realistic
+  examples: |
+    - practical
+    - pragmatic
+- synonym: hypothesis
+  examples: |
+    - assumption
+- synonym: certainty
+  examples: |
+    - truth
+- synonym: creative
+  examples: |
+    - imaginative
+    - inspired
+- synonym: step
+  examples: |
+    - slowly
+- regex: 206_qG6
+  examples: |
+    - ([0-20]{1}/[0-20]{1}/[0-20]{1})

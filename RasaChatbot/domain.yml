@@ -1,0 +1,833 @@
+version: '3.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- EXTERNAL_reminder
+- affirm
+- affirmJob
+- answerBot:
+    triggers: action_answer_bot
+- ask_killerphrases:
+    triggers: action_killerphrases
+- ask_last_question:
+    triggers: action_repeat_last_quest
+- ask_learningstyle:
+    triggers: action_learningstyle
+- ask_residence:
+    triggers: action_your_residence
+- bot_challenge:
+    triggers: action_asked_bot
+- chitchat_age:
+    triggers: action_chitchat
+- chitchat_answerweather:
+    triggers: action_chitchat
+- chitchat_compliment:
+    triggers: action_chitchat
+- chitchat_confirm:
+    triggers: action_chitchat
+- chitchat_giveage:
+    triggers: action_chitchat
+- chitchat_givelanguages:
+    triggers: action_chitchat
+- chitchat_howareyou:
+    triggers: action_chitchat
+- chitchat_insult:
+    triggers: action_chitchat
+- chitchat_joke:
+    triggers: action_chitchat
+- chitchat_languagecourses:
+    triggers: action_chitchat
+- chitchat_languages:
+    triggers: action_chitchat
+- chitchat_other:
+    triggers: action_chitchat
+- chitchat_skills:
+    triggers: action_chitchat
+- chitchat_stop:
+    triggers: action_chitchat
+- chitchat_weather:
+    triggers: action_chitchat
+- chitchat_whatsyourname:
+    triggers: action_chitchat
+- chitchat_whynegation:
+    triggers: action_chitchat
+- chitchat_xmas:
+    triggers: action_chitchat
+- deny
+- explain
+- give_how_you_are_doing:
+    use_entities: 1_how_you_are_doing
+- give_name:
+    use_entities: 1_first_name
+- give_smalltalk
+- goodbye
+- greet
+- interruption:
+    triggers: action_repeat_last_quest
+- negation:
+    triggers: action_negation
+- next
+- nlu_fallback
+- not_explain
+- out_of_scope:
+    triggers: action_out_of_scope
+- qG0:
+    use_entities: 200_qG0
+- qG1:
+    use_entities: 201_qG1
+- qG2:
+    use_entities: true
+- qG4:
+    use_entities: 204_qG4
+- qG5:
+    use_entities: 205_qG5
+- qG6:
+    use_entities: 206_qG6
+- qG7:
+    use_entities: 207_qG7
+- qG8:
+    use_entities: 208_qG8
+- qG9:
+    use_entities: 209_qG9
+- qOne:
+    use_entities: 3_q_three
+- qTwo:
+    use_entities: 4_q_twentyThree
+- qThree:
+    use_entities: 5_q_thirtyOne
+- qFour:
+    use_entities: 15_q_eleven
+- qFive:
+    use_entities: 14_q_seven
+- qSix:
+    use_entities: 16_q_twentySeven
+- qSeven:
+    use_entities: 6_q_twentyFive
+- qEight:
+    use_entities: 9_q_sevenTeen
+- qNine:
+    use_entities: 7_q_two
+- qTen:
+    use_entities: 11_q_ten
+- qEleven:
+    use_entities: 8_q_eightTeen
+- qTwelve:
+    use_entities: 10_q_thirtyEight
+- qThirteen:
+    use_entities: 18_q_twentyTwo
+- qFourteen:
+    use_entities: 12_q_twentyFour
+- qFifteen:
+    use_entities: 13_q_thirtySix
+- qSixteen:
+    use_entities: 17_q_fourtyFour
+- qSeventeen:
+    use_entities: 19_q_six
+- rephrase_learningstyle:
+    triggers: action_rephrase_learningstyle
+- restart
+- time:
+    triggers: action_time
+- user_unknown:
+    triggers: action_user_unknown
+entities:
+- 100_q_three
+- 10_q_thirtyEight
+- 11_q_ten
+- 12_q_twentyFour
+- 13_q_thirtySix
+- 14_q_seven
+- 15_q_eleven
+- 15_q_seven
+- 16_q_twentySeven
+- 17_q_fourtyFour
+- 18_q_twentyTwo
+- 19_q_six
+- 1_first_name
+- 1_how_you_are_doing
+- 200_qG0
+- 201_qG1
+- 204_qG4
+- 205_qG5
+- 206_qG6
+- 207_qG7
+- 208_qG8
+- 209_qG9
+- 3_q_three
+- 4_q_twentyThree
+- 5_q_thirtyOne
+- 6_q_twentyFive
+- 7_q_two
+- 8_q_eightTeen
+- 9_q_sevenTeen
+- 202_qG2
+slots:
+  1_first_name:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity 
+      entity: 1_first_name
+  1_how_you_are_doing:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 4_q_twentyThree
+  100_q_three:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 3_q_three
+  101_q_twentyThree:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 4_q_twentyThree
+  102_q_thirtyOne:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 5_q_thirtyOne
+  103_q_twentyFive:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 6_q_twentyFive
+  104_q_two:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 7_q_two
+  105_q_eightTeen:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 8_q_eightTeen
+  106_q_sevenTeen:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 9_q_sevenTeen
+  107_q_thirtyEight:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 10_q_thirtyEight
+  108_q_ten:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 11_q_ten
+  109_q_twentyFour:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 12_q_twentyFour
+  110_q_thirtySix:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 13_q_thirtySix
+  111_q_seven:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 14_q_seven
+  112_q_eleven:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 15_q_eleven
+  113_q_twentySeven:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 16_q_twentySeven
+  114_q_fourtyFour:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 17_q_fourtyFour
+  115_q_twentyTwo:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 18_q_twentyTwo
+  116_q_six:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 19_q_six
+  200_qG0:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 200_qG0
+  201_qG1:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 201_qG1
+  304_qG4:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 204_qG4
+  305_qG5:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 205_qG5
+  306_qG6:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 206_qG6
+  307_qG7:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 207_qG7
+  208_qG8:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 208_qG8
+  209_qG9:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: 209_qG9
+responses:
+  utter_iamabot:
+  - text: Yes, I'm a machine. 🤖  My job is to recognize your learning style.
+  - text: I'm your study buddy but virtual. 🤖  My job is to recognize your learning style.
+  utter_out_of_scope:
+  - text: Sorry, that´s not possible. You may only choose one answer for each question. If both answers to a question seem to apply to you, choose the one that applies more frequently throughout all your courses. 🙂
+  utter_negation:
+  - text: Sorry, negation is not possible. Please rephrase. 🙂
+  utter_please_rephrase:
+  - text: I'm sorry, but unfortunately, I didn't understand that. 😔 Could you please rephrase that? 🙃
+  - text: I'm sorry, but unfortunately, I'm still in the learning process right now and I don't understand your answer, 😔 can you say it differently? 🙂
+  - text: I'm sorry, but unfortunately, I didn't understand that. 😔 Can you say it in another way? 🙂
+  utter_chitchat_answerweather:
+  - text: Okay. I do not want to seem unkind, but we should go on with the questions to detect your learning style. By the way, you are welcome to ask me after the last question or you can scroll up.
+  utter_chitchat_joke:
+  - text: What's the best thing about Switzerland? I don't know, but the flag is a big plus. 🤣
+  - text: What has more letters than the alphabet? The post office! 🤣
+  - text: How can you make 7 even? Take away the 's'. 🤣
+  - text: Why did the math book look so sad? Because it has so many problems! 🤣
+  utter_chitchat_whatsyourname:
+  - text: I'm Vicky. Nice to meet you! 😊
+  utter_chitchat_age:
+  - text: I was created 4 weeks ago. How old are you?
+  utter_chitchat_insult:
+  - text: Hey {1_first_name}, don't be so unpleasant with me! 😤😕
+  utter_chitchat_whynegation:
+  - text: Negation is not possible, otherwise you could trick me when answering the questions. 😏
+  utter_chitchat_giveage:
+  - text: That is a good age.
+  - text: Cool age!
+  utter_chitchat_languages:
+  - text: I can only speak English at the moment 🙄 but I will attend language courses soon. 🤓
+  - text: I can only speak English at the moment 🙄 but I will attend language courses soon. 🤓 How about you?
+  utter_chitchat_languagecourses:
+  - text: I want to learn German. 🇩🇪
+  - text: I would like to learn German. 🇩🇪
+  utter_chitchat_givelanguages:
+  - text: You are very talented in languages!
+  - text: You speak more languages than me, you are a role model for me!
+  utter_chitchat_howareyou:
+  - text: I'm fine. Thank you! 😊
+  - text: I'm great. Thanks! 😊
+  utter_chitchat_xmas:
+  - text: Merry X-MAS!
+  - text: Merry Christmas!
+  - text: Happy New Year!
+  utter_chitchat_stop:
+  - text: Sorry, but we need to finish the questions so I can classify your learning style. That would be really nice of you! 😊
+  utter_chitchat_compliment:
+  - text: Thank you! 😊
+  - text: Thank you! you are awesome! 😊
+  - text: Thanks! Nice to meet you!
+  - text: Nice to meet you! 😊
+  utter_chitchat_weather:
+  - text: The weather is beautiful today!
+  - text: It looks sunny outside.
+  utter_chitchat_skills:
+  - text: |-
+      My main task is to identify your learning style. Also, you can ask me:
+       - Where do you live?
+       - Why do you ask me that?
+       - Are you a bot?
+       - Where have the buttons gone?
+       - What is a learning style?
+       - How are you?
+       - Why is negation not possible?
+       - How old are you?
+       - What time is it?
+       - Do you speak other languages?
+       - Tell me your name
+       - Tell me a joke!
+       - Answer, please!
+       - How is the weather today?
+  utter_chitchat_other:
+  - text: Hey Buddy, I don't wish to seem unkind, but we should get back to the questions about your learning style. Feel free to ask me which one was the last question or scroll up.
+  - text: I enjoy texting with you. 😊 I don't intend to seem unkind, but we should continue with the further questions to determine your learning style. By the way, feel free to ask me for the last question or just scroll up.
+  - text: I enjoy chatting with you. 😊 I don't intend to seem unfriendly, but we should continue with the questions to identify your learning style. By the way, feel free to ask me for the last question or just scroll up.
+  - text: I love chatting with you. 😊 I don't intend to be rude, but we should continue with the questions about you learning style. Besides, you are welcome to ask me for the last question.
+  utter_answer_bot:
+  - text: You said something that I didn´t understand. However, feel free to ask me what my last question to you was.
+  - text: I'm sorry, but I don't have enough training data to understand you. However, feel free to ask me what my last question to you was.
+  - text: Please reboot me so that I can follow you. To do so, feel free to ask me what my last question to you was.
+  utter_residence:
+  - text: I live in this app all day long.
+  - text: The virtual world is my playground.
+  - text: In this app, whenever you need me. 😉
+  utter_learningstyle:
+  - text: A learning style is a way in which you begin to concentrate on, process, absorb, and retain new and difficult information. The interaction of these elements occurs differently in everyone. Therefore, it is necessary to determine what is most likely to trigger your concentration, how to maintain it, and how to respond to your natural processing style to produce long-term memory and retention. I will try to identify your learning style during our conversation and a quiz game.
+  utter_killerphrases:
+  - text: I have to ask you a few questions to gather personal information about you. This way, I can determine your learning style. Knowing your learning style will help you learn more efficiently in the future.
+  utter_greet/N:
+  - text: Hey {1_first_name} 👋 nice to meet you. How are you? 😊
+  utter_greet/NN:
+  - text: Hey Buddy 👋 nice to meet you. How are you? 😊
+  utter_greet/request:
+  - text: How are you? 😊
+  utter_user_unknown:
+  - text: You may only choose one answer for each question.
+  - text: You can get help by pressing the buttons 😊
+  utter_ask_1_first_name:
+  - text: Hey mate! I ́m Vicky, nice to meet you. What´s your name? 😊
+  utter_ask_1_first_name/request:
+  - text: What´s your name?
+  utter_activity:
+  - text: To start with the classification of your learning style, I would like to ask you what you did yesterday in the evening?
+  utter_how_you_are_doing/g:
+  - buttons:
+    - payload: /explain
+      title: Yes
+    - payload: /not_explain
+      title: No
+    text: That sounds great! I'm fine as well as you! I would like to get to know you better and get together. Also, I would like to detect your learning style during our conversation. Therefore, I have to ask you some personal questions. Please don´t be shy to answer. Do you wish to learn more about what a learning style is? Please use the buttons!
+  utter_how_you_are_doing/b:
+  - buttons:
+    - payload: /explain
+      title: Yes
+    - payload: /not_explain
+      title: No
+    text: Cheer up, buddy! Let´s talk maybe you feel later as sunny as me :-) I would like to get to know you better and get together. Also, I would like to detect your learning style during our conversation. Therefore, I have to ask you some personal questions. Please don´t be shy to answer. Do you wish to learn more about what a learning style is? Please use the buttons!
+  utter_how_you_are_doing/n:
+  - buttons:
+    - payload: /explain
+      title: Yes
+    - payload: /not_explain
+      title: No
+    text: Great. I would like to get to know you better and get together. Also, I would like to detect your learning style during our conversation. Therefore, I have to ask you some personal questions. Please don´t be shy to answer. Do you wish to learn more about what a learning style is? Please use the buttons!
+  utter_how_you_are_doing/request:
+  - buttons:
+    - payload: /explain
+      title: Yes
+    - payload: /not_explain
+      title: No
+    text: I would like to get to know you better and get together. Also, I would like to detect your learning style during our conversation. Therefore I have to ask you some personal questions. Please don´t be shy to answer. Should I explain to you what a learning style is? Please use the buttons!
+  utter_ask_continue:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Would you like to continue with the quiz?
+  utter_start_game:
+  - text: Let´s play a quiz game. I will be your study buddy during the quests. Therefore, you can get help by pressing the buttons. Also, I try to recognize your learning style again. My detection depends on what kind of help you choose. Otherwise, if you can answer the questions correctly on your first try, go for it. But don´t be too selfish. If you don´t feel confident, you can let me help you by selecting an option from the buttons.
+  utter_ask_200_qG0:
+  - buttons:
+    - payload: /qG0{{"200_qG0":"qG00textHelp"}}
+      title: 'Help: text description'
+    - payload: /qG0{{"200_qG0":"qG00imageHelp"}}
+      title: 'Help: image'
+    - payload: /qG0{{"200_qG0":"qG00solution"}}
+      title: Solution
+    text: 'Quest (1/4): Which day follows the day before yesterday, if in two days it is Sunday? Now is fictional and might not be the actual day. If you need help, just click on one of the buttons.'
+  utter_ask_201_qG1:
+  - buttons:
+    - payload: /qG1{{"201_qG1":"qG01textHelp"}}
+      title: 'Help: text description'
+    - payload: /qG1{{"201_qG1":"qG01movieHelp"}}
+      title: 'Help: video'
+    - payload: /qG1{{"201_qG1":"qG01exampleHelp"}}
+      title: 'Help: example'
+    - payload: /qG1{{"201_qG1":"qG01solution"}}
+      title: Solution
+    - payload: /qG1{{"201_qG1":"left"}}
+      title: 5/19
+    - payload: /qG1{{"201_qG1":"right"}}
+      title: 3/29
+    text: 'Quest (2/4): Is the left or the right fraction greater or are both equal: 5/19 or 3/29 ? You can get help or answer via the buttons.'
+  utter_ask_304_qG4:
+  - buttons:
+    - payload: /qG4{{"204_qG4":"qG04textHelp"}}
+      title: Help me!
+    - payload: /qG4{{"204_qG4":"qG04solution"}}
+      title: Solution
+    text: "Quest (5/8): Jane, Rachel, and Tessa are girls wearing a jacket, coat, or skirt in blue, green, or red. None of these clothes are the same color and each girl is wearing a different color. The coat, belonging to Tessa, is not green. Rachel's jacket and Jane's skirt are the same color. Tessa's skirt is red. Her jacket, Rachel's skirt, and Jane's coat are all the same color. What color is Tessa's coat?"
+  utter_ask_305_qG5:
+  - buttons:
+    - payload: /qG5{{"205_qG5":"qG05textHelp"}}
+      title: Help me!
+    - payload: /qG5{{"205_qG5":"qG05solution"}}
+      title: Solution
+    - payload: /qG5{{"205_qG5":"twenty-one"}}
+      title: '21'
+    - payload: /qG5{{"205_qG5":"twenty-eight"}}
+      title: '28'
+    - payload: /qG5{{"205_qG5":"thirty-five"}}
+      title: '35'
+    - payload: /qG5{{"205_qG5":"thirty-two"}}
+      title: '32'
+    - payload: /qG5{{"205_qG5":"twenty-seven"}}
+      title: '27'
+    - payload: /qG5{{"205_qG5":"fourty-five"}}
+      title: '45'
+    text: |-
+      Quest (6/8): You get numbers that are connected in some way. They are connected along the row, but there is also a relationship among the numbers that are above or below each other. Sometimes, a number is missing and an underscore (_) was placed instead of it. One of the numbers was replaced by a question mark (?). Using the information, find the number that would replace the question mark. You can use the buttons to answer.
+        1  _  9  ? 
+        2  6  _  54
+  utter_ask_306_qG6:
+  - buttons:
+    - payload: /qG6{{"206_qG6":"qG06textHelp"}}
+      title: 'Help: text description'
+    - payload: /qG6{{"206_qG6":"qG06movieHelp"}}
+      title: 'Help: video'
+    - payload: /qG6{{"206_qG6":"qG06solution"}}
+      title: Solution
+    text: "Quest (7/8): What is the mean, median, and mode of the following numbers: 7+7+14+10+10+3+7+14? Just write the numbers with a delimiter: '/' in the sequence of mean, median mode, for example: '10/12.5/6'. A comma has to be '.'."
+  utter_ask_307_qG7:
+  - buttons:
+    - payload: /qG7{{"207_qG7":"qG07textHelp"}}
+      title: 'Help: text'
+    - payload: /qG7{{"207_qG7":"qG07movieHelp"}}
+      title: 'Help: video'
+    - payload: /qG7{{"207_qG7":"qG07solution"}}
+      title: Solution
+    - payload: /qG7{{"207_qG7":"qG07A"}}
+      title: A
+    - payload: /qG7{{"207_qG7":"qG07B"}}
+      title: B
+    - payload: /qG7{{"207_qG7":"qG07C"}}
+      title: C
+    - payload: /qG7{{"207_qG7":"qG07D"}}
+      title: D
+    text: |-
+      Quest (8/8): Greenhouse gases include carbon dioxide and methane. How do greenhouse gases help to raise the air temperature near the Earth's surface?
+      A: They allow visible light that enters the atmosphere to pass through.
+      B: They retain heat that is radiated from the surface.
+      C: They reflect heat that reaches the atmosphere.
+      D: They emit heat when they undergo chemical reactions.
+  utter_ask_208_qG8:
+  - buttons:
+    - payload: /qG8{{"208_qG8":"qG08textHelp"}}
+      title: Help me!
+    - payload: /qG8{{"208_qG8":"qG08solution"}}
+      title: Solution
+    text: 'Quest (3/4): What is the next number in the following sequence: 0 0 I III III VI V IX VII XII IX? Please write your answer using Roman numerals.'
+  utter_ask_209_qG9:
+  - buttons:
+    - payload: /qG9{{"209_qG9":"qG09textHelp"}}
+      title: 'Help: text'
+    - payload: /qG9{{"209_qG9":"qG09imageHelp"}}
+      title: 'Help: image'
+    - payload: /qG9{{"209_qG9":"qG09solution"}}
+      title: Solution
+    - payload: /qG9{{"209_qG9":"qG09A"}}
+      title: A
+    - payload: /qG9{{"209_qG9":"qG09B"}}
+      title: B
+    - payload: /qG9{{"209_qG9":"qG09C"}}
+      title: C
+    - payload: /qG9{{"209_qG9":"qG09D"}}
+      title: D
+    text: |-
+      Quest (4/4): How does the greenhouse effect relate to the sunlight?
+      A: Greenhouse gases absorb sunlight, and then reradiate it to the surface.
+      B: Greenhouse gases reflect sunlight into space and prevent it from reaching the Earth's surface.
+      C: Greenhouse gases absorb sunlight and prevent it from reaching the Earth's surface.
+      D: Greenhouse gases absorb heat, and sunlight is the energy source for the heat.
+  utter_ask_100_q_three:
+  - text: Nice. When you think about what you did yesterday, are you more likely to get a picture or words?
+  utter_ask_100_q_three/request:
+  - text: When you think about what you did yesterday, are you more likely to get a picture or words?
+  utter_ask_101_q_twentyThree:
+  - text: Got it. Christmas is coming soon. You might go on vacation! Imagine you are about to arrive at a new place, would you prefer a map or written instructions?
+  utter_ask_101_q_twentyThree/request:
+  - text: Christmas is coming soon. You might go on vacation. Imagine if you get to a new place would you prefer a map or written instruction?
+  utter_ask_102_q_thirtyOne:
+  - text: So, if I would show you a statistic about the most popular Christmas gifts from last year, would you like to receive it as a chart or as a text summary?
+  utter_ask_102_q_thirtyOne/request:
+  - text: So, if I would show you a statistic about the most popular Christmas gifts from last year, would you like to receive it as a chart or as a text summary?
+  utter_ask_103_q_twentyFive:
+  - text: Okay. I'm interested in your personality. So, when you learn something new, would you try it out first or make an initial plan?
+  utter_ask_103_q_twentyFive/request:
+  - text: I'm interested in your personality. So, when you learn something new, would you try it out first or make an initial plan?
+  utter_ask_104_q_two:
+  - text: I understand. Do you tend to be realistic or innovative?
+  utter_ask_104_q_two/request:
+  - text: Do you tend to be realistic or innovative?
+  utter_ask_105_q_eightTeen:
+  - text: And do you prefer the idea of certainty (like truth) or hypothesis (like an explanation that is made based on limited evidence)?
+  utter_ask_105_q_eightTeen/request:
+  - text: Do you prefer the idea of certainty (like truth) or hypothesis (like an explanation that is made based on limited evidence)?
+  utter_ask_106_q_sevenTeen:
+  - buttons:
+    - payload: /qEight{{"9_q_sevenTeen":"start"}}
+      title: former of the two
+    - payload: /qEight{{"9_q_sevenTeen":"understand"}}
+      title: latter of the two
+    text: You are a quite cool person. It ́s a pleasure to meet you. Let ́s talk about your study life. If you receive an exercise or have to prepare a presentation or something like this, do you start working on the solution immediately? Or do you try to fully understand the problem first?
+  utter_ask_106_q_sevenTeen/request:
+  - buttons:
+    - payload: /qEight{{"9_q_sevenTeen":"start"}}
+      title: former of the two
+    - payload: /qEight{{"9_q_sevenTeen":"understand"}}
+      title: latter of the two
+    text: It ́s a pleasure to meet you. Let ́s talk about your study life. If you get an exercise problem or you have to prepare a presentation or something like this do you start working on the solution immediately? Or do you try to fully understand the problem first?
+  utter_ask_107_q_thirtyEight:
+  - text: Great. Let´s talk about your courses. Do you prefer courses that are based on concrete material (like factual data)? Or abstract material (like theoretical models)?
+  utter_ask_107_q_thirtyEight/request:
+  - text: Do you prefer courses that are based on concrete material (like factual data)? Or abstract material (like theoretical models)?
+  utter_ask__108_q_ten/c:
+  - text: You just said that you are more interested in courses based on concrete material. Does that mean you find it easier to learn facts rather than concepts, or do you prefer concepts instead?
+  utter_ask__108_q_ten/a:
+  - text: You just said that you are more interested in courses based on abstract material. Does that mean you find it easier to learn concepts rather than facts, or do you prefer facts instead?
+  utter_ask_108_q_ten/request:
+  - text: Do you find it easier to learn facts or to learn concepts?
+  utter_ask_109_q_twentyFour:
+  - buttons:
+    - payload: /qFourteen{{"12_q_twentyFour":"regular tempo"}}
+      title: former of the two
+    - payload: /qFourteen{{"12_q_twentyFour":"all clicks"}}
+      title: latter of the two
+    text: Ah okay, I understand. Are you a person who learns at a fairly regular speed? Or are you a person who is confused at the beginning and suddenly it all clicks?
+  utter_ask_109_q_twentyFour/request:
+  - buttons:
+    - payload: /qFourteen{{"12_q_twentyFour":"regular tempo"}}
+      title: former of the two
+    - payload: /qFourteen{{"12_q_twentyFour":"all clicks"}}
+      title: latter of the two
+    text: Are you a person who learns at a fairly regular speed? Or are you a person who is confused at the beginning and suddenly it all clicks?
+  utter_ask_110_q_thirtySix:
+  - buttons:
+    - payload: /qFifteen{{"13_q_thirtySix":"stay focused"}}
+      title: former of the two
+    - payload: /qFifteen{{"13_q_thirtySix":"make connections"}}
+      title: latter of the two
+    text: And when you are learning a new subject do you prefer to stay focused on that subject and learn as much as you can? Or do you make connections between that topic and related subjects?
+  utter_ask_110_q_thirtySix/request:
+  - buttons:
+    - payload: /qFifteen{{"13_q_thirtySix":"stay focused"}}
+      title: former of the two
+    - payload: /qFifteen{{"13_q_thirtySix":"make connections"}}
+      title: latter of the two
+    text: And when you are learning a new subject do you prefer to stay focused on that subject and learn as much as you can? Or do you make connections between that subject and related subjects?
+  utter_ask_111_q_seven:
+  - text: Okay. Do you prefer to get new information as visual material (like movies, images) or as verbal information (like a speech, a conversation)?
+  utter_ask_111_q_seven/request:
+  - text: Do you prefer to get new information as visual material (like movies, images) or as verbal information (like a speech, a conversation)?
+  utter_ask_112_q_eleven/vs:
+  - text: Imagine you are looking into a book with lots of diagrams. Given that you prefer visual information, do you look at the diagrams, or do you rather focus on the descriptions?
+  utter_ask_112_q_eleven/vb:
+  - text: Imagine you are looking into a book with many diagrams. Given that you prefer verbal/written information, do you rather focus on the descriptions, or do you rather look at the diagrams?
+  utter_ask_112_q_eleven/request:
+  - text: Imagine you are looking into a book with lots of diagrams. Do you look at the diagrams, or do you focus on the descriptions?
+  utter_ask_113_q_twentySeven/p:
+  - text: You said at the beginning that you remember your yesterday’s activity as a picture. When you see a sketch in class, are you more likely to remember the sketch or what the instructor said about it?
+  utter_ask_113_q_twentySeven/w:
+  - text: You said at the beginning that you remember your yesterday’s activity in words. When you see a sketch in class, are you more likely to remember what the instructor said about it or the sketch?
+  utter_ask_113_q_twentySeven/request:
+  - text: When you see a sketch in class do you likely remember the sketch or what the instructor said about it?
+  utter_ask_114_q_fourtyFour:
+  - buttons:
+    - payload: /qSixteen{{"17_q_fourtyFour":"steps"}}
+      title: former of the two
+    - payload: /qSixteen{{"17_q_fourtyFour":"consequences"}}
+      title: latter of the two
+    text: Nice. When you solve problems in a group, do you tend to think of the steps of the solution process? Or do you think about possible consequences of the solution in a wide range of areas?
+  utter_ask_114_q_fourtyFour/request:
+  - buttons:
+    - payload: /qSixteen{{"17_q_fourtyFour":"steps"}}
+      title: former of the two
+    - payload: /qSixteen{{"17_q_fourtyFour":"consequences"}}
+      title: latter of the two
+    text: When you solve problems in a group, would you be more likely to think of the steps in the solution process? Or do you think about possible consequences of the solution in a wide range of areas?
+  utter_ask_115_q_twentyTwo:
+  - buttons:
+    - payload: /qThirteen{{"18_q_twentyTwo":"careful"}}
+      title: former of the two
+    - payload: /qThirteen{{"18_q_twentyTwo":"creative"}}
+      title: latter of the two
+    text: One thing that would be interesting for me is, do you tend to think of yourself as being more careful about the details of your work or more creative in how you do your work?
+  utter_ask_115_q_twentyTwo/request:
+  - buttons:
+    - payload: /qThirteen{{"18_q_twentyTwo":"careful"}}
+      title: former of the two
+    - payload: /qThirteen{{"18_q_twentyTwo":"creative"}}
+      title: latter of the two
+    text: Are you more likely to be considered careful about the details of your work or creative about how to do your work?
+  utter_ask_116_q_six:
+  - text: Remember your last class session. Imagine you were a teacher, would you rather teach a course that deals with real life situations or that deals with ideas and theories?
+  utter_ask_116_q_six/request:
+  - text: Remember your last class session. Imagine you were a teacher, would you rather teach a course that deals with real life situations or that deals with ideas and theories?
+  utter_learning_style_recommendation_talk:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: After our conversation, would you like to receive an explanation of your identified learning styles?
+  utter_confirm_start_game:
+  - buttons:
+    - payload: /affirm
+      title: Let´s play! 🎮
+    text: Start the game via the button. Answer in the message box or sometimes via the button. Use the buttons to ask for help from me.
+  utter_no_repeat:
+  - text: Can not repeat the question. Scroll up or refresh me, please
+  utter_learning_style_recommendation_game:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: After our quiz-game, would you like to receive an explanation of your identified learning styles?
+  utter_bye_game:
+  - text: See you next time! Bye {1_first_name}! 👋 😊
+actions:
+- action_chitchat
+- give_learning_style_ILS_Dim_2
+- give_learning_style_ILS_Dim_3
+- give_learning_style_ILS_Dim_4
+- give_learning_style_game_ILS_Dim_2
+- give_learning_style_game_ILS_Dim_3
+- give_learning_style_game_ILS_Dim_4
+- action_ask_108_q_ten
+- action_ask_112_q_eleven
+- action_ask_113_q_twentySeven
+- action_asked_bot
+- action_detect_learning_style
+- action_detect_learning_style_game
+- action_explain_learning_style
+- action_feeling
+- action_goodbye_person_by_name
+- action_killerphrases
+- action_learningstyle
+- action_your_residence
+- give_learning_style_recommendation_talk
+- give_learning_style_recommendation_game
+- validate_elicitation_form
+- validate_quest_game_form_part_one
+- validate_quest_game_form_part_two
+- action_out_of_scope
+- action_answer_bot
+- action_user_unknown
+- validate_name_form
+- action_repeat_last_quest
+- action_greet
+- action_time
+- action_rephrase_learningstyle
+- action_negation
+- action_react_to_reminder
+- action_timer_utter_confirm_start_game
+- action_timer_utter_activity
+- action_timer_utter_bye_game
+- action_restart
+forms:
+  name_form:
+    required_slots:
+    - 1_first_name
+      
+  elicitation_form:
+    required_slots:
+    - 100_q_three
+    - 101_q_twentyThree
+    - 102_q_thirtyOne
+    - 103_q_twentyFive
+    - 104_q_two
+    - 105_q_eightTeen
+    - 106_q_sevenTeen
+    - 107_q_thirtyEight
+    - 108_q_ten
+    - 109_q_twentyFour
+    - 110_q_thirtySix
+    - 111_q_seven
+    - 112_q_eleven
+    - 113_q_twentySeven
+    - 114_q_fourtyFour
+    - 115_q_twentyTwo
+    - 116_q_six
+     
+  quest_game_form_part_one:
+    required_slots:
+    - 200_qG0
+    - 201_qG1
+    - 208_qG8
+    - 209_qG9
+     
+  quest_game_form_part_two:
+    required_slots:
+    - 304_qG4
+    - 305_qG5
+    - 306_qG6
+    - 307_qG7

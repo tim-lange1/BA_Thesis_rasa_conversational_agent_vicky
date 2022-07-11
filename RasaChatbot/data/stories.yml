@@ -1,0 +1,740 @@
+version: "3.0"
+stories:
+- story: Happy Path Full Quiz With Recommendation after Talk + after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: affirm
+  - action: give_learning_style_recommendation_talk
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_4
+  - intent: affirm
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - slot_was_set:
+    - 209_qG9: qG07D
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - 304_qG4: blue
+  - slot_was_set:
+    - 305_qG5: twentyseven
+  - slot_was_set:
+    - 306_qG6: 9/8.5/7
+  - slot_was_set:
+    - 307_qG7: qG07B
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_4
+  - intent: affirm
+  - action: action_timer_utter_bye_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+- story: Happy Path Full Quiz With Recommendation after Talk + NOT after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: affirm
+  - action: give_learning_style_recommendation_talk
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_4
+  - intent: affirm
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - slot_was_set:
+    - 209_qG9: qG07D
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - 304_qG4: blue
+  - slot_was_set:
+    - 305_qG5: twentyseven
+  - slot_was_set:
+    - 306_qG6: 9/8.5/7
+  - slot_was_set:
+    - 307_qG7: qG07B
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+- story: Happy Path Full Quiz No Recommendation after Talk with Recommendation after Game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - slot_was_set:
+    - 209_qG9: qG07D
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - 304_qG4: blue
+  - slot_was_set:
+    - 305_qG5: twentyseven
+  - slot_was_set:
+    - 306_qG6: 9/8.5/7
+  - slot_was_set:
+    - 307_qG7: qG07B
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_4
+  - intent: affirm
+  - action: action_timer_utter_bye_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+- story: Happy Path Full Quiz No Recommendation after Talk + after Game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - slot_was_set:
+    - 209_qG9: qG07D
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: affirm
+  - action: quest_game_form_part_two
+  - active_loop: quest_game_form_part_two
+  - slot_was_set:
+    - 304_qG4: blue
+  - slot_was_set:
+    - 305_qG5: twentyseven
+  - slot_was_set:
+    - 306_qG6: 9/8.5/7
+  - slot_was_set:
+    - 307_qG7: qG07B
+  - active_loop: null
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+- story: happy Path half Quiz With Recommendation after Talk + after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: affirm
+  - action: give_learning_style_recommendation_talk
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_4
+  - intent: affirm
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_recommendation_game  
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_4
+  - intent: affirm
+  - action: action_timer_utter_bye_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+
+- story: happy Path half Quiz NO Recommendation after Talk + recommendation after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_recommendation_game
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_game_ILS_Dim_4
+  - intent: affirm
+  - action: action_timer_utter_bye_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+
+- story: Unhappy Path half Quiz NO Recommendation after Talk + after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: deny
+  - action: give_learning_style_recommendation_talk
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name
+
+
+- story: happy Path half Quiz  Recommendation after Talk + NO Recommendation after game
+  steps:
+  - intent: greet
+  - action: name_form
+  - active_loop: name_form
+  - slot_was_set:
+    - 1_first_name: Paul
+  - active_loop: null
+  - intent: give_how_you_are_doing
+  - slot_was_set:
+    - 1_how_you_are_doing: good
+  - action: action_feeling
+  - intent: explain
+  - action: action_explain_learning_style
+  - action: action_timer_utter_activity
+  - intent: give_smalltalk
+  - action: elicitation_form
+  - active_loop: elicitation_form
+  - slot_was_set:
+    - 100_q_three: picture
+  - slot_was_set:
+    - 101_q_twentyThree: written instructions
+  - slot_was_set:
+    - 102_q_thirtyOne: text summarization
+  - slot_was_set:
+    - 103_q_twentyFive: try it out
+  - slot_was_set:
+    - 104_q_two: realistic
+  - slot_was_set:
+    - 105_q_eightTeen: hypothesis
+  - slot_was_set:
+    - 106_q_sevenTeen: start
+  - slot_was_set:
+    - 107_q_thirtyEight: concrete material
+  - slot_was_set:
+    - 108_q_ten: facts
+  - slot_was_set:
+    - 109_q_twentyFour: all clicks
+  - slot_was_set:
+    - 110_q_thirtySix: connections
+  - slot_was_set:
+    - 111_q_seven: visual
+  - slot_was_set:
+    - 112_q_eleven: diagrams
+  - slot_was_set:
+    - 113_q_twentySeven: sketch
+  - slot_was_set:
+    - 114_q_fourtyFour: step by step
+  - slot_was_set:
+    - 115_q_twentyTwo: creative
+  - slot_was_set:
+    - 116_q_six: theories
+  - active_loop: null
+  - action: action_detect_learning_style
+  - action: utter_learning_style_recommendation_talk
+  - intent: affirm
+  - action: give_learning_style_recommendation_talk
+  - intent: affirm 
+  - action: give_learning_style_ILS_Dim_2
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_3
+  - intent: affirm
+  - action: give_learning_style_ILS_Dim_4
+  - intent: affirm
+  - action: utter_start_game
+  - action: action_timer_utter_confirm_start_game
+  - intent: affirm
+  - action: quest_game_form_part_one
+  - active_loop: quest_game_form_part_one
+  - slot_was_set:
+    - 200_qG0: thursday
+  - slot_was_set:
+    - 201_qG1: left
+  - slot_was_set:
+    - 208_qG8: XV
+  - active_loop: null
+  - action: utter_ask_continue
+  - intent: deny
+  - action: action_detect_learning_style_game
+  - action: utter_learning_style_recommendation_game
+  - intent: deny
+  - action: give_learning_style_recommendation_game
+  - intent: goodbye
+  - action: action_goodbye_person_by_name

@@ -1,0 +1,878 @@
+[
+  {
+    "text": "well",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "well",
+        "entity": "1_how_you_are_doing"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 0,
+        "end": 4,
+        "confidence_entity": 0.5056498050689697,
+        "value": "well",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "great",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "great",
+        "entity": "1_how_you_are_doing"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "I think both",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "201_qG1",
+        "start": 8,
+        "end": 12,
+        "confidence_entity": 0.6710319519042969,
+        "value": "both",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t words",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "words",
+        "entity": "3_q_three"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "3_q_three",
+        "start": 2,
+        "end": 13,
+        "confidence_entity": 0.6340218782424927,
+        "value": "don´t words",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t picture",
+    "entities": [
+      {
+        "start": 8,
+        "end": 15,
+        "value": "picture",
+        "entity": "3_q_three"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "3_q_three",
+        "start": 2,
+        "end": 15,
+        "confidence_entity": 0.5971733927726746,
+        "value": "don´t picture",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t chart",
+    "entities": [
+      {
+        "start": 8,
+        "end": 13,
+        "value": "chart",
+        "entity": "5_q_thirtyOne"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "5_q_thirtyOne",
+        "start": 2,
+        "end": 5,
+        "confidence_entity": 0.5115198493003845,
+        "value": "don",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "5_q_thirtyOne",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.6992150545120239,
+        "value": "chart",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t visual material",
+    "entities": [
+      {
+        "start": 8,
+        "end": 14,
+        "value": "visual",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 8,
+        "end": 23,
+        "confidence_entity": 0.49634242057800293,
+        "value": "visual material",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t map",
+    "entities": [
+      {
+        "start": 2,
+        "end": 11,
+        "value": "don´t map",
+        "entity": "4_q_twentyThree"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "4_q_twentyThree",
+        "start": 8,
+        "end": 11,
+        "confidence_entity": 0.7830432653427124,
+        "value": "map",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I don´t chart",
+    "entities": [
+      {
+        "start": 2,
+        "end": 13,
+        "value": "don´t chart",
+        "entity": "5_q_thirtyOne"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "5_q_thirtyOne",
+        "start": 2,
+        "end": 5,
+        "confidence_entity": 0.5115198493003845,
+        "value": "don",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "5_q_thirtyOne",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.6992150545120239,
+        "value": "chart",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "visual material",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "visual",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 0,
+        "end": 15,
+        "confidence_entity": 0.5170286297798157,
+        "value": "visual material",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rather visual material",
+    "entities": [
+      {
+        "start": 7,
+        "end": 13,
+        "value": "visual",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 7,
+        "end": 22,
+        "confidence_entity": 0.4877718687057495,
+        "value": "visual material",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "definitely visual material",
+    "entities": [
+      {
+        "start": 11,
+        "end": 17,
+        "value": "visual",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 11,
+        "end": 26,
+        "confidence_entity": 0.4921296536922455,
+        "value": "visual material",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think I like visual material more",
+    "entities": [
+      {
+        "start": 15,
+        "end": 21,
+        "value": "visual",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 15,
+        "end": 30,
+        "confidence_entity": 0.551066517829895,
+        "value": "visual material",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think I like verbal information more",
+    "entities": [
+      {
+        "start": 15,
+        "end": 21,
+        "value": "verbal",
+        "entity": "14_q_seven"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "14_q_seven",
+        "start": 15,
+        "end": 33,
+        "confidence_entity": 0.6517127752304077,
+        "value": "verbal information",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "regular pace",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.6883025169372559,
+        "value": "regular pace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "regular tempo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.44103559851646423,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "regular speed",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.5882607698440552,
+        "value": "speed",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "regular tempo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 13,
+        "value": "regular tempo",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 8,
+        "end": 13,
+        "confidence_entity": 0.44103559851646423,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rather regular pace",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 7,
+        "end": 19,
+        "confidence_entity": 0.6245121955871582,
+        "value": "regular pace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rather regular tempo",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.4795086085796356,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rather regular speed",
+    "entities": [
+      {
+        "start": 7,
+        "end": 14,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.5989198684692383,
+        "value": "speed",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "rather regular tempo",
+    "entities": [
+      {
+        "start": 7,
+        "end": 20,
+        "value": "regular tempo",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 15,
+        "end": 20,
+        "confidence_entity": 0.4795086085796356,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "definitely regular pace",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 11,
+        "end": 23,
+        "confidence_entity": 0.6141948103904724,
+        "value": "regular pace",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "definitely regular tempo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.4827866852283478,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "definitely regular speed",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.5549193620681763,
+        "value": "speed",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "definitely regular tempo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 24,
+        "value": "regular tempo",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.4827866852283478,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I learn in regular speed",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.5737259387969971,
+        "value": "speed",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I learn in regular tempo",
+    "entities": [
+      {
+        "start": 11,
+        "end": 18,
+        "value": "regular",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 19,
+        "end": 24,
+        "confidence_entity": 0.5925204157829285,
+        "value": "tempo",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "suddenly all clicks",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "suddenly",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 0,
+        "end": 19,
+        "confidence_entity": 0.5243867039680481,
+        "value": "suddenly all clicks",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I´m at the beginning confused and suddenly it all clicks",
+    "entities": [
+      {
+        "start": 46,
+        "end": 56,
+        "value": "all clicks",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 21,
+        "end": 29,
+        "confidence_entity": 0.8072866201400757,
+        "value": "confused",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "12_q_twentyFour",
+        "start": 46,
+        "end": 56,
+        "confidence_entity": 0.6253085732460022,
+        "value": "all clicks",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I´m at the beginning confused and suddenly it all clicks",
+    "entities": [
+      {
+        "start": 21,
+        "end": 29,
+        "value": "confused",
+        "entity": "12_q_twentyFour"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "12_q_twentyFour",
+        "start": 21,
+        "end": 29,
+        "confidence_entity": 0.8072866201400757,
+        "value": "confused",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "12_q_twentyFour",
+        "start": 46,
+        "end": 56,
+        "confidence_entity": 0.6253085732460022,
+        "value": "all clicks",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think I prefer to keep on topic",
+    "entities": [
+      {
+        "start": 20,
+        "end": 24,
+        "value": "keep",
+        "entity": "13_q_thirtySix"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "13_q_thirtySix",
+        "start": 20,
+        "end": 27,
+        "confidence_entity": 0.5052288174629211,
+        "value": "keep on",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "I think I would rather teach a course with ideas and theories",
+    "entities": [
+      {
+        "start": 53,
+        "end": 61,
+        "value": "theories",
+        "entity": "19_q_six"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "19_q_six",
+        "start": 43,
+        "end": 48,
+        "confidence_entity": 0.5618999004364014,
+        "value": "ideas",
+        "extractor": "DIETClassifier"
+      },
+      {
+        "entity": "19_q_six",
+        "start": 53,
+        "end": 61,
+        "confidence_entity": 0.98265540599823,
+        "value": "theories",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "both",
+    "entities": [
+      {
+        "start": 0,
+        "end": 4,
+        "value": "both",
+        "entity": "201_qG1"
+      }
+    ],
+    "predicted_entities": []
+  },
+  {
+    "text": "9/8/7",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "9/8/7",
+        "entity": "206_qG6"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "201_qG1",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.6483271718025208,
+        "value": "9/8/7",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "increase of three",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "increase",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.49502864480018616,
+        "value": "increase of three",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "increase of three",
+    "entities": [
+      {
+        "start": 12,
+        "end": 17,
+        "value": "three",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 0,
+        "end": 17,
+        "confidence_entity": 0.49502864480018616,
+        "value": "increase of three",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "three higher",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "three",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 0,
+        "end": 12,
+        "confidence_entity": 0.5054231882095337,
+        "value": "three higher",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "increment of 3",
+    "entities": [
+      {
+        "start": 13,
+        "end": 14,
+        "value": "3",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 0,
+        "end": 14,
+        "confidence_entity": 0.8817948698997498,
+        "value": "increment of 3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "an increase of 3",
+    "entities": [
+      {
+        "start": 15,
+        "end": 16,
+        "value": "3",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 3,
+        "end": 16,
+        "confidence_entity": 0.5781680941581726,
+        "value": "increase of 3",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  },
+  {
+    "text": "an increase of three",
+    "entities": [
+      {
+        "start": 15,
+        "end": 20,
+        "value": "three",
+        "entity": "208_qG8"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "208_qG8",
+        "start": 3,
+        "end": 20,
+        "confidence_entity": 0.5319955348968506,
+        "value": "increase of three",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

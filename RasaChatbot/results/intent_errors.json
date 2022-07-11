@@ -1,0 +1,98 @@
+[
+  {
+    "text": "well",
+    "intent": "give_how_you_are_doing",
+    "intent_prediction": {
+      "name": "qG8",
+      "confidence": 0.637383759021759
+    }
+  },
+  {
+    "text": "great",
+    "intent": "give_how_you_are_doing",
+    "intent_prediction": {
+      "name": "chitchat_other",
+      "confidence": 0.7859216332435608
+    }
+  },
+  {
+    "text": "both",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "qG1",
+      "confidence": 0.5111294984817505
+    }
+  },
+  {
+    "text": "I think both",
+    "intent": "out_of_scope",
+    "intent_prediction": {
+      "name": "qG1",
+      "confidence": 0.7552375793457031
+    }
+  },
+  {
+    "text": "I don´t words",
+    "intent": "negation",
+    "intent_prediction": {
+      "name": "qOne",
+      "confidence": 0.49073848128318787
+    }
+  },
+  {
+    "text": "I don´t picture",
+    "intent": "negation",
+    "intent_prediction": {
+      "name": "qOne",
+      "confidence": 0.4901430010795593
+    }
+  },
+  {
+    "text": "I [don´t written instructions)(4_q_twentyThree)",
+    "intent": "qTwo",
+    "intent_prediction": {
+      "name": "negation",
+      "confidence": 0.5282473564147949
+    }
+  },
+  {
+    "text": "I don´t map",
+    "intent": "qTwo",
+    "intent_prediction": {
+      "name": "negation",
+      "confidence": 0.8054906129837036
+    }
+  },
+  {
+    "text": "I don´t chart",
+    "intent": "qThree",
+    "intent_prediction": {
+      "name": "negation",
+      "confidence": 0.7102418541908264
+    }
+  },
+  {
+    "text": "I [don´t text)(5_q_thirtyOne) summarization",
+    "intent": "qThree",
+    "intent_prediction": {
+      "name": "negation",
+      "confidence": 0.91844242811203
+    }
+  },
+  {
+    "text": "5/19",
+    "intent": "qG1",
+    "intent_prediction": {
+      "name": "qG6",
+      "confidence": 0.5591751337051392
+    }
+  },
+  {
+    "text": "3/29",
+    "intent": "qG1",
+    "intent_prediction": {
+      "name": "qG6",
+      "confidence": 0.5591751337051392
+    }
+  }
+]
