@@ -1,4 +1,4 @@
-version: '3.0'
+version: '2.0'
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
@@ -56,10 +56,8 @@ intents:
     triggers: action_chitchat
 - deny
 - explain
-- give_how_you_are_doing:
-    use_entities: 1_how_you_are_doing
-- give_name:
-    use_entities: 1_first_name
+- give_how_you_are_doing
+- give_name
 - give_smalltalk
 - goodbye
 - greet
@@ -72,58 +70,32 @@ intents:
 - not_explain
 - out_of_scope:
     triggers: action_out_of_scope
-- qG0:
-    use_entities: 200_qG0
-- qG1:
-    use_entities: 201_qG1
-- qG2:
-    use_entities: true
-- qG4:
-    use_entities: 204_qG4
-- qG5:
-    use_entities: 205_qG5
-- qG6:
-    use_entities: 206_qG6
-- qG7:
-    use_entities: 207_qG7
-- qG8:
-    use_entities: 208_qG8
-- qG9:
-    use_entities: 209_qG9
-- qOne:
-    use_entities: 3_q_three
-- qTwo:
-    use_entities: 4_q_twentyThree
-- qThree:
-    use_entities: 5_q_thirtyOne
-- qFour:
-    use_entities: 15_q_eleven
-- qFive:
-    use_entities: 14_q_seven
-- qSix:
-    use_entities: 16_q_twentySeven
-- qSeven:
-    use_entities: 6_q_twentyFive
-- qEight:
-    use_entities: 9_q_sevenTeen
-- qNine:
-    use_entities: 7_q_two
-- qTen:
-    use_entities: 11_q_ten
-- qEleven:
-    use_entities: 8_q_eightTeen
-- qTwelve:
-    use_entities: 10_q_thirtyEight
-- qThirteen:
-    use_entities: 18_q_twentyTwo
-- qFourteen:
-    use_entities: 12_q_twentyFour
-- qFifteen:
-    use_entities: 13_q_thirtySix
-- qSixteen:
-    use_entities: 17_q_fourtyFour
-- qSeventeen:
-    use_entities: 19_q_six
+- qEight
+- qEleven
+- qFifteen
+- qFive
+- qFour
+- qFourteen
+- qG0
+- qG1
+- qG2
+- qG4
+- qG5
+- qG6
+- qG7
+- qG8
+- qG9
+- qNine
+- qOne
+- qSeven
+- qSeventeen
+- qSix
+- qSixteen
+- qTen
+- qThirteen
+- qThree
+- qTwelve
+- qTwo
 - rephrase_learningstyle:
     triggers: action_rephrase_learningstyle
 - restart
@@ -164,194 +136,98 @@ entities:
 - 202_qG2
 slots:
   1_first_name:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity 
-      entity: 1_first_name
   1_how_you_are_doing:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 4_q_twentyThree
   100_q_three:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 3_q_three
   101_q_twentyThree:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 4_q_twentyThree
   102_q_thirtyOne:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 5_q_thirtyOne
   103_q_twentyFive:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 6_q_twentyFive
   104_q_two:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 7_q_two
   105_q_eightTeen:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 8_q_eightTeen
   106_q_sevenTeen:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 9_q_sevenTeen
   107_q_thirtyEight:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 10_q_thirtyEight
   108_q_ten:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 11_q_ten
   109_q_twentyFour:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 12_q_twentyFour
   110_q_thirtySix:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 13_q_thirtySix
   111_q_seven:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 14_q_seven
   112_q_eleven:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 15_q_eleven
   113_q_twentySeven:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 16_q_twentySeven
   114_q_fourtyFour:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 17_q_fourtyFour
   115_q_twentyTwo:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 18_q_twentyTwo
   116_q_six:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 19_q_six
+  requested_slot:
+    type: unfeaturized
+    auto_fill: false
+    influence_conversation: false
   200_qG0:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 200_qG0
   201_qG1:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 201_qG1
   304_qG4:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 204_qG4
   305_qG5:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 205_qG5
   306_qG6:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 206_qG6
   307_qG7:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 207_qG7
   208_qG8:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 208_qG8
   209_qG9:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
+    type: text
+    auto_fill: false
     influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: 209_qG9
 responses:
   utter_iamabot:
   - text: Yes, I'm a machine. 🤖  My job is to recognize your learning style.
@@ -796,38 +672,115 @@ actions:
 forms:
   name_form:
     required_slots:
-    - 1_first_name
-      
+      1_first_name:
+      - entity: 1_first_name
+        intent: give_name
+        type: from_entity
   elicitation_form:
     required_slots:
-    - 100_q_three
-    - 101_q_twentyThree
-    - 102_q_thirtyOne
-    - 103_q_twentyFive
-    - 104_q_two
-    - 105_q_eightTeen
-    - 106_q_sevenTeen
-    - 107_q_thirtyEight
-    - 108_q_ten
-    - 109_q_twentyFour
-    - 110_q_thirtySix
-    - 111_q_seven
-    - 112_q_eleven
-    - 113_q_twentySeven
-    - 114_q_fourtyFour
-    - 115_q_twentyTwo
-    - 116_q_six
-     
+      100_q_three:
+      - entity: 3_q_three
+        intent: qOne
+        type: from_entity
+      101_q_twentyThree:
+      - entity: 4_q_twentyThree
+        intent: qTwo
+        type: from_entity
+      102_q_thirtyOne:
+      - entity: 5_q_thirtyOne
+        intent: qThree
+        type: from_entity
+      103_q_twentyFive:
+      - entity: 6_q_twentyFive
+        intent: qSeven
+        type: from_entity
+      104_q_two:
+      - entity: 7_q_two
+        intent: qNine
+        type: from_entity
+      105_q_eightTeen:
+      - entity: 8_q_eightTeen
+        intent: qEleven
+        type: from_entity
+      106_q_sevenTeen:
+      - entity: 9_q_sevenTeen
+        intent: qEight
+        type: from_entity
+      107_q_thirtyEight:
+      - entity: 10_q_thirtyEight
+        intent: qTwelve
+        type: from_entity
+      108_q_ten:
+      - entity: 11_q_ten
+        intent: qTen
+        type: from_entity
+      109_q_twentyFour:
+      - entity: 12_q_twentyFour
+        intent: qFourteen
+        type: from_entity
+      110_q_thirtySix:
+      - entity: 13_q_thirtySix
+        intent: qFifteen
+        type: from_entity
+      111_q_seven:
+      - entity: 14_q_seven
+        intent: qFive
+        type: from_entity
+      112_q_eleven:
+      - entity: 15_q_eleven
+        intent: qFour
+        type: from_entity
+      113_q_twentySeven:
+      - entity: 16_q_twentySeven
+        intent: qSix
+        type: from_entity
+      114_q_fourtyFour:
+      - entity: 17_q_fourtyFour
+        intent: qSixteen
+        type: from_entity
+      115_q_twentyTwo:
+      - entity: 18_q_twentyTwo
+        intent: qThirteen
+        type: from_entity
+      116_q_six:
+      - entity: 19_q_six
+        intent: qSeventeen
+        type: from_entity
   quest_game_form_part_one:
     required_slots:
-    - 200_qG0
-    - 201_qG1
-    - 208_qG8
-    - 209_qG9
-     
+      200_qG0:
+      - entity: 200_qG0
+        intent: qG0
+        type: from_entity
+      201_qG1:
+      - entity: 201_qG1
+        intent: qG1
+        type: from_entity
+      208_qG8:
+      - entity: 208_qG8
+        intent: qG8
+        not_intent: chitchat_giveage
+        type: from_entity
+      209_qG9:
+      - entity: 209_qG9
+        intent: qG9
+        type: from_entity
   quest_game_form_part_two:
     required_slots:
-    - 304_qG4
-    - 305_qG5
-    - 306_qG6
-    - 307_qG7
+      304_qG4:
+      - entity: 204_qG4
+        intent: qG4
+        type: from_entity
+      305_qG5:
+      - entity: 205_qG5
+        intent: qG5
+        not_intent: chitchat_giveage
+        type: from_entity
+      306_qG6:
+      - entity: 206_qG6
+        intent: qG6
+        type: from_entity
+      307_qG7:
+      - entity: 207_qG7
+        intent: qG7
+        type: from_entity

@@ -37,6 +37,7 @@ policies:
     constrain_similarities: True
     max_history: 5
     epochs: 150
+  - name: MappingPolicy
   - name: AugmentedMemoizationPolicy
     max_history: 5
   - name: RulePolicy
