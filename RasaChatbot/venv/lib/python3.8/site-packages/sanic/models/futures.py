@@ -7,13 +7,14 @@ from sanic.models.handler_types import (
     MiddlewareType,
     SignalHandler,
 )
+from sanic.types import HashableDict
 
 
 class FutureRoute(NamedTuple):
     handler: str
     uri: str
     methods: Optional[Iterable[str]]
-    host: str
+    host: Union[str, List[str]]
     strict_slashes: bool
     stream: bool
     version: Optional[int]
@@ -25,6 +26,7 @@ class FutureRoute(NamedTuple):
     static: bool
     version_prefix: str
     error_format: Optional[str]
+    route_context: HashableDict
 
 
 class FutureListener(NamedTuple):
@@ -60,3 +62,8 @@ class FutureSignal(NamedTuple):
     handler: SignalHandler
     event: str
     condition: Optional[Dict[str, str]]
+    exclusive: bool
+
+
+class FutureRegistry(set):
+    ...

@@ -1,1 +1,4 @@
-.DS_Store 
+RasaChatbot/venv
+.idea
+RasaChatbot/.rasa
+.DS_Store
